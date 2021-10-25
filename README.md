@@ -1,6 +1,6 @@
 # retrochess
 You have white - I have black
 
-![teasing](phone_screen.jpg){:height="36px" width="36px"}
+<img src="phone_screen.jpg" alt="teasing" style="width:200px;"/>
 
 (About to commit code)

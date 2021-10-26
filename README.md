@@ -55,7 +55,7 @@ Pour en savoir plus:
 
 # Dépendances
 * Le moteur est développé en C
-* Il utilise un générateur de coups de type ["BitBoard"](https://github.com/pioz/chess), autrement dit les échiquiers sont codés sur 64 bits et les calculs de trajectoire de pièces se font avec des opérateurs bit à bit. (https://www.chessprogramming.org/Bitboards).
+* Il utilise un générateur de coups de type ["BitBoard"](https://github.com/pioz/chess), autrement dit les échiquiers sont codés sur 64 bits et les calculs des trajectoires de pièces se font avec des opérateurs bit à bit. (https://www.chessprogramming.org/Bitboards).
 * L'interface est développée en [Lua](https://www.lua.org/) avec [Löve2D](https://love2d.org/), un framework 2D.
 * Le look console provient de [LV100](https://github.com/Eiyeron/LV-100). 
 * Le style retro provient de [moonshine](https://github.com/vrld/moonshine), une api permettant de créer des effets avec des shaders GLSL en lua.

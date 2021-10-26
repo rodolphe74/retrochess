@@ -19,30 +19,30 @@ Works on Windows and Android
 Le principe :
 ```
 Fonction MINI_MAX(profondeur, min_ou_max)
-Si profondeur = 0 -> retourner l'évaluation de l'échiquier
+  Si profondeur = 0 -> retourner l'évaluation de l'échiquier
 
-Si MAX
-  Sauvegarder l'échiquier
-  Générer les coups possibles pour l'échiquier
-    Pour chaque coup
-      Jouer le coup
-      Appeler récursivement la fonction MINI_MAX avec profondeur - 1 et MIN
-      Recuperer l'evaluation du coup joué au retour de la fonction
-      Garder l'évaluation MAX
-    Fin Pour
-    Restaurer l'échiquier sauvegardé
-    Retourner l'évaluation MAX
+  Si MAX
+    Sauvegarder l'échiquier
+    Générer les coups possibles pour l'échiquier
+      Pour chaque coup
+        Jouer le coup
+        Appeler récursivement la fonction MINI_MAX avec profondeur - 1 et MIN
+        Recuperer l'evaluation du coup joué au retour de la fonction
+        Garder l'évaluation MAX
+      Fin Pour
+      Restaurer l'échiquier sauvegardé
+      Retourner l'évaluation MAX
 
-Si MIN
-  Générer les coups possibles pour l'échiquier
-    Pour chaque coup
-      Jouer le coup
-      Appeler récursivement la fonction MINI_MAX avec profondeur - 1 et MAX
-      Recuperer l'evaluation du coup joué au retour de la fonction
-      Garder l'évaluation MIN
-    Fin Pour
-    Restaurer l'échiquier sauvegardé
-    Retourner l'évaluation MIN
+  Si MIN
+    Générer les coups possibles pour l'échiquier
+      Pour chaque coup
+        Jouer le coup
+        Appeler récursivement la fonction MINI_MAX avec profondeur - 1 et MAX
+        Recuperer l'evaluation du coup joué au retour de la fonction
+        Garder l'évaluation MIN
+      Fin Pour
+      Restaurer l'échiquier sauvegardé
+      Retourner l'évaluation MIN
 ```
 
 

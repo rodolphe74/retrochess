@@ -29,8 +29,8 @@ Fonction MINI_MAX(profondeur, min_ou_max)
         Appeler récursivement la fonction MINI_MAX avec profondeur - 1 et MIN
         Recuperer l'evaluation du coup joué au retour de la fonction
         Garder l'évaluation MAX
+        Restaurer l'échiquier sauvegardé
       Fin Pour
-      Restaurer l'échiquier sauvegardé
       Retourner l'évaluation MAX
 
   Si MIN
@@ -40,8 +40,8 @@ Fonction MINI_MAX(profondeur, min_ou_max)
         Appeler récursivement la fonction MINI_MAX avec profondeur - 1 et MAX
         Recuperer l'evaluation du coup joué au retour de la fonction
         Garder l'évaluation MIN
+        Restaurer l'échiquier sauvegardé
       Fin Pour
-      Restaurer l'échiquier sauvegardé
       Retourner l'évaluation MIN
 Fin fonction
 ```

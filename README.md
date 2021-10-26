@@ -16,7 +16,7 @@ Works on Windows and Android.
 * Une fonction d'évaluation qui donne la qualité de l'échiquier résultant d'un coup joué.
 * Une IHM.
 
-Le principe :
+*Le principe :*
 
 Etant l'ordinateur, je cherche à minimiser le coup de mon adversaire, c'est à dire trouver le coup d'évaluation minimale en fonction des réponses de mon adversaire qui seront d'évaluation maximales; 
 

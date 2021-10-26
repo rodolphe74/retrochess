@@ -1,0 +1,5 @@
+-I.\lua-5.1.4_Win64_dll12_lib\include
+-I.\Containers\src\include
+-I.\Lua
+-IC:\Users\rodoc\HOME\msys64\usr\include
+-I.

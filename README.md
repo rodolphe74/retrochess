@@ -18,7 +18,10 @@ Works on Windows and Android.
 
 Le principe :
 
-Etant l'ordinateur, je cherche à minimiser le coup de mon adversaire, c'est à dire trouver le coup d'évaluation minimale en fonction des réponses de mon adversaire qui seront d'évaluation maximales; c'est à dire le min(max) sur une profondeur de 2;
+Etant l'ordinateur, je cherche à minimiser le coup de mon adversaire, c'est à dire trouver le coup d'évaluation minimale en fonction des réponses de mon adversaire qui seront d'évaluation maximales; 
+
+C'est à dire le min(max) sur une profondeur de 2;
+
 Mais je jouerai mieux si je faisais une recherche sur une profondeur 5 :
 ```
 Appeler MIN_MAX avec 5 et MIN

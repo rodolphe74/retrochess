@@ -50,6 +50,6 @@ Pour en savoir plus:
 
 * https://fr.wikipedia.org/wiki/Programming_a_Computer_for_Playing_Chess
 * https://fr.wikipedia.org/wiki/Algorithme_minimax
-
+* ProgrammingaComputerforPlayingChess.pdf
 
 

@@ -48,7 +48,8 @@ Fin fonction
 
 Pour en savoir plus:
 
-Programming a Computer for Playing Chess (https://fr.wikipedia.org/wiki/Programming_a_Computer_for_Playing_Chess)
+* https://fr.wikipedia.org/wiki/Programming_a_Computer_for_Playing_Chess
+* https://fr.wikipedia.org/wiki/Algorithme_minimax
 
 
 

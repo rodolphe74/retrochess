@@ -46,8 +46,9 @@ Fonction MINI_MAX(profondeur, min_ou_max)
 Fin fonction
 ```
 
-** Pour en savoir plus:
-(https://fr.wikipedia.org/wiki/Programming_a_Computer_for_Playing_Chess)
+Pour en savoir plus:
+
+Programming a Computer for Playing Chess (https://fr.wikipedia.org/wiki/Programming_a_Computer_for_Playing_Chess)
 
 
 

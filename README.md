@@ -43,6 +43,7 @@ Fonction MINI_MAX(profondeur, min_ou_max)
       Fin Pour
       Restaurer l'échiquier sauvegardé
       Retourner l'évaluation MIN
+Fin fonction
 ```
 
 

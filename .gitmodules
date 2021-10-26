@@ -1,3 +1,7 @@
 [submodule "moonshine"]
 	path = assets/assets/moonshine
 	url = https://github.com/vrld/moonshine.git
+	
+[submodule "moonshine"]
+	path = assets/moonshine
+	url = https://github.com/vrld/moonshine.git

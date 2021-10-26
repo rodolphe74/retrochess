@@ -18,7 +18,7 @@ Works on Windows and Android.
 
 *Le principe :*
 
-Etant l'ordinateur, je cherche à minimiser le coup de mon adversaire, c'est à dire trouver le coup d'évaluation minimale en fonction des réponses de mon adversaire qui seront d'évaluation maximales; 
+Etant l'ordinateur, je cherche à minimiser le coup de mon adversaire, c'est à dire trouver le coup d'évaluation minimale en fonction des réponses de mon adversaire qui seront d'évaluation maximale; 
 
 C'est à dire le min(max) sur une profondeur de 2;
 

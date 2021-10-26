@@ -17,6 +17,12 @@ Works on Windows and Android.
 * Une IHM.
 
 Le principe :
+
+Etant l'ordinateur, je cherche à minimiser le coup de mon adversaire sur une recherche de profondeur 5:
+```
+Appeler MIN_MAX avec 5 et MIN
+```
+
 ```
 Fonction MINI_MAX(profondeur, min_ou_max)
   Si profondeur = 0 -> retourner l'évaluation de l'échiquier

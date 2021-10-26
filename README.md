@@ -53,3 +53,6 @@ Pour en savoir plus:
 * [ProgrammingaComputerforPlayingChess.pdf](./ProgrammingaComputerforPlayingChess.pdf) 
 
 
+# Dépendances
+* Le moteur est développé en C
+* Il utilise un générateur de coups de type ["BitBoard"](https://github.com/pioz/chess), autrement dit les échiquiers sont codés sur 64 bits et les calculs de trajectoire de pièces se font avec des opérateurs bit à bit. (https://www.chessprogramming.org/Bitboards)

@@ -11,8 +11,15 @@ Works on Windows and Android
 
 
 # Qu'est ce qu'il faut pour qu'un ordinateur joue aux échecs ?
-...
+* Un générateur de coups en fonction de l'état de l'échiquier
+* Un algo minimax permettant permettant de construire un arbre des possibilités de jeu entre l'ordinateur et son adversaire
+* Une fonction d'évaluation qui donne la qualité de l'échiquier résultant d'un coup joué
+* Une IHM
 
+Le principe :
+```
+ds
+```
 
 
 

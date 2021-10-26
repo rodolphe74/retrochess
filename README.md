@@ -1,20 +1,20 @@
 # Retrochess
-Play chess against computer in a pure retro style
+Play chess against computer in a pure retro style.
 
-Chess Engine coded in C
+Chess Engine coded in C.
 
-IHM made with love2d
+IHM made with love2d.
 
-Works on Windows and Android 
+Works on Windows and Android.
 
 <img src="phone_screen.jpg" alt="teasing" style="width:300px;"/>
 
 
 # Qu'est ce qu'il nous faut pour qu'un ordinateur joue aux échecs ?
-* Un générateur de coups en fonction de l'état de l'échiquier
-* Un algo minimax permettant permettant de construire un arbre des possibilités de jeu entre l'ordinateur et son adversaire
-* Une fonction d'évaluation qui donne la qualité de l'échiquier résultant d'un coup joué
-* Une IHM
+* Un générateur de coups en fonction de l'état de l'échiquier.
+* Un algo minimax permettant permettant de construire un arbre des possibilités de jeu entre l'ordinateur et son adversaire.
+* Une fonction d'évaluation qui donne la qualité de l'échiquier résultant d'un coup joué.
+* Une IHM.
 
 Le principe :
 ```
@@ -54,7 +54,7 @@ Pour en savoir plus:
 
 
 # Dépendances
-* Le moteur est développé en C
+* Le moteur est développé en C.
 * Il utilise un générateur de coups de type ["BitBoard"](https://github.com/pioz/chess), autrement dit les échiquiers sont codés sur 64 bits et les calculs des trajectoires de pièces se font avec des opérateurs bit à bit. (https://www.chessprogramming.org/Bitboards).
 * L'interface est développée en [Lua](https://www.lua.org/) avec [Löve2D](https://love2d.org/), un framework 2D, qui facilite le portage entre différentes machines.
 * Le look console provient de [LV100](https://github.com/Eiyeron/LV-100). 

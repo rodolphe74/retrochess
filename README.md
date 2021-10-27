@@ -70,3 +70,8 @@ Pour en savoir plus:
 * L'interface est développée en [Lua](https://www.lua.org/) avec [Löve2D](https://love2d.org/), un framework 2D, qui facilite le portage entre différentes machines.
 * Le look console provient de [LV100](https://github.com/Eiyeron/LV-100). 
 * Le style retro provient de [moonshine](https://github.com/vrld/moonshine), une api permettant de créer des effets avec des shaders GLSL en lua.
+
+# Architecture du projet
+Le projet se compose :
+* du "moteur" en C qui prend la forme d'une librairie .dll sous Windows et .so sous Android. Le code et le Makefile [MSYS2](https://www.msys2.org/docs/environments/) se trouvent dans le sous répertoire bitboard ; le make est à lancer en mode MINGW64 pour ne pas avoir de dépendance vers cygwin mais vers msvcrt. Pour construire la librairie Android, les fichiers Android.mk et Application.mk sont présents mais il est nécessaire d'installer le [NDK](https://developer.android.com/ndk) Android au préalable.
+* de l'interface en lua dans le sous répertoire assets. Le point d'entrée est le fichier main.lua. Il est nécessaire d'adapter le chemin vers la dll windows dans ce source (variable sharedPath dans la fonction get_funcs()).

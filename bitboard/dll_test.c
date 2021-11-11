@@ -60,10 +60,13 @@ int main() {
 
 	l_get_moves_list(L);
 
+	l_get_taken(L);
+
 
 //  	l_is_check_mate(L);
 
 	l_close_chess_lib(L);
+
 
 	lua_close(L);
     return 0;

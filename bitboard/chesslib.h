@@ -21,6 +21,7 @@ int g_get_board(lua_State *L);
 int g_get_piece_at(lua_State *L);
 int g_get_moves_list(lua_State *L);
 int g_get_castling_done(lua_State *L);
+int g_get_taken(lua_State *L);
 
 
 
@@ -35,6 +36,7 @@ __declspec(dllexport) int __cdecl l_get_piece_at(lua_State *L);
 __declspec(dllexport) int __cdecl l_get_moves_list(lua_State *L);
 __declspec(dllexport) int __cdecl l_is_check_mate(lua_State *L);
 __declspec(dllexport) int __cdecl l_get_castling_done(lua_State *L);
+__declspec(dllexport) int __cdecl l_get_taken(lua_State *L);
 #endif
 
 #ifdef _ANDROID_
@@ -48,6 +50,7 @@ extern int l_get_piece_at(lua_State *L);
 extern int l_get_moves_list(lua_State *L);
 extern int l_is_check_mate(lua_State *L);
 extern int l_get_castling_done(lua_State *L);
+extern int l_get_taken(lua_State *L);
 #endif
 
 

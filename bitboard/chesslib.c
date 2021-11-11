@@ -1,7 +1,10 @@
 #include "chesslib.h"
+#include "board.h"
 #include "util.h"
+#include "log.h"
 #include <stdint.h>
 #include <vector.h>
+
 
 
 Board STARTING_BOARD;
@@ -43,7 +46,7 @@ int g_init_chess_lib(lua_State *L)
 		'\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0',
 		'\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0',
 		'\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0',
-		'p',  'p',  'p',  'p',	'p',  'p',  'p',  'p',
+		'\0',  'p',  'p',  'p',	'p',  'p',  'p',  'p',
 		'r',  'n',  'b',  'q',	'k',  'b',  'n',  'r'
 	};
 
@@ -272,7 +275,7 @@ int g_get_moves_list(lua_State *L)
 		ret_value = pseudo_legal_move_ep(&(g.b), from, i, en_passant_copy, &e);
 		if (ret_value/*pseudo_legal_move_ep(&(g.b), from, i, en_passant_copy, &e)*/) {
 
-			uint8_t ct = castling_type(&g.b, from, i);	//TODO
+			uint8_t ct = castling_type(&g.b, from, i);
 			if (try_move_without_notation(&(g.b), from, i, 'Q', new_board, &capture, ret_value == EN_PASSANT ? e : 0)) {
 
 				uint32_t m = ((uint8_t) e) << 16 | ((uint8_t) ct << 8) | (uint8_t) i;
@@ -296,6 +299,73 @@ int g_get_castling_done(lua_State *L)
 	lua_pushinteger(L, g.castling_done[0]);
 	lua_pushinteger(L, g.castling_done[1]);
 	return 2;
+}
+
+
+int count_char(const char *s, int size, char c)
+{
+	int i = 0, count = 0;
+
+	for (i = 0; i < size; i++)
+		if (s[i] == c)
+			count++;
+
+	return count;
+}
+
+int g_get_taken(lua_State *L)
+{
+	lua_newtable(L);
+
+	lua_pushstring(L, "K");
+	lua_pushinteger(L, 1 - count_char(g.b.placement, 64, 'K'));
+	lua_settable(L, -3);
+
+	lua_pushstring(L, "Q");
+	lua_pushinteger(L, 1 - count_char(g.b.placement, 64, 'Q'));
+	lua_settable(L, -3);
+
+	lua_pushstring(L, "R");
+	lua_pushinteger(L, 2 - count_char(g.b.placement, 64, 'R'));
+	lua_settable(L, -3);
+
+	lua_pushstring(L, "N");
+	lua_pushinteger(L, 2 - count_char(g.b.placement, 64, 'N'));
+	lua_settable(L, -3);
+
+	lua_pushstring(L, "B");
+	lua_pushinteger(L, 2 - count_char(g.b.placement, 64, 'B'));
+	lua_settable(L, -3);
+
+	lua_pushstring(L, "P");
+	lua_pushinteger(L, 8 - count_char(g.b.placement, 64, 'P'));
+	lua_settable(L, -3);
+
+	lua_pushstring(L, "k");
+	lua_pushinteger(L, 1 - count_char(g.b.placement, 64, 'k'));
+	lua_settable(L, -3);
+
+	lua_pushstring(L, "q");
+	lua_pushinteger(L, 1 - count_char(g.b.placement, 64, 'q'));
+	lua_settable(L, -3);
+
+	lua_pushstring(L, "r");
+	lua_pushinteger(L, 2 - count_char(g.b.placement, 64, 'r'));
+	lua_settable(L, -3);
+
+	lua_pushstring(L, "n");
+	lua_pushinteger(L, 2 - count_char(g.b.placement, 64, 'n'));
+	lua_settable(L, -3);
+
+	lua_pushstring(L, "b");
+	lua_pushinteger(L, 2 - count_char(g.b.placement, 64, 'b'));
+	lua_settable(L, -3);
+
+	lua_pushstring(L, "p");
+	lua_pushinteger(L, 8 - count_char(g.b.placement, 64, 'p'));
+	lua_settable(L, -3);
+
+	return 1;
 }
 
 
@@ -353,6 +423,11 @@ __declspec(dllexport) int __cdecl l_get_castling_done(lua_State *L)
 {
 	return g_get_castling_done(L);
 }
+
+__declspec(dllexport) int __cdecl l_get_taken(lua_State *L)
+{
+	return g_get_taken(L);
+}
 #endif
 
 
@@ -403,8 +478,14 @@ int l_is_check_mate(lua_State *L)
 	return g_is_check_mate(L);
 }
 
-extern int l_get_castling_done(lua_State *L)
+int l_get_castling_done(lua_State *L)
 {
 	return g_get_castling_done(L);
+}
+
+
+int l_get_taken(lua_State *L)
+{
+	return g_get_taken(L);
 }
 #endif

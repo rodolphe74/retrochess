@@ -3,3 +3,5 @@
 -I.\Lua
 -IC:\Users\rodoc\HOME\msys64\usr\include
 -I.
+-D_CHESSLIB_LOG_
+-D_WINDOWS_

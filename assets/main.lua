@@ -1,50 +1,37 @@
 package.path = package.path .. ";../../?.lua;../../?/init.lua;../libs/?.lua;../libs/?/init.lua" -- Small loading hack, not needed in normal times.
 
-
-
 -- https://stackoverflow.com/questions/39382554/how-to-use-lua-require-function-to-access-a-module-before-the-actual-address
 -- package.path is a string that estabilishes where and how it should search for the file you required. It usually looks like this:
 
 -- "/some/path/?.lua; /some/other/path/?.lua; ?.lua;"
--- When you call require("module"), Lua takes the first path contained in the string 
--- in package.path (the paths are separated by semicolons, so the first path would be /some/path/?.lua), 
+-- When you call require("module"), Lua takes the first path contained in the string
+-- in package.path (the paths are separated by semicolons, so the first path would be /some/path/?.lua),
 -- and replaces the ? in the string with the string that was passed to require.
 
 -- So Lua would first search your module at /some/path/module.lua.
 
--- If it finds that file, then it executes it, otherwise it moves on to the next path: 
+-- If it finds that file, then it executes it, otherwise it moves on to the next path:
 -- it would search at /some/other/path/module.lua, and finally at module.lua.
 
 
 local base64 = require'base64'
-
 local Terminal = require "terminal"
 local moonshine = require 'moonshine'
-
 require "SimplyTimers"
-local timerList = {}
 
+local timerList = {}
 local SQUARE_WIDTH_CHESS_FONT = 36
 local SQUARE_HEIGHT_CHESS_FONT = 36
 local XBOARD_CHESS_FONT = 36
 local YBOARD_CHESS_FONT = 186
-
 local ANDROID_SHIFT = 0
 local ANDROID_SHIFT_BOTTOM = 0
 local ANDROID_BOARD_SHIFT = 0
-
--- local selectedBox = {}
 local selectedBoxes = {}
-
-
 local lastSelection = {}
-local lastAlphaBeta = {}
 local cumulatedTime = 0
-
-local screenInf = {}
-
 local board
-
+local takenList
 
 osString = love.system.getOS();
 love.window.updateMode(360, 640)
@@ -52,48 +39,32 @@ love.window.updateMode(360, 640)
 if osString ~= "Windows" then
 	-- Android
 	-- love.window.setFullscreen(true)
-	-- effect = moonshine(336, 692, moonshine.effects.scanlines).chain(moonshine.effects.crt).chain(moonshine.effects.glow)
 	effect = moonshine(336, 692, moonshine.effects.scanlines).chain(moonshine.effects.crt)
 	ANDROID_SHIFT = 1
 	ANDROID_SHIFT_BOTTOM = 0
 	ANDROID_BOARD_SHIFT = 36
 else
 	-- Windows
-	-- effect = moonshine(360, 640, moonshine.effects.scanlines).chain(moonshine.effects.crt).chain(moonshine.effects.glow)
 	effect = moonshine(360, 640, moonshine.effects.scanlines).chain(moonshine.effects.crt)
 end
 
--- effect = moonshine(moonshine.effects.scanlines)
--- effect = moonshine(moonshine.effects.scanlines).chain(moonshine.effects.filmgrain)
--- effect = moonshine(moonshine.effects.filmgrain)
-
--- effect.scanlines.opacity=0.2
--- effect.filmgrain.opacity = 0.6
--- effect.filmgrain.size = 2
-
-
-
--- effect = moonshine(360, 640, moonshine.effects.scanlines).chain(moonshine.effects.crt).chain(moonshine.effects.glow)
 effect.scanlines.opacity=0.6
--- effect.glow.min_luma = 0.2
 effect.crt.x=1.03
 effect.crt.y=1.03
 
 
-
-
 local chessFont = love.graphics.newFont("AVENFONT.TTF", 36)
+local chessFontSmall = love.graphics.newFont("AVENFONT.TTF", 24)
 
 
 local font = love.graphics.newFont("x14y24pxHeadUpDaisy.ttf", 24) -- Thanks @hicchicc for the font
 local term = Terminal(14*40, (font:getHeight()-4)*25, font, nil, font:getHeight()-4)
-screenInf = {font:getHeight(), 14*40, (font:getHeight()-4)*25}
 term:hide_cursor()
 
 term:set_cursor_color(Terminal.schemes.basic[7])
 
 -- shared lib functions
-local l_sin
+-- local l_sin
 local l_close_chess_lib
 local l_init_chess_lib
 local l_alpha_beta
@@ -102,7 +73,7 @@ local l_get_board
 local l_get_piece_at
 local l_get_moves_list
 local l_get_castling_done
-local ref	-- reference sur le jeu en cours (dans la dll)
+local l_get_taken
 
 
 -- Operations bit a bit
@@ -129,12 +100,12 @@ function drawBoard(s, x, y)
 	_x = x 
 	_y = _y + SQUARE_HEIGHT_CHESS_FONT
 	for i = 1, #s do
-	
+
 		if count == 0 then
 			love.graphics.print("$", _x, _y)
 			_x = _x + SQUARE_WIDTH_CHESS_FONT
 		end
-	
+
 		local chr = s:sub(i,i)
 
 		if chr == "p" then
@@ -179,7 +150,7 @@ function drawBoard(s, x, y)
 				love.graphics.print("K", _x, _y)
 			end
 			_x = _x + SQUARE_WIDTH_CHESS_FONT
-		
+
 		elseif chr == "P" then
 			if flipflop == 1 then
 				love.graphics.print("o", _x, _y)
@@ -230,24 +201,62 @@ function drawBoard(s, x, y)
 			end
 			_x = _x + SQUARE_WIDTH_CHESS_FONT
 		end
-		
+
 		if count == 8 then
 			love.graphics.print("%", _x, _y)
 			_x = x
 			_y = _y + SQUARE_HEIGHT_CHESS_FONT
 			count = -1
 		end
-		
+
 		if flipflop == 0 then
 			flipflop = 1
 		else 
 			flipflop = 0
 		end
-		
+
 		count = count + 1
 	end
 	_x = x
 	love.graphics.print("/(((((((()", _x, _y)
+end
+
+
+function drawTakenWhitePieces()
+	love.graphics.setFont(chessFontSmall)
+	love.graphics.print("l", 75, 134);
+	love.graphics.print("w", 117, 134);
+	love.graphics.print("t", 159, 134);
+	love.graphics.print("m", 201, 134);
+	love.graphics.print("v", 243, 134);
+	love.graphics.print("o", 285, 134);
+
+	love.graphics.setFont(font)
+	love.graphics.print(takenList["K"], 98, 132)
+	love.graphics.print(takenList["Q"], 140, 132)
+	love.graphics.print(takenList["R"], 182, 132)
+	love.graphics.print(takenList["N"], 224, 132)
+	love.graphics.print(takenList["B"], 266, 132)
+	love.graphics.print(takenList["P"], 308, 132)
+end
+
+
+function drawTakenBlackPieces()
+	love.graphics.setFont(chessFontSmall)
+	love.graphics.print("k", 75, 592);
+	love.graphics.print("q", 117, 592);
+	love.graphics.print("r", 159, 592);
+	love.graphics.print("n", 201, 592);
+	love.graphics.print("b", 243, 592);
+	love.graphics.print("p", 285, 592);
+
+	love.graphics.setFont(font)
+	love.graphics.print(takenList["k"], 98, 590)
+	love.graphics.print(takenList["q"], 140, 590)
+	love.graphics.print(takenList["r"], 182, 590)
+	love.graphics.print(takenList["n"], 224, 590)
+	love.graphics.print(takenList["b"], 266, 590)
+	love.graphics.print(takenList["p"], 308, 590)
 end
 
 
@@ -258,22 +267,22 @@ function getSquareChessFont(xMouse, yMouse)
 	square_height = SQUARE_HEIGHT_CHESS_FONT
 	xBoard = XBOARD_CHESS_FONT
 	yBoard = YBOARD_CHESS_FONT + ANDROID_BOARD_SHIFT
-	
+
 	local x = math.floor((xMouse - xBoard) / square_width)
 	local y = math.floor((yMouse - yBoard - ANDROID_BOARD_SHIFT) / square_height)
-	
+
 	if x > 7 or x < 0 then
 		return -1
 	end
-	
+
 	if y > 7 or y < 0 then
 		return -1
 	end
-	
+
 	local square = x + (7-y) * 8
-	
+
 	print("square:" .. square)
-	
+
 	return square
 end
 
@@ -283,102 +292,104 @@ function highlightSquareChessFont(i, cc)
     local square_height = SQUARE_HEIGHT_CHESS_FONT
 	local xBoard = XBOARD_CHESS_FONT
 	local yBoard = YBOARD_CHESS_FONT
-	
+
 	local y = 7 - math.floor(i / 8)
 	local x = math.floor(math.fmod(i, 8))
-	
+
 	if x > 7 or x < 0 then
 		return -1
 	end
-	
+
 	if y > 7 or y < 0 then
 		return -1
 	end
-	
+
 	print (x,y)
 
 	selectedBox = {
 		cc,
 		xBoard + x * square_width ,
-		yBoard + y * square_height + ANDROID_BOARD_SHIFT, 
-		square_width, 
+		yBoard + y * square_height + ANDROID_BOARD_SHIFT,
+		square_width,
 		square_height
 	}
-	
+
 	table.insert(selectedBoxes, selectedBox)
-	
 end
 
 
 
 function love.load()
 	get_funcs()
-	
+
+
 	term:set_cursor_backcolor({0,1,0,0.5})
 	term:print(16, ANDROID_SHIFT+1, "Retrochess");
 	term:set_cursor_backcolor({0,0,0,1})
-	
+
 	term:print(2, ANDROID_SHIFT+2, "Black - Computer")
 	term:print(2, ANDROID_SHIFT+3, "Evaluated pos:")
 	term:print(2, ANDROID_SHIFT+4, "Best evaluation:")
 	term:print(2, ANDROID_SHIFT+5, "Time: 0.0")
--- 	term:print(2, ANDROID_SHIFT+6, "Strokes:")
+	term:print(2, ANDROID_SHIFT+6, "Took:")
 	term:print(2, ANDROID_SHIFT_BOTTOM+22, "White - Human")
 	term:print(2, ANDROID_SHIFT_BOTTOM+23, "Time: 0.0")
--- 	term:print(2, ANDROID_SHIFT_BOTTOM+24, "Strokes:")
+ 	term:print(2, ANDROID_SHIFT_BOTTOM+24, "Took:")
 
     if osString == "Windows" then
-        ref = l_init_chess_lib()
+        l_init_chess_lib()
 		board = l_get_board()
-		
+		takenList = l_get_taken()
+
     elseif osString == "Android" then
-		ref = l_init_chess_lib()
+		l_init_chess_lib()
 		board = l_get_board()
+		takenList = l_get_taken()
 	end
 
-end
 
+end
 
 
 function love.update(dt)
 	if updateTimer(dt, "playBlack", timerList) then
 		print("playBlack")
-		deleteTimer("playBlack", timerList)		
-		
+		deleteTimer("playBlack", timerList)
+
 		local count, eval, from, to, ep, castling, t = l_alpha_beta(1, 5)	-- black search
-		
-		lastAlphaBeta = {count, eval, from, to, ep, t}
-		
+
 		term:print(2, ANDROID_SHIFT+2, "Black - Computer")
 		term:print(2, ANDROID_SHIFT+3, "Evaluated pos:" .. count .. "|" .. ep .. "       ")
 		term:print(2, ANDROID_SHIFT+4, "Best evaluation:" .. eval .. "       ")
 		cumulatedTime = cumulatedTime + t
 		term:print(2, ANDROID_SHIFT+5, "Time:" .. 0.0 + t .. " | " .. cumulatedTime .. "       ")
-		
-		print(count, eval, from, to, t)
-		
+
+		print("l_alpha_beta", count, eval, from, to, t)
+
 		if castling == 768 then
+			-- castling right
 			l_move_to(from, to, 0, 1, 1)
-			l_move_to(7, 5, 0, 1, 1)
+			l_move_to(63, 61, 0, 1, 1)
 		elseif castling == 1024 then
+			-- castling left
 			l_move_to(from, to, 0, 1, 1)
-			l_move_to(0, 3, 0, 1, 1)
+			l_move_to(56, 59, 0, 1, 1)
 		else
 			l_move_to(from, to, ep, 0, 1)	-- commit black play
 		end
-		
-		
+
 		board = l_get_board()	-- refresh board
-		
+		takenList = l_get_taken()	-- refresh taken list
+
 		checkWhite = l_is_check_mate(0)
 		checkBlack = l_is_check_mate(1)
-		
+
 		print ("White is Mate " .. checkWhite)
 		print ("Black is Mate " .. checkBlack)
-		
+
 		term:print(12, ANDROID_SHIFT_BOTTOM+20, "                   ")
 		term:print(12, ANDROID_SHIFT_BOTTOM+21, "                   ")
-		
+
 		if checkWhite == 2 then
 			term:set_cursor_backcolor({1,1,0,0.5})
 			term:print(14, ANDROID_SHIFT_BOTTOM+21, "White is check")
@@ -395,14 +406,12 @@ function love.update(dt)
 			term:print(14, ANDROID_SHIFT_BOTTOM+21, "                 ")
 		end
 		term:set_cursor_backcolor({0,0,0,1})
-		
 	end
-	
     term:update(dt)
 end
 
-function playWhite(from, to, castling, enPassant)
 
+function playWhite(from, to, castling, enPassant)
 	if castling == 256 then
 		l_move_to(from, to, 0, 1, 0)
 		l_move_to(7, 5, 0, 1, 0)
@@ -412,25 +421,30 @@ function playWhite(from, to, castling, enPassant)
 	else
 		l_move_to(from, to, enPassant, 0, 0)	-- commit white play
 	end
-	
+
+	-- debug purpose
 	if enPassant ~= 0 then
 		print("enPassant - " .. enPassant)
 	end
 
 	local a,b = l_get_castling_done()
 	print("castling_done ".. a .. "," .. b)
-	
+	--
+
 	board = l_get_board()
-	
+
 	term:set_cursor_backcolor({0,0,1,0.5})
 	term:print(12, ANDROID_SHIFT_BOTTOM+20, "Reflechissement...")
 	term:set_cursor_backcolor({0,0,0,1})
+
+	takenList = l_get_taken()
+
 	addTimer(0.7, "playBlack", timerList)
 end
 
 
 function unselect()
-	for k,v in pairs(lastSelection) do
+	for _,v in pairs(lastSelection) do
 		highlightSquare(v, {0.6,0.6,0.6,1}, {0.3,0.3,0.3,1})
 	end
 end
@@ -440,16 +454,16 @@ function love.mousepressed(x, y, button, istouch)
 	if osString == "Android" then
 		return
 	end
-	
+
 	selectedBoxes = {}
-	
+
 	if button == 1 then
 		local s = getSquareChessFont(x, y)
-		print(s)
-		
+		print("s:" .. s)
+
 		local p = l_get_piece_at(s)	-- min black - maj white
 		print("p:" .. p)
-		
+
 		if p == "" or string.upper(p) ~= p then
 			print("#" .. table.getn(lastSelection))
 			-- empty square ou piece adverse teste si le coup est possible
@@ -458,30 +472,31 @@ function love.mousepressed(x, y, button, istouch)
 				local v8 = bit(v,255,AND)
 				local v16 = bit(v,65280,AND)
 				local v24 = bit(v,16711680,AND) / (2^16)
-				print("v", v8, v16, v24)
+				-- print("v", v8, v16, v24)
 				if s == v8 then
 					print("play:" .. lastSelection[1] .. "," .. s)
 					playWhite(lastSelection[1], s, v16, v24)
 					return
 				end
 			end
-			-- unselect()	-- case vide ou la piece selectionnee ne peut aller
-			return	
+			return
 		end
-		
-		-- efface la selection precedent
-		-- unselect()
+
 		lastSelection = {}
 		table.insert(lastSelection, s)	-- lastSelection[1] = piece selectionnee
-		
+
 		lst = l_get_moves_list(s)
-		for k,v in pairs(lst) do
+		-- every play is coded on 3 bytes
+		-- first case number to go
+		-- second castling ?
+		-- third en passant ?
+		for _,v in pairs(lst) do
 			local v8 = bit(v,255,AND)
-			local v16 = bit(v,65280,AND)
-			local v24 = bit(v,16711680,AND) / (2^16)
-			print("v8=" .. v8)
-			print("v16=" .. v16)
-			print("v24=" .. v24)
+			-- local v16 = bit(v,65280,AND)
+			-- local v24 = bit(v,16711680,AND) / (2^16)
+			-- print("v8=" .. v8)
+			-- print("v16=" .. v16)
+			-- print("v24=" .. v24)
 			highlightSquareChessFont(v8, {0.3, 0.6, 0.3, 0.5})
 			table.insert(lastSelection, v)
 		end
@@ -495,14 +510,14 @@ function love.touchpressed(id, x, y, dx, dy, pressure)
 	if osString ~= "Android" then
 		return
 	end
-	
+
 	selectedBoxes = {}
-	
+
 	local s = getSquareChessFont(x, y + ANDROID_BOARD_SHIFT)
-	
+
 	local p = l_get_piece_at(s)	-- min black - maj white
 	print("p:" .. p)
-	
+
 	if p == "" or string.upper(p) ~= p then
 		print("#" .. table.getn(lastSelection))
 		-- empty square ou piece adverse teste si le coup est possible
@@ -517,24 +532,22 @@ function love.touchpressed(id, x, y, dx, dy, pressure)
 				return
 			end
 		end
-		return	
+		return
 	end
-	
-	-- efface la selection precedent
-	-- unselect()
+
+	-- efface la selection precedente
 	lastSelection = {}
 	table.insert(lastSelection, s)	-- lastSelection[1] = piece selectionnee
-	
+
 	lst = l_get_moves_list(s)	-- chaque coup est code sur 3 octets
-	for k,v in pairs(lst) do
-		local v8 = bit(v,255,AND)	-- la position sur l'echequier
-		local v16 = bit(v,65280,AND)	-- s'agit il d'un roque ?
-		local v24 = bit(v,16711680,AND) / (2^16)	-- s'agit il d'une prise en passant
+	for _,v in pairs(lst) do
+		local v8 = bit(v,255,AND)	-- la position sur l'echiquier
+		-- local v16 = bit(v,65280,AND)	-- s'agit il d'un roque ?
+		-- local v24 = bit(v,16711680,AND) / (2^16)	-- s'agit il d'une prise en passant
 		highlightSquareChessFont(v8, {0.3, 0.6, 0.3, 0.5})
 		table.insert(lastSelection, v)
 	end
 	highlightSquareChessFont(s, {0.3, 0.3, 0.6, 0.5})
-	
 end
 
 
@@ -544,28 +557,27 @@ function love.draw()
     effect(function()
         love.graphics.push()
         love.graphics.scale(love.graphics.getWidth()/term.canvas:getWidth(), love.graphics.getHeight()/term.canvas:getHeight())
-		
+
         term:draw()
-		
+
 		love.graphics.scale(1/(love.graphics.getWidth()/term.canvas:getWidth()), 1/(love.graphics.getHeight()/term.canvas:getHeight()))
-		
+
 		drawBoard(board, 0, 150 + ANDROID_BOARD_SHIFT)
-		
-		
+		drawTakenWhitePieces()
+		drawTakenBlackPieces()
+
 		if table.getn(selectedBoxes) > 0 then
 			local r, g, b, a = love.graphics.getColor()
-			for k,v in pairs(selectedBoxes) do
+			for _,v in pairs(selectedBoxes) do
 				love.graphics.setColor(v[1])
 				love.graphics.rectangle("fill", v[2], v[3], v[4], v[5])
 			end
 			love.graphics.setColor(r, g, b, a)
 		end
-				
+
         love.graphics.pop()
     end)
 end
-
-
 
 
 function love.quit()
@@ -582,15 +594,12 @@ function love.quit()
 end
 
 
-
-
-
 function get_funcs()
 	if osString == "Windows" then
 		print(">Windows")
-		
+
 		local sharedPath = "C:/Users/rodoc/HOME/developpement/lua/retrochess/bitboard/chesslib.dll"
-        l_sin = package.loadlib(sharedPath, "l_sin")
+        -- l_sin = package.loadlib(sharedPath, "l_sin")
         l_close_chess_lib = package.loadlib(sharedPath, "l_close_chess_lib")
         l_init_chess_lib = package.loadlib(sharedPath, "l_init_chess_lib")
         l_alpha_beta = package.loadlib(sharedPath, "l_alpha_beta")
@@ -600,16 +609,17 @@ function get_funcs()
 		l_get_moves_list = package.loadlib(sharedPath, "l_get_moves_list")
 		l_is_check_mate = package.loadlib(sharedPath, "l_is_check_mate")
 		l_get_castling_done = package.loadlib(sharedPath, "l_get_castling_done")
-		
+		l_get_taken = package.loadlib(sharedPath, "l_get_taken")
+
     elseif osString == "Android" then
 		print(">Android")
 		get_lib_android()
 		local decoded = base64.decode(shared)
 		local dir = love.filesystem.getSaveDirectory()
 		local success, message = love.filesystem.write("libchesslib.so", decoded)
-		
+
 		local sharedPath = tostring(dir) .. "/" .. "libchesslib.so"
-		l_sin = package.loadlib(sharedPath, "l_sin")
+		-- l_sin = package.loadlib(sharedPath, "l_sin")
 		l_close_chess_lib = package.loadlib(sharedPath, "l_close_chess_lib")
         l_init_chess_lib = package.loadlib(sharedPath, "l_init_chess_lib")
         l_alpha_beta = package.loadlib(sharedPath, "l_alpha_beta")

@@ -41,14 +41,14 @@ const int16_t filter_bishop[] = {
 };
 
 const int16_t filter_rook[] = {
-	0,  0,	 0,   0,   0,	0,   0,	 0,
-	5,  10,	 10,  10,  10,	10,  10, 5,
-	-5, 0,	 0,   0,   0,	0,   0,	 -5,
-	-5, 0,	 0,   0,   0,	0,   0,	 -5,
-	-5, 0,	 0,   0,   0,	0,   0,	 -5,
-	-5, 0,	 0,   0,   0,	0,   0,	 -5,
-	-5, 0,	 0,   0,   0,	0,   0,	 -5,
-	0,  0,	 0,   5,   5,	0,   0,	 0
+	0,  0,	 0,   0,   0,	0,   0,	  0,
+	5,  10,	 10,  10,  10,	10,  10,  5,
+	-5, 0,	 0,   0,   0,	0,   0,	  -5,
+	-5, 0,	 0,   0,   0,	0,   0,	  -5,
+	-5, 0,	 0,   0,   0,	0,   0,	  -5,
+	-5, 0,	 0,   0,   0,	0,   0,	  -5,
+	-5, 0,	 0,   0,   0,	0,   0,	  -5,
+	0,  0,	 0,   5,   5,	0,   0,	  0
 };
 
 
@@ -109,12 +109,14 @@ void board_generate_moves(game_board *g)
 	char capture;
 
 	uint8_t en_passant_copy[16];
+
 	memcpy(en_passant_copy, g->en_passant, 16);
 	memset(g->en_passant, 128, 16);
 
 	vector_clear(g->moves);
 
 	int ret_value, e;
+
 	for (int j = 0; j < 63; j++) {
 		for (int i = 0; i < 64; i++) {
 			ret_value = pseudo_legal_move_ep(&g->b, j, i, en_passant_copy, &e);
@@ -135,13 +137,13 @@ void board_generate_moves(game_board *g)
 void update_en_passant_candidates(game_board *g, int from, int to)
 {
 // 	printf("**************************** from %d - to %d\n", from , to);
-	if (from/8 == 1 &&  from+16 == to  && g->b.placement[to] == 'P') {
+	if (from / 8 == 1 &&  from + 16 == to  && g->b.placement[to] == 'P') {
 		printf("@@@\n");
-		g->en_passant[from%8] = to;
+		g->en_passant[from % 8] = to;
 	}
-	if (from/8 == 6 &&  from-16 == to  && g->b.placement[to] == 'p') {
+	if (from / 8 == 6 &&  from - 16 == to  && g->b.placement[to] == 'p') {
 		printf("###\n");
-		g->en_passant[(from%8)+8] = to;
+		g->en_passant[(from % 8) + 8] = to;
 	}
 
 // 	printf("en_passant\n");
@@ -160,6 +162,7 @@ void do_move(game_board *g, move *m)
 {
 	Board new_board;
 	char capture;
+
 	try_move_without_notation(&g->b, m->from, m->to, 'Q', &new_board, &capture, m->en_passant);
 
 	if (m->castling_type > 0) {
@@ -335,8 +338,10 @@ int16_t alpha_beta(game_board *g, uint8_t depth, uint8_t maximize, int16_t alpha
 void do_backup_game(game_board *current, backup_game *backup)
 {
 	size_t size = vector_size(current->moves);
+
 	backup->data_size = size;
 	move *moves_backup = malloc(sizeof(move) * size);
+
 	vector_copy_to_array(moves_backup, current->moves);
 	backup->data = moves_backup;
 	backup->b = current->b;
@@ -480,14 +485,14 @@ int is_check_mate(game_board *g)
 void init_chess_library()
 {
 	char sample_board[64] = {
-		'R',  'N',  'B',  'Q',	'K',  'B',  'N',  'R',
-		'P', 'P',  'P',  'P',	'P',  'P',  'P',  'P',
-		'\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0',
-		'\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0',
-		'\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0',
-		'\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0',
-		'p',  'p',  'p',  'p',	'p',  'p',  'p',  'p',
-		'r',  'n',  'b',  'q',	'k',  'b',  'n',  'r'
+		'R',  'N',  'B',  'Q',	'K',   'B',  'N',  'R',
+		'P',  'P',  'P',  'P',	'P',   'P',  'P',  'P',
+		'\0', '\0', '\0', '\0', '\0',  '\0', '\0', '\0',
+		'\0', '\0', '\0', '\0', '\0',  '\0', '\0', '\0',
+		'\0', '\0', '\0', '\0', '\0',  '\0', '\0', '\0',
+		'\0', '\0', '\0', '\0', '\0',  '\0', '\0', '\0',
+		'p',  'p',  'p',  'p',	'p',   'p',  'p',  'p',
+		'r',  'n',  'b',  'q',	'k',   'b',  'n',  'r'
 	};
 
 // 	char sample_board[64] = {
@@ -554,6 +559,7 @@ int main()
 
 	// alphabeta
 	uint32_t chess_nodes_count = 0;
+
 	g.moves = vector_init(sizeof(move));
 
 
@@ -561,7 +567,7 @@ int main()
 	int16_t strokes_count_black = 0;
 
 
-	while(1) {
+	while (1) {
 		g.b.active_color = BLACK;
 		tstart();
 		alpha = INT16_MIN;

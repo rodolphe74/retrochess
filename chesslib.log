@@ -789,3 +789,1282 @@
 2021-10-26 17:03:03 DEBUG chesslib.c:192: g_move_to | is_castling = 0
 2021-10-26 17:03:03 DEBUG chesslib.c:193: g_move_to | global castling = 0-0
 2021-10-26 17:03:03 DEBUG chesslib.c:98: g_close_chess_lib
+2021-10-30 16:06:16 DEBUG chesslib.c:85: g_init_chess_lib
+2021-10-30 16:06:21 DEBUG chesslib.c:268: g_get_moves_list | color = 0
+2021-10-30 16:06:21 DEBUG chesslib.c:190: g_move_to | color = 0
+2021-10-30 16:06:21 DEBUG chesslib.c:191: g_move_to | en_passant = 0
+2021-10-30 16:06:21 DEBUG chesslib.c:192: g_move_to | is_castling = 0
+2021-10-30 16:06:21 DEBUG chesslib.c:193: g_move_to | global castling = 0-0
+2021-10-30 16:06:22 DEBUG chesslib.c:147: g_alpha_beta | 1 5 
+2021-10-30 16:06:23 DEBUG chesslib.c:166: g_alpha_beta | 162537 -90 57 42 0 0 0.832000 
+2021-10-30 16:06:23 DEBUG chesslib.c:190: g_move_to | color = 1
+2021-10-30 16:06:23 DEBUG chesslib.c:191: g_move_to | en_passant = 0
+2021-10-30 16:06:23 DEBUG chesslib.c:192: g_move_to | is_castling = 0
+2021-10-30 16:06:23 DEBUG chesslib.c:193: g_move_to | global castling = 0-0
+2021-10-30 16:06:49 DEBUG chesslib.c:98: g_close_chess_lib
+2021-10-30 16:21:19 DEBUG chesslib.c:98: g_init_chess_lib
+2021-10-30 16:21:20 DEBUG chesslib.c:281: g_get_moves_list | color = 0
+2021-10-30 16:21:20 DEBUG chesslib.c:203: g_move_to | color = 0
+2021-10-30 16:21:20 DEBUG chesslib.c:204: g_move_to | en_passant = 0
+2021-10-30 16:21:20 DEBUG chesslib.c:205: g_move_to | is_castling = 0
+2021-10-30 16:21:20 DEBUG chesslib.c:206: g_move_to | global castling = 0-0
+2021-10-30 16:21:21 DEBUG chesslib.c:160: g_alpha_beta | 1 5 
+2021-10-30 16:21:22 DEBUG chesslib.c:179: g_alpha_beta | 191421 -40 52 44 0 0 0.969000 
+2021-10-30 16:21:22 DEBUG chesslib.c:203: g_move_to | color = 1
+2021-10-30 16:21:22 DEBUG chesslib.c:204: g_move_to | en_passant = 0
+2021-10-30 16:21:22 DEBUG chesslib.c:205: g_move_to | is_castling = 0
+2021-10-30 16:21:22 DEBUG chesslib.c:206: g_move_to | global castling = 0-0
+2021-10-30 16:21:22 DEBUG chesslib.c:281: g_get_moves_list | color = 0
+2021-10-30 16:21:23 DEBUG chesslib.c:203: g_move_to | color = 0
+2021-10-30 16:21:23 DEBUG chesslib.c:204: g_move_to | en_passant = 0
+2021-10-30 16:21:23 DEBUG chesslib.c:205: g_move_to | is_castling = 0
+2021-10-30 16:21:23 DEBUG chesslib.c:206: g_move_to | global castling = 0-0
+2021-10-30 16:21:23 DEBUG chesslib.c:160: g_alpha_beta | 1 5 
+2021-10-30 16:21:26 DEBUG chesslib.c:179: g_alpha_beta | 501250 -105 57 42 0 0 2.195000 
+2021-10-30 16:21:26 DEBUG chesslib.c:203: g_move_to | color = 1
+2021-10-30 16:21:26 DEBUG chesslib.c:204: g_move_to | en_passant = 0
+2021-10-30 16:21:26 DEBUG chesslib.c:205: g_move_to | is_castling = 0
+2021-10-30 16:21:26 DEBUG chesslib.c:206: g_move_to | global castling = 0-0
+2021-10-30 16:21:27 DEBUG chesslib.c:111: g_close_chess_lib
+2021-10-30 16:24:11 DEBUG chesslib.c:98: g_init_chess_lib
+2021-10-30 16:24:14 DEBUG chesslib.c:281: g_get_moves_list | color = 0
+2021-10-30 16:24:15 DEBUG chesslib.c:203: g_move_to | color = 0
+2021-10-30 16:24:15 DEBUG chesslib.c:204: g_move_to | en_passant = 0
+2021-10-30 16:24:15 DEBUG chesslib.c:205: g_move_to | is_castling = 0
+2021-10-30 16:24:15 DEBUG chesslib.c:206: g_move_to | global castling = 0-0
+2021-10-30 16:24:16 DEBUG chesslib.c:160: g_alpha_beta | 1 5 
+2021-10-30 16:24:16 DEBUG chesslib.c:179: g_alpha_beta | 144540 -90 57 42 0 0 0.921000 
+2021-10-30 16:24:16 DEBUG chesslib.c:203: g_move_to | color = 1
+2021-10-30 16:24:16 DEBUG chesslib.c:204: g_move_to | en_passant = 0
+2021-10-30 16:24:16 DEBUG chesslib.c:205: g_move_to | is_castling = 0
+2021-10-30 16:24:16 DEBUG chesslib.c:206: g_move_to | global castling = 0-0
+2021-10-30 16:24:18 DEBUG chesslib.c:281: g_get_moves_list | color = 0
+2021-10-30 16:24:19 DEBUG chesslib.c:203: g_move_to | color = 0
+2021-10-30 16:24:19 DEBUG chesslib.c:204: g_move_to | en_passant = 0
+2021-10-30 16:24:19 DEBUG chesslib.c:205: g_move_to | is_castling = 0
+2021-10-30 16:24:19 DEBUG chesslib.c:206: g_move_to | global castling = 0-0
+2021-10-30 16:24:19 DEBUG chesslib.c:160: g_alpha_beta | 1 5 
+2021-10-30 16:24:21 DEBUG chesslib.c:179: g_alpha_beta | 279358 -135 62 45 0 0 1.896000 
+2021-10-30 16:24:21 DEBUG chesslib.c:203: g_move_to | color = 1
+2021-10-30 16:24:21 DEBUG chesslib.c:204: g_move_to | en_passant = 0
+2021-10-30 16:24:21 DEBUG chesslib.c:205: g_move_to | is_castling = 0
+2021-10-30 16:24:21 DEBUG chesslib.c:206: g_move_to | global castling = 0-0
+2021-10-30 16:24:23 DEBUG chesslib.c:111: g_close_chess_lib
+2021-10-30 18:17:40 DEBUG chesslib.c:84: g_init_chess_lib
+2021-10-30 18:17:41 DEBUG chesslib.c:259: g_get_moves_list | color = 0
+2021-10-30 18:17:41 DEBUG chesslib.c:184: g_move_to | color = 0
+2021-10-30 18:17:41 DEBUG chesslib.c:185: g_move_to | en_passant = 0
+2021-10-30 18:17:41 DEBUG chesslib.c:186: g_move_to | is_castling = 0
+2021-10-30 18:17:41 DEBUG chesslib.c:187: g_move_to | global castling = 0-0
+2021-10-30 18:17:42 DEBUG chesslib.c:140: g_alpha_beta | 1 5 
+2021-10-30 18:17:43 DEBUG chesslib.c:160: g_alpha_beta | 162537 -90 57 42 0 0 0.787000 
+2021-10-30 18:17:43 DEBUG chesslib.c:184: g_move_to | color = 1
+2021-10-30 18:17:43 DEBUG chesslib.c:185: g_move_to | en_passant = 0
+2021-10-30 18:17:43 DEBUG chesslib.c:186: g_move_to | is_castling = 0
+2021-10-30 18:17:43 DEBUG chesslib.c:187: g_move_to | global castling = 0-0
+2021-10-30 18:17:44 DEBUG chesslib.c:259: g_get_moves_list | color = 0
+2021-10-30 18:17:45 DEBUG chesslib.c:184: g_move_to | color = 0
+2021-10-30 18:17:45 DEBUG chesslib.c:185: g_move_to | en_passant = 0
+2021-10-30 18:17:45 DEBUG chesslib.c:186: g_move_to | is_castling = 0
+2021-10-30 18:17:45 DEBUG chesslib.c:187: g_move_to | global castling = 0-0
+2021-10-30 18:17:45 DEBUG chesslib.c:140: g_alpha_beta | 1 5 
+2021-10-30 18:17:47 DEBUG chesslib.c:160: g_alpha_beta | 263450 -85 52 44 0 0 1.603000 
+2021-10-30 18:17:47 DEBUG chesslib.c:184: g_move_to | color = 1
+2021-10-30 18:17:47 DEBUG chesslib.c:185: g_move_to | en_passant = 0
+2021-10-30 18:17:47 DEBUG chesslib.c:186: g_move_to | is_castling = 0
+2021-10-30 18:17:47 DEBUG chesslib.c:187: g_move_to | global castling = 0-0
+2021-10-30 18:17:50 DEBUG chesslib.c:259: g_get_moves_list | color = 0
+2021-10-30 18:17:50 DEBUG chesslib.c:184: g_move_to | color = 0
+2021-10-30 18:17:50 DEBUG chesslib.c:185: g_move_to | en_passant = 0
+2021-10-30 18:17:50 DEBUG chesslib.c:186: g_move_to | is_castling = 0
+2021-10-30 18:17:50 DEBUG chesslib.c:187: g_move_to | global castling = 0-0
+2021-10-30 18:17:51 DEBUG chesslib.c:140: g_alpha_beta | 1 5 
+2021-10-30 18:17:54 DEBUG chesslib.c:160: g_alpha_beta | 513438 -140 51 35 0 0 2.999000 
+2021-10-30 18:17:54 DEBUG chesslib.c:184: g_move_to | color = 1
+2021-10-30 18:17:54 DEBUG chesslib.c:185: g_move_to | en_passant = 0
+2021-10-30 18:17:54 DEBUG chesslib.c:186: g_move_to | is_castling = 0
+2021-10-30 18:17:54 DEBUG chesslib.c:187: g_move_to | global castling = 0-0
+2021-10-30 18:17:55 DEBUG chesslib.c:95: g_close_chess_lib
+2021-10-31 02:47:16 DEBUG chesslib.c:88: g_init_chess_lib
+2021-10-31 02:47:18 DEBUG chesslib.c:275: g_get_moves_list | color = 0
+2021-10-31 02:47:18 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-10-31 02:47:18 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-10-31 02:47:18 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-10-31 02:47:18 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-10-31 02:47:19 DEBUG chesslib.c:148: g_alpha_beta | 1 5 
+2021-10-31 02:47:20 DEBUG chesslib.c:168: g_alpha_beta | 130605 -125 51 35 0 0 0.535000 
+2021-10-31 02:47:20 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-10-31 02:47:20 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-10-31 02:47:20 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-10-31 02:47:20 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-10-31 02:47:21 DEBUG chesslib.c:100: g_close_chess_lib
+2021-10-31 02:51:41 DEBUG chesslib.c:88: g_init_chess_lib
+2021-10-31 02:51:43 DEBUG chesslib.c:100: g_close_chess_lib
+2021-10-31 02:51:55 DEBUG chesslib.c:88: g_init_chess_lib
+2021-10-31 02:51:58 DEBUG chesslib.c:275: g_get_moves_list | color = 0
+2021-10-31 02:51:59 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-10-31 02:51:59 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-10-31 02:51:59 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-10-31 02:51:59 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-10-31 02:59:08 DEBUG chesslib.c:88: g_init_chess_lib
+2021-10-31 02:59:11 DEBUG chesslib.c:275: g_get_moves_list | color = 0
+2021-10-31 02:59:11 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-10-31 02:59:11 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-10-31 02:59:11 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-10-31 02:59:11 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-10-31 02:59:12 DEBUG chesslib.c:148: g_alpha_beta | 1 5 
+2021-10-31 02:59:13 DEBUG chesslib.c:168: g_alpha_beta | 191421 -40 52 44 0 0 0.986000 
+2021-10-31 02:59:13 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-10-31 02:59:13 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-10-31 02:59:13 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-10-31 02:59:13 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-10-31 02:59:15 DEBUG chesslib.c:275: g_get_moves_list | color = 0
+2021-10-31 02:59:19 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-10-31 02:59:19 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-10-31 02:59:19 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-10-31 02:59:19 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-10-31 02:59:19 DEBUG chesslib.c:148: g_alpha_beta | 1 5 
+2021-10-31 02:59:22 DEBUG chesslib.c:168: g_alpha_beta | 501250 -105 57 42 0 0 2.215000 
+2021-10-31 02:59:22 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-10-31 02:59:22 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-10-31 02:59:22 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-10-31 02:59:22 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-10-31 02:59:22 DEBUG chesslib.c:275: g_get_moves_list | color = 0
+2021-10-31 02:59:23 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-10-31 02:59:23 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-10-31 02:59:23 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-10-31 02:59:23 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-10-31 02:59:24 DEBUG chesslib.c:148: g_alpha_beta | 1 5 
+2021-10-31 02:59:25 DEBUG chesslib.c:168: g_alpha_beta | 390680 -340 59 31 0 0 1.622000 
+2021-10-31 02:59:25 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-10-31 02:59:25 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-10-31 02:59:25 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-10-31 02:59:25 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-10-31 02:59:28 DEBUG chesslib.c:275: g_get_moves_list | color = 0
+2021-10-31 02:59:30 DEBUG chesslib.c:275: g_get_moves_list | color = 0
+2021-10-31 02:59:31 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-10-31 02:59:31 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-10-31 02:59:31 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-10-31 02:59:31 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-10-31 02:59:32 DEBUG chesslib.c:148: g_alpha_beta | 1 5 
+2021-10-31 02:59:33 DEBUG chesslib.c:168: g_alpha_beta | 400032 -360 31 28 0 0 1.608000 
+2021-10-31 02:59:33 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-10-31 02:59:33 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-10-31 02:59:33 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-10-31 02:59:33 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-10-31 02:59:38 DEBUG chesslib.c:275: g_get_moves_list | color = 0
+2021-10-31 02:59:39 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-10-31 02:59:39 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-10-31 02:59:39 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-10-31 02:59:39 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-10-31 02:59:40 DEBUG chesslib.c:148: g_alpha_beta | 1 5 
+2021-10-31 02:59:41 DEBUG chesslib.c:168: g_alpha_beta | 245746 -450 28 7 0 0 1.023000 
+2021-10-31 02:59:41 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-10-31 02:59:41 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-10-31 02:59:41 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-10-31 02:59:41 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-10-31 03:00:00 DEBUG chesslib.c:275: g_get_moves_list | color = 0
+2021-10-31 03:00:00 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-10-31 03:00:00 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-10-31 03:00:00 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-10-31 03:00:00 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-10-31 03:00:01 DEBUG chesslib.c:148: g_alpha_beta | 1 5 
+2021-10-31 03:00:02 DEBUG chesslib.c:168: g_alpha_beta | 280211 -895 51 44 0 0 1.254000 
+2021-10-31 03:00:02 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-10-31 03:00:02 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-10-31 03:00:02 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-10-31 03:00:02 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-10-31 03:05:06 DEBUG chesslib.c:100: g_close_chess_lib
+2021-11-02 15:03:40 DEBUG chesslib.c:106: g_init_chess_lib
+2021-11-02 15:03:46 DEBUG chesslib.c:118: g_close_chess_lib
+2021-11-02 15:03:54 DEBUG chesslib.c:106: g_init_chess_lib
+2021-11-02 15:03:57 DEBUG chesslib.c:293: g_get_moves_list | color = 0
+2021-11-02 15:03:57 DEBUG chesslib.c:211: g_move_to | color = 0
+2021-11-02 15:03:57 DEBUG chesslib.c:212: g_move_to | en_passant = 0
+2021-11-02 15:03:57 DEBUG chesslib.c:213: g_move_to | is_castling = 0
+2021-11-02 15:03:57 DEBUG chesslib.c:214: g_move_to | global castling = 0-0
+2021-11-02 15:03:58 DEBUG chesslib.c:166: g_alpha_beta | 1 5 
+2021-11-02 15:04:00 DEBUG chesslib.c:186: g_alpha_beta | 368299 -195 57 42 0 0 1.824000 
+2021-11-02 15:04:00 DEBUG chesslib.c:211: g_move_to | color = 1
+2021-11-02 15:04:00 DEBUG chesslib.c:212: g_move_to | en_passant = 0
+2021-11-02 15:04:00 DEBUG chesslib.c:213: g_move_to | is_castling = 0
+2021-11-02 15:04:00 DEBUG chesslib.c:214: g_move_to | global castling = 0-0
+2021-11-02 15:04:01 DEBUG chesslib.c:293: g_get_moves_list | color = 0
+2021-11-02 15:04:30 DEBUG chesslib.c:106: g_init_chess_lib
+2021-11-02 15:04:32 DEBUG chesslib.c:293: g_get_moves_list | color = 0
+2021-11-02 15:04:32 DEBUG chesslib.c:211: g_move_to | color = 0
+2021-11-02 15:04:32 DEBUG chesslib.c:212: g_move_to | en_passant = 0
+2021-11-02 15:04:32 DEBUG chesslib.c:213: g_move_to | is_castling = 0
+2021-11-02 15:04:32 DEBUG chesslib.c:214: g_move_to | global castling = 0-0
+2021-11-02 15:04:33 DEBUG chesslib.c:166: g_alpha_beta | 1 5 
+2021-11-02 15:04:34 DEBUG chesslib.c:186: g_alpha_beta | 239865 -175 51 35 0 0 1.130000 
+2021-11-02 15:04:34 DEBUG chesslib.c:211: g_move_to | color = 1
+2021-11-02 15:04:34 DEBUG chesslib.c:212: g_move_to | en_passant = 0
+2021-11-02 15:04:34 DEBUG chesslib.c:213: g_move_to | is_castling = 0
+2021-11-02 15:04:34 DEBUG chesslib.c:214: g_move_to | global castling = 0-0
+2021-11-02 15:04:35 DEBUG chesslib.c:293: g_get_moves_list | color = 0
+2021-11-02 15:04:35 DEBUG chesslib.c:211: g_move_to | color = 0
+2021-11-02 15:04:35 DEBUG chesslib.c:212: g_move_to | en_passant = 0
+2021-11-02 15:04:35 DEBUG chesslib.c:213: g_move_to | is_castling = 0
+2021-11-02 15:04:35 DEBUG chesslib.c:214: g_move_to | global castling = 0-0
+2021-11-02 15:04:36 DEBUG chesslib.c:166: g_alpha_beta | 1 5 
+2021-11-02 15:04:38 DEBUG chesslib.c:186: g_alpha_beta | 421795 -205 57 42 0 0 2.320000 
+2021-11-02 15:04:38 DEBUG chesslib.c:211: g_move_to | color = 1
+2021-11-02 15:04:38 DEBUG chesslib.c:212: g_move_to | en_passant = 0
+2021-11-02 15:04:38 DEBUG chesslib.c:213: g_move_to | is_castling = 0
+2021-11-02 15:04:38 DEBUG chesslib.c:214: g_move_to | global castling = 0-0
+2021-11-02 15:04:40 DEBUG chesslib.c:118: g_close_chess_lib
+2021-11-02 15:10:14 DEBUG chesslib.c:106: g_init_chess_lib
+2021-11-02 15:10:14 DEBUG chesslib.c:293: g_get_moves_list | color = 0
+2021-11-02 15:10:15 DEBUG chesslib.c:211: g_move_to | color = 0
+2021-11-02 15:10:15 DEBUG chesslib.c:212: g_move_to | en_passant = 0
+2021-11-02 15:10:15 DEBUG chesslib.c:213: g_move_to | is_castling = 0
+2021-11-02 15:10:15 DEBUG chesslib.c:214: g_move_to | global castling = 0-0
+2021-11-02 15:10:16 DEBUG chesslib.c:166: g_alpha_beta | 1 5 
+2021-11-02 15:10:17 DEBUG chesslib.c:186: g_alpha_beta | 239865 -175 51 35 0 0 1.111000 
+2021-11-02 15:10:17 DEBUG chesslib.c:211: g_move_to | color = 1
+2021-11-02 15:10:17 DEBUG chesslib.c:212: g_move_to | en_passant = 0
+2021-11-02 15:10:17 DEBUG chesslib.c:213: g_move_to | is_castling = 0
+2021-11-02 15:10:17 DEBUG chesslib.c:214: g_move_to | global castling = 0-0
+2021-11-02 15:10:17 DEBUG chesslib.c:293: g_get_moves_list | color = 0
+2021-11-02 15:10:18 DEBUG chesslib.c:211: g_move_to | color = 0
+2021-11-02 15:10:18 DEBUG chesslib.c:212: g_move_to | en_passant = 0
+2021-11-02 15:10:18 DEBUG chesslib.c:213: g_move_to | is_castling = 0
+2021-11-02 15:10:18 DEBUG chesslib.c:214: g_move_to | global castling = 0-0
+2021-11-02 15:10:18 DEBUG chesslib.c:166: g_alpha_beta | 1 5 
+2021-11-02 15:10:21 DEBUG chesslib.c:186: g_alpha_beta | 421795 -205 57 42 0 0 2.283000 
+2021-11-02 15:10:21 DEBUG chesslib.c:211: g_move_to | color = 1
+2021-11-02 15:10:21 DEBUG chesslib.c:212: g_move_to | en_passant = 0
+2021-11-02 15:10:21 DEBUG chesslib.c:213: g_move_to | is_castling = 0
+2021-11-02 15:10:21 DEBUG chesslib.c:214: g_move_to | global castling = 0-0
+2021-11-02 15:10:22 DEBUG chesslib.c:118: g_close_chess_lib
+2021-11-07 06:14:44 DEBUG chesslib.c:106: g_init_chess_lib
+2021-11-07 06:14:46 DEBUG chesslib.c:118: g_close_chess_lib
+2021-11-07 06:15:54 DEBUG chesslib.c:85: g_init_chess_lib
+2021-11-07 06:15:59 DEBUG chesslib.c:98: g_close_chess_lib
+2021-11-07 06:17:33 DEBUG chesslib.c:85: g_init_chess_lib
+2021-11-07 06:17:37 DEBUG chesslib.c:98: g_close_chess_lib
+2021-11-07 06:21:15 DEBUG chesslib.c:85: g_init_chess_lib
+2021-11-07 06:21:29 DEBUG chesslib.c:268: g_get_moves_list | color = 0
+2021-11-07 06:21:30 DEBUG chesslib.c:190: g_move_to | color = 0
+2021-11-07 06:21:30 DEBUG chesslib.c:191: g_move_to | en_passant = 0
+2021-11-07 06:21:30 DEBUG chesslib.c:192: g_move_to | is_castling = 0
+2021-11-07 06:21:30 DEBUG chesslib.c:193: g_move_to | global castling = 0-0
+2021-11-07 06:21:30 DEBUG chesslib.c:147: g_alpha_beta | 1 5 
+2021-11-07 06:21:31 DEBUG chesslib.c:166: g_alpha_beta | 144540 -90 57 42 0 0 0.917000 
+2021-11-07 06:21:31 DEBUG chesslib.c:190: g_move_to | color = 1
+2021-11-07 06:21:31 DEBUG chesslib.c:191: g_move_to | en_passant = 0
+2021-11-07 06:21:31 DEBUG chesslib.c:192: g_move_to | is_castling = 0
+2021-11-07 06:21:31 DEBUG chesslib.c:193: g_move_to | global castling = 0-0
+2021-11-07 06:21:45 DEBUG chesslib.c:98: g_close_chess_lib
+2021-11-07 06:23:58 DEBUG chesslib.c:85: g_init_chess_lib
+2021-11-07 06:24:01 DEBUG chesslib.c:98: g_close_chess_lib
+2021-11-07 06:25:30 DEBUG chesslib.c:85: g_init_chess_lib
+2021-11-07 06:25:37 DEBUG chesslib.c:98: g_close_chess_lib
+2021-11-07 06:25:41 DEBUG chesslib.c:85: g_init_chess_lib
+2021-11-07 06:25:43 DEBUG chesslib.c:98: g_close_chess_lib
+2021-11-07 06:26:48 DEBUG chesslib.c:85: g_init_chess_lib
+2021-11-07 06:28:09 DEBUG chesslib.c:98: g_close_chess_lib
+2021-11-07 06:37:14 DEBUG chesslib.c:85: g_init_chess_lib
+2021-11-07 06:37:59 DEBUG chesslib.c:98: g_close_chess_lib
+2021-11-07 06:40:17 DEBUG chesslib.c:85: g_init_chess_lib
+2021-11-07 06:40:19 DEBUG chesslib.c:98: g_close_chess_lib
+2021-11-07 06:43:42 DEBUG chesslib.c:85: g_init_chess_lib
+2021-11-07 06:43:48 DEBUG chesslib.c:98: g_close_chess_lib
+2021-11-07 06:44:31 DEBUG chesslib.c:85: g_init_chess_lib
+2021-11-07 06:44:34 DEBUG chesslib.c:98: g_close_chess_lib
+2021-11-07 06:49:23 DEBUG chesslib.c:85: g_init_chess_lib
+2021-11-07 06:49:27 DEBUG chesslib.c:98: g_close_chess_lib
+2021-11-07 06:52:34 DEBUG chesslib.c:87: g_init_chess_lib
+2021-11-07 06:52:35 DEBUG chesslib.c:100: g_close_chess_lib
+2021-11-07 06:53:07 DEBUG chesslib.c:87: g_init_chess_lib
+2021-11-07 06:53:09 DEBUG chesslib.c:270: g_get_moves_list | color = 0
+2021-11-07 06:53:09 DEBUG chesslib.c:192: g_move_to | color = 0
+2021-11-07 06:53:09 DEBUG chesslib.c:193: g_move_to | en_passant = 0
+2021-11-07 06:53:09 DEBUG chesslib.c:194: g_move_to | is_castling = 0
+2021-11-07 06:53:09 DEBUG chesslib.c:195: g_move_to | global castling = 0-0
+2021-11-07 06:53:10 DEBUG chesslib.c:149: g_alpha_beta | 1 5 
+2021-11-07 06:53:11 DEBUG chesslib.c:168: g_alpha_beta | 118620 415 52 36 0 0 0.531000 
+2021-11-07 06:53:11 DEBUG chesslib.c:192: g_move_to | color = 1
+2021-11-07 06:53:11 DEBUG chesslib.c:193: g_move_to | en_passant = 0
+2021-11-07 06:53:11 DEBUG chesslib.c:194: g_move_to | is_castling = 0
+2021-11-07 06:53:11 DEBUG chesslib.c:195: g_move_to | global castling = 0-0
+2021-11-07 06:53:15 DEBUG chesslib.c:100: g_close_chess_lib
+2021-11-07 07:01:25 DEBUG chesslib.c:87: g_init_chess_lib
+2021-11-07 07:01:25 DEBUG chesslib.c:360: *********************p=0
+2021-11-07 07:01:27 DEBUG chesslib.c:100: g_close_chess_lib
+2021-11-07 07:02:04 DEBUG chesslib.c:87: g_init_chess_lib
+2021-11-07 07:02:04 DEBUG chesslib.c:360: *********************p=0
+2021-11-07 07:02:06 DEBUG chesslib.c:100: g_close_chess_lib
+2021-11-07 07:02:12 DEBUG chesslib.c:87: g_init_chess_lib
+2021-11-07 07:02:12 DEBUG chesslib.c:360: *********************p=0
+2021-11-07 07:02:48 DEBUG chesslib.c:100: g_close_chess_lib
+2021-11-07 07:04:50 DEBUG chesslib.c:87: g_init_chess_lib
+2021-11-07 07:04:50 DEBUG chesslib.c:316: *********************p=1
+2021-11-07 07:04:50 DEBUG chesslib.c:364: *********************p=0
+2021-11-07 07:06:13 DEBUG chesslib.c:100: g_close_chess_lib
+2021-11-07 07:12:06 DEBUG chesslib.c:87: g_init_chess_lib
+2021-11-07 07:12:06 DEBUG chesslib.c:316: *********************p=1
+2021-11-07 07:12:06 DEBUG chesslib.c:364: *********************p=0
+2021-11-07 07:13:14 DEBUG chesslib.c:100: g_close_chess_lib
+2021-11-07 07:15:47 DEBUG chesslib.c:87: g_init_chess_lib
+2021-11-07 07:15:47 DEBUG chesslib.c:316: *********************p=1
+2021-11-07 07:15:47 DEBUG chesslib.c:364: *********************p=0
+2021-11-07 07:15:50 DEBUG chesslib.c:100: g_close_chess_lib
+2021-11-07 07:16:00 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-07 07:16:00 DEBUG chesslib.c:317: *********************p=1
+2021-11-07 07:16:00 DEBUG chesslib.c:318: [37m8[0m . n b q k b n r 
+[37m7[0m p p p p p p p p 
+[37m6[0m . . . . . . . . 
+[37m5[0m . . . . . . . . 
+[37m4[0m . . . . . . . . 
+[37m3[0m . . . . . . . . 
+[37m2[0m P P P P P P P P 
+[37m1[0m R N B Q K B N R 
+[37m  a b c d e f g h[0m
+2021-11-07 07:16:00 DEBUG chesslib.c:366: *********************p=0
+2021-11-07 07:16:05 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-07 07:18:11 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-07 07:18:11 DEBUG chesslib.c:317: *********************p=1
+2021-11-07 07:18:18 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-07 07:19:19 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-07 07:19:19 DEBUG chesslib.c:317: *********************p=0
+2021-11-07 07:19:24 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-07 07:21:14 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-07 07:21:14 DEBUG chesslib.c:308: *********************s=-1384611768
+2021-11-07 07:21:14 DEBUG chesslib.c:320: *********************p=0
+2021-11-07 07:21:14 DEBUG chesslib.c:308: *********************s=-1384611768
+2021-11-07 07:21:14 DEBUG chesslib.c:308: *********************s=-1384611768
+2021-11-07 07:21:14 DEBUG chesslib.c:308: *********************s=-1384611768
+2021-11-07 07:21:14 DEBUG chesslib.c:308: *********************s=-1384611768
+2021-11-07 07:21:14 DEBUG chesslib.c:308: *********************s=-1384611768
+2021-11-07 07:21:14 DEBUG chesslib.c:308: *********************s=-1384611768
+2021-11-07 07:21:14 DEBUG chesslib.c:308: *********************s=-1384611768
+2021-11-07 07:21:14 DEBUG chesslib.c:308: *********************s=-1384611768
+2021-11-07 07:21:14 DEBUG chesslib.c:308: *********************s=-1384611768
+2021-11-07 07:21:14 DEBUG chesslib.c:308: *********************s=-1384611768
+2021-11-07 07:21:14 DEBUG chesslib.c:308: *********************s=-1384611768
+2021-11-07 07:21:14 DEBUG chesslib.c:308: *********************s=-1384611768
+2021-11-07 07:21:24 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-07 07:21:43 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-07 07:21:43 DEBUG chesslib.c:308: *********************s=RNBQKBNRPPPPPPPP
+2021-11-07 07:21:43 DEBUG chesslib.c:320: *********************p=0
+2021-11-07 07:21:43 DEBUG chesslib.c:308: *********************s=RNBQKBNRPPPPPPPP
+2021-11-07 07:21:43 DEBUG chesslib.c:308: *********************s=RNBQKBNRPPPPPPPP
+2021-11-07 07:21:43 DEBUG chesslib.c:308: *********************s=RNBQKBNRPPPPPPPP
+2021-11-07 07:21:43 DEBUG chesslib.c:308: *********************s=RNBQKBNRPPPPPPPP
+2021-11-07 07:21:43 DEBUG chesslib.c:308: *********************s=RNBQKBNRPPPPPPPP
+2021-11-07 07:21:43 DEBUG chesslib.c:308: *********************s=RNBQKBNRPPPPPPPP
+2021-11-07 07:21:43 DEBUG chesslib.c:308: *********************s=RNBQKBNRPPPPPPPP
+2021-11-07 07:21:43 DEBUG chesslib.c:308: *********************s=RNBQKBNRPPPPPPPP
+2021-11-07 07:21:43 DEBUG chesslib.c:308: *********************s=RNBQKBNRPPPPPPPP
+2021-11-07 07:21:43 DEBUG chesslib.c:308: *********************s=RNBQKBNRPPPPPPPP
+2021-11-07 07:21:43 DEBUG chesslib.c:308: *********************s=RNBQKBNRPPPPPPPP
+2021-11-07 07:21:43 DEBUG chesslib.c:308: *********************s=RNBQKBNRPPPPPPPP
+2021-11-07 07:21:44 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-07 07:25:37 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-07 07:25:37 DEBUG chesslib.c:308: *********************s=RNBQKBNRPPPPPPPP
+2021-11-07 07:25:37 DEBUG chesslib.c:320: *********************p=64
+2021-11-07 07:25:37 DEBUG chesslib.c:308: *********************s=RNBQKBNRPPPPPPPP
+2021-11-07 07:25:37 DEBUG chesslib.c:308: *********************s=RNBQKBNRPPPPPPPP
+2021-11-07 07:25:37 DEBUG chesslib.c:308: *********************s=RNBQKBNRPPPPPPPP
+2021-11-07 07:25:37 DEBUG chesslib.c:308: *********************s=RNBQKBNRPPPPPPPP
+2021-11-07 07:25:37 DEBUG chesslib.c:308: *********************s=RNBQKBNRPPPPPPPP
+2021-11-07 07:25:37 DEBUG chesslib.c:308: *********************s=RNBQKBNRPPPPPPPP
+2021-11-07 07:25:37 DEBUG chesslib.c:308: *********************s=RNBQKBNRPPPPPPPP
+2021-11-07 07:25:37 DEBUG chesslib.c:308: *********************s=RNBQKBNRPPPPPPPP
+2021-11-07 07:25:37 DEBUG chesslib.c:308: *********************s=RNBQKBNRPPPPPPPP
+2021-11-07 07:25:37 DEBUG chesslib.c:308: *********************s=RNBQKBNRPPPPPPPP
+2021-11-07 07:25:37 DEBUG chesslib.c:308: *********************s=RNBQKBNRPPPPPPPP
+2021-11-07 07:25:37 DEBUG chesslib.c:308: *********************s=RNBQKBNRPPPPPPPP
+2021-11-07 07:25:39 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-07 07:25:46 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-07 07:25:46 DEBUG chesslib.c:308: *********************s=RNBQKBNRPPPPPPPP
+2021-11-07 07:25:46 DEBUG chesslib.c:320: *********************p=64
+2021-11-07 07:25:46 DEBUG chesslib.c:308: *********************s=RNBQKBNRPPPPPPPP
+2021-11-07 07:25:46 DEBUG chesslib.c:308: *********************s=RNBQKBNRPPPPPPPP
+2021-11-07 07:25:46 DEBUG chesslib.c:308: *********************s=RNBQKBNRPPPPPPPP
+2021-11-07 07:25:46 DEBUG chesslib.c:308: *********************s=RNBQKBNRPPPPPPPP
+2021-11-07 07:25:46 DEBUG chesslib.c:308: *********************s=RNBQKBNRPPPPPPPP
+2021-11-07 07:25:46 DEBUG chesslib.c:308: *********************s=RNBQKBNRPPPPPPPP
+2021-11-07 07:25:46 DEBUG chesslib.c:308: *********************s=RNBQKBNRPPPPPPPP
+2021-11-07 07:25:46 DEBUG chesslib.c:308: *********************s=RNBQKBNRPPPPPPPP
+2021-11-07 07:25:46 DEBUG chesslib.c:308: *********************s=RNBQKBNRPPPPPPPP
+2021-11-07 07:25:46 DEBUG chesslib.c:308: *********************s=RNBQKBNRPPPPPPPP
+2021-11-07 07:25:46 DEBUG chesslib.c:308: *********************s=RNBQKBNRPPPPPPPP
+2021-11-07 07:25:46 DEBUG chesslib.c:308: *********************s=RNBQKBNRPPPPPPPP
+2021-11-07 07:25:48 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-07 07:31:46 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-07 07:31:46 DEBUG chesslib.c:321: *********************p=1
+2021-11-07 07:32:02 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-07 07:32:27 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-07 07:32:27 DEBUG chesslib.c:321: *********************p=1
+2021-11-07 07:32:32 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-07 07:33:12 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-07 07:33:24 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-07 07:36:56 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-07 07:36:58 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 07:36:59 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-07 07:36:59 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 07:36:59 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 07:36:59 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 07:37:00 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-07 07:37:00 DEBUG chesslib.c:169: g_alpha_beta | 212836 -15 57 42 0 0 0.843000 
+2021-11-07 07:37:00 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-07 07:37:00 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 07:37:00 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 07:37:00 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 07:37:03 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-07 07:40:54 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-07 07:40:57 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-07 07:45:29 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-07 07:45:30 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 07:45:31 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-07 07:45:31 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 07:45:31 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 07:45:31 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 07:45:31 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-07 07:45:33 DEBUG chesslib.c:169: g_alpha_beta | 321121 15 57 42 0 0 1.368000 
+2021-11-07 07:45:33 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-07 07:45:33 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 07:45:33 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 07:45:33 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 07:45:34 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 07:45:34 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-07 07:45:34 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 07:45:34 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 07:45:34 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 07:45:35 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-07 07:45:36 DEBUG chesslib.c:169: g_alpha_beta | 220342 -5 52 36 0 0 1.017000 
+2021-11-07 07:45:36 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-07 07:45:36 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 07:45:36 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 07:45:36 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 07:45:38 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 07:45:39 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-07 07:45:39 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 07:45:39 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 07:45:39 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 07:45:39 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-07 07:45:41 DEBUG chesslib.c:169: g_alpha_beta | 389884 -110 42 27 0 0 1.668000 
+2021-11-07 07:45:41 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-07 07:45:41 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 07:45:41 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 07:45:41 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 07:45:44 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-07 07:47:40 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-07 07:47:40 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 07:47:41 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 07:47:42 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 07:47:42 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 07:47:43 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 07:47:45 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 07:47:46 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-07 07:47:46 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 07:47:46 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 07:47:46 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 07:47:46 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-07 07:47:47 DEBUG chesslib.c:169: g_alpha_beta | 186514 15 57 42 0 0 0.952000 
+2021-11-07 07:47:47 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-07 07:47:47 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 07:47:47 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 07:47:47 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 07:47:48 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 07:47:49 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-07 07:47:49 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 07:47:49 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 07:47:49 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 07:47:49 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-07 07:47:51 DEBUG chesslib.c:169: g_alpha_beta | 236695 0 52 44 0 0 1.318000 
+2021-11-07 07:47:51 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-07 07:47:51 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 07:47:51 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 07:47:51 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 07:47:52 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 07:47:52 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-07 07:47:52 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 07:47:52 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 07:47:52 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 07:47:53 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-07 07:47:55 DEBUG chesslib.c:169: g_alpha_beta | 467856 -75 44 35 0 0 2.186000 
+2021-11-07 07:47:55 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-07 07:47:55 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 07:47:55 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 07:47:55 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 07:47:56 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-07 07:49:39 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-07 07:49:40 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 07:49:40 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-07 07:49:40 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 07:49:40 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 07:49:40 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 07:49:41 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-07 07:49:42 DEBUG chesslib.c:169: g_alpha_beta | 212836 -15 57 42 0 0 0.850000 
+2021-11-07 07:49:42 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-07 07:49:42 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 07:49:42 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 07:49:42 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 07:49:42 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 07:49:43 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 07:49:43 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 07:49:44 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 07:49:45 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 07:49:45 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 07:49:46 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 07:49:49 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-07 08:01:19 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-07 08:01:21 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 08:01:21 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-07 08:01:21 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:01:21 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:01:21 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 08:01:22 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-07 08:01:23 DEBUG chesslib.c:169: g_alpha_beta | 238908 15 57 42 0 0 0.981000 
+2021-11-07 08:01:23 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-07 08:01:23 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:01:23 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:01:23 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 08:01:23 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 08:01:24 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-07 08:01:24 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:01:24 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:01:24 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 08:01:24 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-07 08:01:25 DEBUG chesslib.c:169: g_alpha_beta | 252667 -70 52 36 0 0 1.004000 
+2021-11-07 08:01:25 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-07 08:01:25 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:01:25 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:01:25 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 08:01:25 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 08:01:27 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-07 08:01:27 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:01:27 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:01:27 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 08:01:28 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-07 08:01:29 DEBUG chesslib.c:169: g_alpha_beta | 433715 -105 59 45 0 0 1.606000 
+2021-11-07 08:01:29 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-07 08:01:29 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:01:29 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:01:29 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 08:01:30 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 08:01:31 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-07 08:01:31 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:01:31 DEBUG chesslib.c:195: g_move_to | is_castling = 1
+2021-11-07 08:01:31 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 08:01:31 DEBUG chesslib.c:205: g_move_to | set castling[0]=1
+2021-11-07 08:01:31 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-07 08:01:31 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:01:31 DEBUG chesslib.c:195: g_move_to | is_castling = 1
+2021-11-07 08:01:31 DEBUG chesslib.c:196: g_move_to | global castling = 1-0
+2021-11-07 08:01:31 DEBUG chesslib.c:205: g_move_to | set castling[0]=1
+2021-11-07 08:01:32 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-07 08:01:35 DEBUG chesslib.c:169: g_alpha_beta | 975937 -100 51 35 0 0 3.569000 
+2021-11-07 08:01:35 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-07 08:01:35 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:01:35 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:01:35 DEBUG chesslib.c:196: g_move_to | global castling = 1-0
+2021-11-07 08:01:37 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 08:01:38 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-07 08:04:03 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-07 08:04:05 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-07 08:17:02 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-07 08:20:23 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 08:20:25 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 08:20:58 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 08:21:02 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 08:21:03 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 08:21:05 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 08:21:06 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 08:21:07 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 08:21:10 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 08:21:48 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 08:21:54 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 08:21:56 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 08:21:57 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 08:22:54 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-07 08:22:58 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-07 08:22:59 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 08:22:59 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-07 08:22:59 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:22:59 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:22:59 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 08:23:00 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-07 08:23:01 DEBUG chesslib.c:169: g_alpha_beta | 186514 15 57 42 0 0 0.946000 
+2021-11-07 08:23:01 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-07 08:23:01 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:23:01 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:23:01 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 08:23:02 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 08:23:02 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-07 08:23:02 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:23:02 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:23:02 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 08:23:03 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-07 08:23:04 DEBUG chesslib.c:169: g_alpha_beta | 236695 0 52 44 0 0 1.306000 
+2021-11-07 08:23:04 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-07 08:23:04 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:23:04 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:23:04 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 08:23:06 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 08:23:08 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-07 08:23:08 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:23:08 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:23:08 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 08:23:09 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-07 08:23:11 DEBUG chesslib.c:169: g_alpha_beta | 467856 -75 44 35 0 0 2.191000 
+2021-11-07 08:23:11 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-07 08:23:11 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:23:11 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:23:11 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 08:23:12 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 08:23:13 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-07 08:23:13 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:23:13 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:23:13 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 08:23:14 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-07 08:23:15 DEBUG chesslib.c:169: g_alpha_beta | 341563 -250 35 28 0 0 1.429000 
+2021-11-07 08:23:15 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-07 08:23:15 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:23:15 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:23:15 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 08:23:16 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 08:23:17 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-07 08:23:17 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:23:17 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:23:17 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 08:23:17 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-07 08:23:21 DEBUG chesslib.c:169: g_alpha_beta | 798905 -295 59 31 0 0 3.462000 
+2021-11-07 08:23:21 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-07 08:23:21 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:23:21 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:23:21 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 08:23:24 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 08:23:26 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-07 08:23:26 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:23:26 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:23:26 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 08:23:27 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-07 08:23:30 DEBUG chesslib.c:169: g_alpha_beta | 719855 -295 31 45 0 0 3.060000 
+2021-11-07 08:23:30 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-07 08:23:30 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:23:30 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:23:30 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 08:23:31 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 08:23:31 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-07 08:23:31 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:23:31 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:23:31 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 08:23:32 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-07 08:23:34 DEBUG chesslib.c:169: g_alpha_beta | 436116 -430 28 21 0 0 1.546000 
+2021-11-07 08:23:34 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-07 08:23:34 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:23:34 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:23:34 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 08:23:35 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 08:23:36 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-07 08:23:36 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:23:36 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:23:36 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 08:23:37 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-07 08:23:40 DEBUG chesslib.c:169: g_alpha_beta | 842015 -420 61 25 0 0 3.762000 
+2021-11-07 08:23:40 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-07 08:23:40 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:23:40 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:23:40 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 08:23:43 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 08:23:43 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-07 08:23:43 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:23:43 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:23:43 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 08:23:44 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-07 08:23:48 DEBUG chesslib.c:169: g_alpha_beta | 1070664 -280 25 52 0 0 4.487000 
+2021-11-07 08:23:48 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-07 08:23:48 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:23:48 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:23:48 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 08:23:52 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 08:23:53 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-07 08:23:53 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:23:53 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:23:53 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 08:23:54 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-07 08:23:56 DEBUG chesslib.c:169: g_alpha_beta | 561925 -525 45 44 0 0 2.489000 
+2021-11-07 08:23:56 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-07 08:23:56 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:23:56 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:23:56 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 08:23:58 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 08:24:08 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 08:24:09 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-07 08:24:09 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:24:09 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:24:09 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 08:24:10 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-07 08:24:12 DEBUG chesslib.c:169: g_alpha_beta | 591822 -465 51 35 0 0 2.470000 
+2021-11-07 08:24:12 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-07 08:24:12 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:24:12 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:24:12 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 08:24:15 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 08:24:31 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-07 08:24:31 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:24:31 DEBUG chesslib.c:195: g_move_to | is_castling = 1
+2021-11-07 08:24:31 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-07 08:24:31 DEBUG chesslib.c:205: g_move_to | set castling[0]=1
+2021-11-07 08:24:31 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-07 08:24:31 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:24:31 DEBUG chesslib.c:195: g_move_to | is_castling = 1
+2021-11-07 08:24:31 DEBUG chesslib.c:196: g_move_to | global castling = 1-0
+2021-11-07 08:24:31 DEBUG chesslib.c:205: g_move_to | set castling[0]=1
+2021-11-07 08:24:31 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-07 08:24:33 DEBUG chesslib.c:169: g_alpha_beta | 468088 -595 44 30 0 0 1.934000 
+2021-11-07 08:24:33 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-07 08:24:33 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:24:33 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:24:33 DEBUG chesslib.c:196: g_move_to | global castling = 1-0
+2021-11-07 08:24:42 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 08:24:43 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-07 08:24:43 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:24:43 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:24:43 DEBUG chesslib.c:196: g_move_to | global castling = 1-0
+2021-11-07 08:24:44 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-07 08:24:57 DEBUG chesslib.c:169: g_alpha_beta | 2668194 -410 30 23 0 0 13.534000 
+2021-11-07 08:24:57 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-07 08:24:57 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:24:57 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:24:57 DEBUG chesslib.c:196: g_move_to | global castling = 1-0
+2021-11-07 08:25:00 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 08:25:01 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-07 08:25:01 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:25:01 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:25:01 DEBUG chesslib.c:196: g_move_to | global castling = 1-0
+2021-11-07 08:25:01 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-07 08:25:16 DEBUG chesslib.c:169: g_alpha_beta | 2597979 -595 58 30 0 0 14.968000 
+2021-11-07 08:25:16 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-07 08:25:16 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:25:16 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:25:16 DEBUG chesslib.c:196: g_move_to | global castling = 1-0
+2021-11-07 08:25:20 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 08:25:28 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 08:25:29 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-07 08:25:29 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:25:29 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:25:29 DEBUG chesslib.c:196: g_move_to | global castling = 1-0
+2021-11-07 08:25:29 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-07 08:25:36 DEBUG chesslib.c:169: g_alpha_beta | 1502770 -630 62 45 0 0 6.519000 
+2021-11-07 08:25:36 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-07 08:25:36 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:25:36 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:25:36 DEBUG chesslib.c:196: g_move_to | global castling = 1-0
+2021-11-07 08:25:38 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 08:25:38 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-07 08:25:38 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:25:38 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:25:38 DEBUG chesslib.c:196: g_move_to | global castling = 1-0
+2021-11-07 08:25:39 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-07 08:25:45 DEBUG chesslib.c:169: g_alpha_beta | 1301295 -715 42 25 0 0 5.607000 
+2021-11-07 08:25:45 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-07 08:25:45 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:25:45 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:25:45 DEBUG chesslib.c:196: g_move_to | global castling = 1-0
+2021-11-07 08:25:47 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 08:25:48 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-07 08:25:48 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:25:48 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:25:48 DEBUG chesslib.c:196: g_move_to | global castling = 1-0
+2021-11-07 08:25:48 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-07 08:26:01 DEBUG chesslib.c:169: g_alpha_beta | 2574252 -710 60 62 0 3 12.988000 
+2021-11-07 08:26:01 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-07 08:26:01 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:26:01 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:26:01 DEBUG chesslib.c:196: g_move_to | global castling = 1-0
+2021-11-07 08:26:05 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 08:26:06 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-07 08:26:06 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:26:06 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:26:06 DEBUG chesslib.c:196: g_move_to | global castling = 1-0
+2021-11-07 08:26:07 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-07 08:26:16 DEBUG chesslib.c:169: g_alpha_beta | 2164690 -750 52 43 0 0 9.768000 
+2021-11-07 08:26:16 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-07 08:26:16 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:26:16 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:26:16 DEBUG chesslib.c:196: g_move_to | global castling = 1-0
+2021-11-07 08:26:29 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 08:26:35 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 08:26:36 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-07 08:26:36 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:26:36 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:26:36 DEBUG chesslib.c:196: g_move_to | global castling = 1-0
+2021-11-07 08:26:37 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-07 08:26:38 DEBUG chesslib.c:169: g_alpha_beta | 244856 -32768 30 21 0 0 0.989000 
+2021-11-07 08:26:38 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-07 08:26:38 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:26:38 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:26:38 DEBUG chesslib.c:196: g_move_to | global castling = 1-0
+2021-11-07 08:26:46 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-07 08:26:46 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-07 08:26:46 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:26:46 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:26:46 DEBUG chesslib.c:196: g_move_to | global castling = 1-0
+2021-11-07 08:26:47 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-07 08:26:47 DEBUG chesslib.c:169: g_alpha_beta | 91363 -32768 23 14 0 0 0.338000 
+2021-11-07 08:26:47 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-07 08:26:47 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-07 08:26:47 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-07 08:26:47 DEBUG chesslib.c:196: g_move_to | global castling = 1-0
+2021-11-07 08:26:56 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 08:16:13 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 08:16:16 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 08:16:22 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 08:16:27 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 08:18:49 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 08:19:12 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 08:22:01 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 08:22:17 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 08:27:09 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 08:28:02 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 08:28:06 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 08:28:21 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 08:28:25 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 08:28:32 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 08:28:55 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 08:29:05 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 08:29:07 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 08:29:54 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 08:30:02 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 08:31:08 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 08:31:13 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 08:32:03 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 08:32:07 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 08:32:53 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 08:32:56 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 08:33:02 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 08:33:39 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 08:34:41 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 08:34:54 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 08:35:01 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 08:35:04 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 08:35:26 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 08:35:51 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 08:36:19 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 08:36:30 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 08:37:13 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 08:39:25 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 08:43:03 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 08:43:05 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-10 08:43:06 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-10 08:43:06 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 08:43:06 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 08:43:06 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 08:43:07 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-10 08:43:08 DEBUG chesslib.c:169: g_alpha_beta | 321121 15 57 42 0 0 1.385000 
+2021-11-10 08:43:08 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-10 08:43:08 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 08:43:08 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 08:43:08 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 08:43:10 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-10 08:43:11 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-10 08:43:11 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 08:43:11 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 08:43:11 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 08:43:12 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-10 08:43:13 DEBUG chesslib.c:169: g_alpha_beta | 305293 20 52 44 0 0 1.419000 
+2021-11-10 08:43:13 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-10 08:43:13 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 08:43:13 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 08:43:13 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 08:43:15 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-10 08:43:15 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-10 08:43:15 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 08:43:15 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 08:43:15 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 08:43:16 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-10 08:43:18 DEBUG chesslib.c:169: g_alpha_beta | 410584 -25 44 35 0 0 2.026000 
+2021-11-10 08:43:18 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-10 08:43:18 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 08:43:18 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 08:43:18 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 08:43:22 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-10 08:43:22 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-10 08:43:22 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 08:43:22 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 08:43:22 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 08:43:23 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-10 08:43:25 DEBUG chesslib.c:169: g_alpha_beta | 331452 -240 35 28 0 0 1.476000 
+2021-11-10 08:43:25 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-10 08:43:25 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 08:43:25 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 08:43:25 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 08:43:29 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 08:45:23 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 08:45:25 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-10 08:45:26 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-10 08:45:26 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 08:45:26 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 08:45:26 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 08:45:27 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-10 08:45:28 DEBUG chesslib.c:169: g_alpha_beta | 321121 15 57 42 0 0 1.378000 
+2021-11-10 08:45:28 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-10 08:45:28 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 08:45:28 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 08:45:28 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 08:45:37 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 08:47:16 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 08:47:21 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-10 08:47:21 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-10 08:47:21 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 08:47:21 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 08:47:21 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 08:47:22 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-10 08:47:23 DEBUG chesslib.c:169: g_alpha_beta | 186514 15 57 42 0 0 0.954000 
+2021-11-10 08:47:23 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-10 08:47:23 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 08:47:23 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 08:47:23 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 08:47:24 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 08:51:23 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 08:51:36 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 08:52:03 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 08:52:10 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 08:52:45 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 08:53:08 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 08:53:24 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 08:53:32 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 08:53:41 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 08:53:51 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 08:54:11 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 08:54:25 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 08:55:12 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 08:55:24 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 08:57:47 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 08:57:49 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 08:59:01 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 08:59:03 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 08:59:22 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 08:59:25 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 08:59:32 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 08:59:33 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 09:00:11 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 09:00:19 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 09:00:25 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 09:00:31 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 09:02:56 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 09:03:20 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 09:03:45 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 09:03:48 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 09:03:55 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 09:03:58 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 09:04:03 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 09:04:09 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 09:04:14 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 09:04:17 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 09:04:25 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 09:04:28 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 09:04:34 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 09:06:19 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 09:06:58 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 09:07:18 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 09:07:47 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 09:08:06 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 09:09:22 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 09:09:28 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 09:10:04 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 09:10:36 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 09:10:46 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 09:12:19 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 09:34:39 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 09:34:39 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 09:34:47 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 09:35:14 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 09:35:25 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 09:36:23 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 09:36:29 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 09:37:27 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 09:37:32 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 09:37:45 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 09:37:49 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 09:37:54 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 09:37:57 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 09:38:02 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 09:38:07 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 09:38:12 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 09:38:14 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 09:38:18 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 09:38:24 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 09:38:28 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 09:38:30 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 09:38:36 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 09:38:38 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 09:38:43 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 09:38:47 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 09:38:52 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 09:39:02 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 09:39:40 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 09:39:49 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-10 09:39:50 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-10 09:39:50 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:39:50 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:39:50 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:39:50 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-10 09:39:51 DEBUG chesslib.c:169: g_alpha_beta | 186514 15 57 42 0 0 0.983000 
+2021-11-10 09:39:51 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-10 09:39:51 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:39:51 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:39:51 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:39:54 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-10 09:39:55 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-10 09:39:55 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:39:55 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:39:55 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:39:55 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-10 09:39:57 DEBUG chesslib.c:169: g_alpha_beta | 319391 -45 52 44 0 0 1.503000 
+2021-11-10 09:39:57 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-10 09:39:57 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:39:57 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:39:57 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:40:01 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-10 09:40:01 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-10 09:40:01 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:40:01 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:40:01 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:40:02 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-10 09:40:04 DEBUG chesslib.c:169: g_alpha_beta | 469997 -95 62 45 0 0 1.930000 
+2021-11-10 09:40:04 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-10 09:40:04 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:40:04 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:40:04 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:40:07 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-10 09:40:07 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-10 09:40:07 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:40:07 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:40:07 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:40:08 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-10 09:40:10 DEBUG chesslib.c:169: g_alpha_beta | 386913 -195 45 30 0 0 1.625000 
+2021-11-10 09:40:10 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-10 09:40:10 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:40:10 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:40:10 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:40:37 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 09:40:42 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 09:41:05 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 09:41:06 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 09:41:22 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 09:42:16 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-10 09:42:18 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-10 09:42:18 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-10 09:42:18 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:42:18 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:42:18 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:42:19 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-10 09:42:21 DEBUG chesslib.c:169: g_alpha_beta | 321121 15 57 42 0 0 1.385000 
+2021-11-10 09:42:21 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-10 09:42:21 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:42:21 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:42:21 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:42:22 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-10 09:42:23 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-10 09:42:23 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:42:23 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:42:23 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:42:23 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-10 09:42:25 DEBUG chesslib.c:169: g_alpha_beta | 295521 -30 62 45 0 0 1.153000 
+2021-11-10 09:42:25 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-10 09:42:25 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:42:25 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:42:25 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:42:26 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-10 09:42:27 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-10 09:42:27 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:42:27 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:42:27 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:42:27 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-10 09:42:28 DEBUG chesslib.c:169: g_alpha_beta | 236683 -95 45 28 0 0 1.134000 
+2021-11-10 09:42:28 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-10 09:42:28 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:42:28 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:42:28 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:42:32 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-10 09:42:33 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-10 09:42:33 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:42:33 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:42:33 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:42:33 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-10 09:42:36 DEBUG chesslib.c:169: g_alpha_beta | 604659 -180 52 44 0 0 2.872000 
+2021-11-10 09:42:36 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-10 09:42:36 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:42:36 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:42:36 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:42:48 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 09:42:50 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 09:42:54 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 09:42:56 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 09:42:58 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-10 09:44:16 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-10 09:44:20 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-10 09:44:20 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-10 09:44:20 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:44:20 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:44:20 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:44:21 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-10 09:44:22 DEBUG chesslib.c:169: g_alpha_beta | 321121 15 57 42 0 0 1.382000 
+2021-11-10 09:44:22 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-10 09:44:22 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:44:22 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:44:22 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:44:23 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-10 09:44:23 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-10 09:44:23 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:44:23 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:44:23 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:44:24 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-10 09:44:25 DEBUG chesslib.c:169: g_alpha_beta | 305293 20 52 44 0 0 1.436000 
+2021-11-10 09:44:25 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-10 09:44:25 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:44:25 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:44:25 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:44:26 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-10 09:44:26 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-10 09:44:26 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:44:26 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:44:26 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:44:27 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-10 09:44:29 DEBUG chesslib.c:169: g_alpha_beta | 454025 -75 62 45 0 0 1.946000 
+2021-11-10 09:44:29 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-10 09:44:29 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:44:29 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:44:29 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:44:29 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-10 09:44:30 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-10 09:44:30 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:44:30 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:44:30 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:44:31 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-10 09:44:33 DEBUG chesslib.c:169: g_alpha_beta | 463936 -180 45 28 0 0 1.986000 
+2021-11-10 09:44:33 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-10 09:44:33 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:44:33 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:44:33 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:44:34 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-10 09:44:35 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-10 09:44:35 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:44:35 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:44:35 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:44:35 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-10 09:44:42 DEBUG chesslib.c:169: g_alpha_beta | 1643935 -360 59 31 0 0 6.811000 
+2021-11-10 09:44:42 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-10 09:44:42 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:44:42 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:44:42 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:44:49 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-10 09:44:50 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-10 09:44:50 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:44:50 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:44:50 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:44:50 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-10 09:44:52 DEBUG chesslib.c:169: g_alpha_beta | 303629 -600 28 22 0 0 1.192000 
+2021-11-10 09:44:52 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-10 09:44:52 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:44:52 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:44:52 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:44:59 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-10 09:45:00 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-10 09:45:00 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:45:00 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:45:00 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:45:01 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-10 09:45:01 DEBUG chesslib.c:169: g_alpha_beta | 258045 -955 22 7 0 0 0.809000 
+2021-11-10 09:45:01 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-10 09:45:01 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:45:01 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:45:01 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:45:09 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-10 09:45:14 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-10 09:45:15 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-10 09:45:15 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:45:15 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:45:15 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:45:15 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-10 09:45:17 DEBUG chesslib.c:169: g_alpha_beta | 488904 -1050 31 15 0 0 1.812000 
+2021-11-10 09:45:17 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-10 09:45:17 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:45:17 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:45:17 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:45:25 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-10 09:45:25 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-10 09:45:25 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:45:25 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:45:25 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:45:26 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-10 09:45:27 DEBUG chesslib.c:169: g_alpha_beta | 400837 -1280 42 27 0 0 1.373000 
+2021-11-10 09:45:27 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-10 09:45:27 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:45:27 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:45:27 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:45:31 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-10 09:45:32 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-10 09:45:32 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:45:32 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:45:32 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:45:33 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-10 09:45:34 DEBUG chesslib.c:169: g_alpha_beta | 537409 -1695 15 6 0 0 1.601000 
+2021-11-10 09:45:34 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-10 09:45:34 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:45:34 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:45:34 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:45:40 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-10 09:45:41 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-10 09:45:41 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:45:41 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:45:41 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:45:41 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-10 09:45:45 DEBUG chesslib.c:169: g_alpha_beta | 1070384 -1745 27 21 0 0 3.394000 
+2021-11-10 09:45:45 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-10 09:45:45 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:45:45 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:45:45 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:45:52 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-10 09:45:53 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-10 09:45:53 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:45:53 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:45:53 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:45:54 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-10 09:45:54 DEBUG chesslib.c:169: g_alpha_beta | 116135 -2645 6 13 0 0 0.287000 
+2021-11-10 09:45:54 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-10 09:45:54 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:45:54 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:45:54 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:46:01 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-10 09:46:01 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-10 09:46:01 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:46:01 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:46:01 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:46:02 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-10 09:46:02 DEBUG chesslib.c:169: g_alpha_beta | 190217 -2820 13 5 0 0 0.489000 
+2021-11-10 09:46:02 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-10 09:46:02 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:46:02 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:46:02 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:46:05 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-10 09:46:06 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-10 09:46:06 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:46:06 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:46:06 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:46:06 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-10 09:46:07 DEBUG chesslib.c:169: g_alpha_beta | 79735 -32768 5 12 0 0 0.220000 
+2021-11-10 09:46:07 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-10 09:46:07 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:46:07 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:46:07 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:46:08 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-10 09:46:11 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-10 09:46:12 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-10 09:46:12 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:46:12 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:46:12 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:46:12 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-10 09:46:12 DEBUG chesslib.c:169: g_alpha_beta | 1 -32768 7 13 0 0 0.000000 
+2021-11-10 09:46:12 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-10 09:46:12 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-10 09:46:12 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-10 09:46:12 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-10 09:47:09 DEBUG chesslib.c:101: g_close_chess_lib

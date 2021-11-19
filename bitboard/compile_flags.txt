@@ -2,6 +2,7 @@
 -I.\Containers\src\include
 -I.\Lua
 -IC:\Users\rodoc\HOME\msys64\usr\include
+-IC:\Users\rodoc\HOME\msys64\usr\include\w32api
 -I.
 -D_CHESSLIB_LOG_
--D_WINDOWS_
+-D_WINCHESS_

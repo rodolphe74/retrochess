@@ -25,7 +25,7 @@ int g_get_taken(lua_State *L);
 
 
 
-#ifdef _WINDOWS_
+#ifdef _WINCHESS_
 __declspec(dllexport) int __cdecl l_sin(lua_State *L);
 __declspec(dllexport) int __cdecl l_init_chess_lib(lua_State *L);
 __declspec(dllexport) int __cdecl l_close_chess_lib(lua_State *L);

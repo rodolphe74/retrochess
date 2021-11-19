@@ -18,20 +18,20 @@ game: game.c bitboard.o board.o common.o special.o util.o
 	$(CC) $(CFLAGS) $^ -o $@ $(LDFLAGS)
 
 chess: chess.c bitboard.o board.o common.o special.o util.o
-	$(CC) $(CFLAGS) $^ -o $@ $(LDFLAGS)
+	$(CC) $(CFLAGS) -D_WINCHESS_ $^ -o $@ $(LDFLAGS)
 	
 
 
 dlltest: dll_test.c
-	$(CC) $(CFLAGS) -D_WINDOWS_ $^ -o $@  -LContainers -lcontm64 -L. -llua51 -L. -lchesslib
+	$(CC) $(CFLAGS) -D_WINCHESS_ -D_WINDOWS_ $^ -o $@  -LContainers -lcontm64 -L. -llua51 -L. -lchesslib
 
 
 
 chesslib.dll: chesslib.c chess.o bitboard.o board.o common.o special.o util.o log.o
-	$(CC) $(CFLAGS) -D_WINDOWS_ -D_CHESSLIB_LOG_  -shared -Wl,--subsystem,windows $^ -o $@  $(LDFLAGS)
+	$(CC) $(CFLAGS) -D_WINCHESS_ -D_WINDOWS_ -D_CHESSLIB_LOG_  -shared -Wl,--subsystem,windows $^ -o $@  $(LDFLAGS)
 
 chess.o: chess.c
-	$(CC) $(CFLAGS) -c -o $@ $<
+	$(CC) $(CFLAGS) -D_WINCHESS_ -c -o $@ $<
 
 bitboard.o: bitboard.c
 	$(CC) $(CFLAGS) -c -o $@ $<
@@ -55,7 +55,6 @@ log.o: log.c
 
 clean:
 	$(DEL) *.o
-	$(DEL) *.tos
 	$(DEL) chesslib.dll
 	$(DEL) dlltest.exe
 

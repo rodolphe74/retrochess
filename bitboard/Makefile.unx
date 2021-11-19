@@ -1,0 +1,76 @@
+CC=gcc
+DEL=rm -f
+
+# sudo apt install liblua5.1-0-dev
+
+CFLAGS=-O3 -std=c99 -fPIC -Iubuntu_libs/Containers/src/include -I/usr/include/lua5.1
+LDFLAGS=-Lubuntu_libs/Containers -lcont -llua5.1
+
+# In this case:
+#
+# $@ evaluates to all
+# $< evaluates to library.cpp
+# $^ evaluates to library.cpp main.cpp
+
+all: chess game libchesslib.so dlltest
+
+
+game: game.c bitboard.o board.o common.o special.o util.o
+	$(CC) $(CFLAGS) $^ -o $@ $(LDFLAGS)
+
+
+valgrind: chess_v
+	valgrind --leak-check=yes ./chess_v
+
+chess_v: chess_v.c bitboard.o board.o common.o special.o util.o
+	$(CC) $(CFLAGS) $^ -o $@ $(LDFLAGS)
+
+
+chess: chess.c bitboard.o board.o common.o special.o util.o
+	$(CC) $(CFLAGS) -D_ANDROID_ $^ -o $@ $(LDFLAGS)
+	
+
+
+dlltest: dll_test.c
+	$(CC) $(CFLAGS) -D_ANDROID_ $^ -o $@  -Lubuntu_libs/Containers -lcont -L. -lchesslib -llua5.1
+
+
+libchesslib.so: chesslib.c chess.o bitboard.o board.o common.o special.o util.o log.o
+	$(CC) $(CFLAGS)  -D_ANDROID_ -D_CHESSLIB_LOG_  -shared $^ -o $@  $(LDFLAGS)
+
+chess.o: chess.c
+	$(CC) $(CFLAGS) -D_ANDROID_ -c -o $@ $<
+
+bitboard.o: bitboard.c
+	$(CC) $(CFLAGS) -c -o $@ $<
+
+board.o: board.c
+	$(CC) $(CFLAGS) -c -o $@ $<
+
+common.o: common.c  
+	$(CC) $(CFLAGS) -c -o $@ $<
+
+special.o: special.c  
+	$(CC) $(CFLAGS) -c -o $@ $<
+
+util.o: util.c
+	$(CC) $(CFLAGS) -c -o $@ $<
+
+log.o: log.c
+	$(CC) $(CFLAGS) -c -o $@ $<
+
+
+
+clean:
+	$(DEL) *.o
+	$(DEL) *.tos
+	$(DEL) libchesslib.so
+	$(DEL) dlltest
+	$(DEL) chess
+	$(DEL) chess_v
+
+
+copy_debian:
+	7z u sources.zip *.c *.h
+	7z u sources.zip Containers
+	scp -P10022 sources.zip rodoc@localhost:/home/rodoc/developpement/love/chesslib

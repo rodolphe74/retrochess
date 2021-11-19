@@ -63,3 +63,37 @@
 2021-11-07 07:01:09 DEBUG chesslib.c:194: g_move_to | is_castling = 0
 2021-11-07 07:01:09 DEBUG chesslib.c:195: g_move_to | global castling = 0-0
 2021-11-07 07:01:11 DEBUG chesslib.c:100: g_close_chess_lib
+2021-11-15 04:53:02 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-15 04:53:04 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-15 04:53:05 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-15 04:53:05 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-15 04:53:05 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-15 04:53:05 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-15 04:53:06 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-15 04:53:07 DEBUG chesslib.c:169: g_alpha_beta | 186514 15 57 42 0 0 0.938000 
+2021-11-15 04:53:07 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-15 04:53:07 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-15 04:53:07 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-15 04:53:07 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-15 04:53:16 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-15 04:55:10 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-15 04:55:13 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-15 04:55:32 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-15 04:55:34 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-15 04:55:35 DEBUG chesslib.c:193: g_move_to | color = 0
+2021-11-15 04:55:35 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-15 04:55:35 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-15 04:55:35 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-15 04:55:35 DEBUG chesslib.c:150: g_alpha_beta | 1 5 
+2021-11-15 04:55:37 DEBUG chesslib.c:169: g_alpha_beta | 321121 15 57 42 0 0 1.370000 
+2021-11-15 04:55:37 DEBUG chesslib.c:193: g_move_to | color = 1
+2021-11-15 04:55:37 DEBUG chesslib.c:194: g_move_to | en_passant = 0
+2021-11-15 04:55:37 DEBUG chesslib.c:195: g_move_to | is_castling = 0
+2021-11-15 04:55:37 DEBUG chesslib.c:196: g_move_to | global castling = 0-0
+2021-11-15 04:55:39 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-15 04:56:06 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-15 04:56:08 DEBUG chesslib.c:271: g_get_moves_list | color = 0
+2021-11-16 07:25:00 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-16 07:25:52 DEBUG chesslib.c:101: g_close_chess_lib
+2021-11-16 07:38:05 DEBUG chesslib.c:88: g_init_chess_lib
+2021-11-16 07:38:07 DEBUG chesslib.c:101: g_close_chess_lib

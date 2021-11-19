@@ -57,7 +57,6 @@ int16_t evaluation(Board *board);
 void do_backup_game(game_board *current, backup_game *backup);
 void restore_backup_game(backup_game *backup, game_board *g);
 void free_backup_game(backup_game *backup);
-void copy_game_board(game_board *target, game_board *source);
 int16_t evaluation(Board *board);
 int16_t alpha_beta(game_board *g, uint8_t depth, uint8_t maximize, int16_t alpha, int16_t beta, move *bm, uint32_t *count);
 int16_t alpha_beta_thrd(game_board *g, uint8_t depth, uint8_t maximize, int16_t alpha, int16_t beta, move *bm, uint32_t *count);

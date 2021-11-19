@@ -850,7 +850,7 @@ int main()
 		alpha = INT16_MIN;
 		beta = INT16_MAX;
 // 		printf("alpha=%d beta=%d\n", alpha, beta);
-		eval = alpha_beta_thrd(&g, 5, 0, alpha, beta, &the_move, &chess_nodes_count);
+		eval = alpha_beta(&g, 5, 0, alpha, beta, &the_move, &chess_nodes_count);
 		tstop("alpha_beta");
 		print_move(&g, &the_move);
 		printf("count:%d->%d %d ep=%d%c%c", chess_nodes_count, eval, the_move.eval, the_move.en_passant, 10, 13);
@@ -874,7 +874,7 @@ int main()
 		chess_nodes_count = 0;
 		alpha = INT16_MIN;
 		beta = INT16_MAX;
-		eval = alpha_beta_thrd(&g, 4, 1, alpha, beta, &the_move, &chess_nodes_count);
+		eval = alpha_beta(&g, 4, 1, alpha, beta, &the_move, &chess_nodes_count);
 		tstop("alpha_beta");
 		print_move(&g, &the_move);
 		printf("count:%d->%d %d ep=%d%c%c", chess_nodes_count, eval, the_move.eval, the_move.en_passant, 10, 13);

@@ -5,4 +5,4 @@
 -IC:\Users\rodoc\HOME\msys64\usr\include\w32api
 -I.
 -D_CHESSLIB_LOG_
--D_WINCHESS_
+-D_ANDROID_

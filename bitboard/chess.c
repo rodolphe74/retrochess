@@ -15,6 +15,11 @@
 #include <handleapi.h>
 #endif
 
+#ifdef _ANDROID_
+#include <pthread.h>
+#endif
+
+
 #define MAX_THREADS 4
 
 static Board STARTING_BOARD;
@@ -110,11 +115,11 @@ void print_move(game_board *g, move *m)
 	char capture = 0;
 
 	int ep = have_en_passant(&new_board, m->from, m->to);
-	
+
 	algebraic = get_notation(&g->b, m->from, m->to, capture, ep, /*promote_in*/ 0, 0, 0);
 	printf("[%d, %d]=%s %c%c", m->from, m->to, algebraic, 10, 13);
 	free(algebraic);
-	
+
 }
 
 void board_generate_moves(game_board *g)
@@ -122,7 +127,7 @@ void board_generate_moves(game_board *g)
 	Board *new_board = malloc(sizeof(Board));
 	char *move_done;
 	char capture;
-	
+
 	uint8_t en_passant_copy[16];
 
 	memcpy(en_passant_copy, g->en_passant, 16);
@@ -144,7 +149,7 @@ void board_generate_moves(game_board *g)
 			}
 		}
 	}
-	
+
 	free(new_board);
 }
 
@@ -264,45 +269,44 @@ int16_t mini_max(game_board *g, uint8_t depth, uint8_t maximize, move *bm, uint3
 
 void update_best_eval_min(int16_t *best_mv, alpha_beta_params *results, int results_size, int start_index)
 {
-// 	printf("recherche min de %d a %d\n", start_index, start_index + results_size);
-// 	printf("A: best_mv_min %d\n", *best_mv);
+	// 	printf("recherche min de %d a %d\n", start_index, start_index + results_size);
+	// 	printf("A: best_mv_min %d\n", *best_mv);
 	for (int i = start_index; i < start_index + results_size; i++) {
 		int16_t eval = results[i].bm->eval;
-// 		printf("   %d eval=%d\n", i, eval);
+		// 		printf("   %d eval=%d\n", i, eval);
 		if (*best_mv > eval) {
 			*best_mv = eval;
 		}
 	}
-// 	printf("B: best_mv_min %d\n", *best_mv);
+	// 	printf("B: best_mv_min %d\n", *best_mv);
 }
 
 void update_best_eval_max(int16_t *best_mv, alpha_beta_params *results, int results_size, int start_index)
 {
-// 	printf("recherche max de %d a %d\n", start_index, start_index + results_size);
-// 	printf("A: best_mv_max %d\n", *best_mv);
+	// 	printf("recherche max de %d a %d\n", start_index, start_index + results_size);
+	// 	printf("A: best_mv_max %d\n", *best_mv);
 	for (int i = start_index; i < start_index + results_size; i++) {
 		int16_t eval = results[i].bm->eval;
-// 		printf("   eval=%d\n", eval);
+		// 		printf("   eval=%d\n", eval);
 		if (*best_mv < eval) {
 			*best_mv = eval;
 		}
 	}
-// 	printf("B: best_mv_max %d\n", *best_mv);
+	// 	printf("B: best_mv_max %d\n", *best_mv);
 }
 
 
 
 #ifdef _WINCHESS_
-
 DWORD WINAPI thread_proc(LPVOID params)
 {
-	alpha_beta_params *p = (alpha_beta_params *) params;
+	alpha_beta_params *p = (alpha_beta_params *)params;
 
-	DWORD wait_result; 
-	BOOL loop = TRUE;
+	// 	DWORD wait_result;
+	// 	BOOL loop = TRUE;
 	int16_t eval;
 
-// 	printf("in thread alpha %d - beta %d\n", p->alpha, p->beta);
+	// 	printf("in thread alpha %d - beta %d\n", p->alpha, p->beta);
 	eval = alpha_beta(p->g, p->depth, p->maximize, p->alpha, p->beta, p->bm, p->count);
 
 	return TRUE;
@@ -312,18 +316,20 @@ DWORD WINAPI thread_proc(LPVOID params)
 
 int16_t alpha_beta_thrd(game_board *g, uint8_t depth, uint8_t maximize, int16_t alpha, int16_t beta, move *bm, uint32_t *count)
 {
-	// Version multi-threads
+	// Version multi-threads win32
 	// Un thread par coup de premier niveau
 	DWORD thread_id;
 	move current_mv;
 
-    // parcours des coups possibles en gardant le max
+	// parcours des coups possibles en gardant le max
 	backup_game *backup = malloc(sizeof(backup_game));
+
 	board_generate_moves(g);
 	size_t vsize = vector_size(g->moves);
-    // printf("vsize %d\n", (int) vsize);
+	// printf("vsize %d\n", (int) vsize);
 
 	alpha_beta_params *threads_p = malloc(sizeof(alpha_beta_params) * vsize);
+
 	do_backup_game(g, backup);
 
 	for (int i = 0; i < vsize; i++) {
@@ -331,7 +337,7 @@ int16_t alpha_beta_thrd(game_board *g, uint8_t depth, uint8_t maximize, int16_t 
 		do_move(g, &current_mv);
 
 		// Reservation memoire et copie du board courant
-		game_board *board_copy = (game_board *) malloc(sizeof(game_board));
+		game_board *board_copy = (game_board *)malloc(sizeof(game_board));
 		memcpy(&board_copy->b, &g->b, sizeof(Board));
 		board_copy->moves = vector_init(sizeof(move));
 		vector_clear(board_copy->moves);
@@ -339,7 +345,7 @@ int16_t alpha_beta_thrd(game_board *g, uint8_t depth, uint8_t maximize, int16_t 
 		memcpy(board_copy->castling_done, g->en_passant, 2);
 
 		// Reservation memoire pour le meilleur coup et le nombre de coups
-		move *bm_new = (move *) malloc(sizeof(move));
+		move *bm_new = (move *)malloc(sizeof(move));
 		memcpy(bm_new, bm, sizeof(move));
 		uint32_t *count_new = malloc(sizeof(uint32_t));
 		*count_new = 0;
@@ -349,14 +355,14 @@ int16_t alpha_beta_thrd(game_board *g, uint8_t depth, uint8_t maximize, int16_t 
 
 		// Parametres alpha-beta a destination du thread
 
-		threads_p[i].g = board_copy;		// copy
+		threads_p[i].g = board_copy;            // copy
 		threads_p[i].depth = depth - 1;
 		threads_p[i].maximize = maximize ? 0 : 1;
 		threads_p[i].alpha = alpha;
 		threads_p[i].beta = beta;
 
-		threads_p[i].bm = bm_new;			// reserved
-		threads_p[i].count = count_new;		// reserved
+		threads_p[i].bm = bm_new;               // reserved
+		threads_p[i].count = count_new;         // reserved
 
 		restore_backup_game(backup, g);
 	}
@@ -367,21 +373,22 @@ int16_t alpha_beta_thrd(game_board *g, uint8_t depth, uint8_t maximize, int16_t 
 	int16_t best_mv_max = INT16_MIN;
 	int16_t best_mv_min = INT16_MAX;
 	int brk;
-	for (int j = 0; j < vsize/MAX_THREADS; j++) {
+
+	for (int j = 0; j < vsize / MAX_THREADS; j++) {
 		HANDLE *threads = malloc(sizeof(HANDLE) * (MAX_THREADS));
 		for (int i = 0; i < MAX_THREADS; i++) {
-// 			printf("start thread %d with param %d\n", i, thrd_count);
-			threads[i] = CreateThread( 
-					NULL,       						// default security attributes
-					0,          						// default stack size
-					(LPTHREAD_START_ROUTINE) thread_proc, 
-					(LPVOID) &threads_p[thrd_count],	// thread function arguments
-					0,          						// default creation flags
-					&thread_id); 						// receive thread identifier
+			// 			printf("start thread %d with param %d\n", i, thrd_count);
+			threads[i] = CreateThread(
+				NULL,                                           // default security attributes
+				0,                                              // default stack size
+				(LPTHREAD_START_ROUTINE)thread_proc,
+				(LPVOID)&threads_p[thrd_count],                 // thread function arguments
+				0,                                              // default creation flags
+				&thread_id);                                    // receive thread identifier
 			thrd_count++;
 		}
 		WaitForMultipleObjects(MAX_THREADS, threads, TRUE, INFINITE);
-		
+
 		if (maximize) {
 			update_best_eval_max(&best_mv_max, threads_p, MAX_THREADS, thrd_count - MAX_THREADS);
 			if (alpha <= best_mv_max) {
@@ -394,7 +401,7 @@ int16_t alpha_beta_thrd(game_board *g, uint8_t depth, uint8_t maximize, int16_t 
 			}
 		}
 
-// 		printf("alpha %d - beta %d\n", alpha, beta);
+		// 		printf("alpha %d - beta %d\n", alpha, beta);
 		// MAJ des paramètres pour les prochains threads
 		for (int i = thrd_count - MAX_THREADS; i < vsize; i++) {
 			threads_p[i].alpha = alpha;
@@ -408,31 +415,32 @@ int16_t alpha_beta_thrd(game_board *g, uint8_t depth, uint8_t maximize, int16_t 
 		free(threads);
 	}
 	// Reste des paquets
-	HANDLE *threads = malloc(sizeof(HANDLE) * (vsize%MAX_THREADS));
-	for (int i = 0; i < vsize%MAX_THREADS; i++) {
-		threads[i] = CreateThread( 
-				NULL,       						// default security attributes
-				0,          						// default stack size
-				(LPTHREAD_START_ROUTINE) thread_proc, 
-				(LPVOID) &threads_p[thrd_count],	// thread function arguments
-				0,          						// default creation flags
-				&thread_id); 						// receive thread identifier
+	HANDLE *threads = malloc(sizeof(HANDLE) * (vsize % MAX_THREADS));
+
+	for (int i = 0; i < vsize % MAX_THREADS; i++) {
+		threads[i] = CreateThread(
+			NULL,                                           // default security attributes
+			0,                                              // default stack size
+			(LPTHREAD_START_ROUTINE)thread_proc,
+			(LPVOID)&threads_p[thrd_count],                 // thread function arguments
+			0,                                              // default creation flags
+			&thread_id);                                    // receive thread identifier
 		thrd_count++;
 	}
-	WaitForMultipleObjects(vsize%MAX_THREADS, threads, TRUE, INFINITE);
+	WaitForMultipleObjects(vsize % MAX_THREADS, threads, TRUE, INFINITE);
 	if (maximize) {
-		update_best_eval_max(&best_mv_max, threads_p, vsize%MAX_THREADS, thrd_count - vsize%MAX_THREADS);
+		update_best_eval_max(&best_mv_max, threads_p, vsize % MAX_THREADS, thrd_count - vsize % MAX_THREADS);
 		if (alpha <= best_mv_max) {
 			alpha = best_mv_max;
 		}
 	} else {
-		update_best_eval_min(&best_mv_min, threads_p, vsize%MAX_THREADS, thrd_count - vsize%MAX_THREADS);
+		update_best_eval_min(&best_mv_min, threads_p, vsize % MAX_THREADS, thrd_count - vsize % MAX_THREADS);
 		if (beta >= best_mv_min) {
 			beta = best_mv_min;
 		}
 	}
 
-	for (int i = 0; i < vsize%MAX_THREADS; i++) {
+	for (int i = 0; i < vsize % MAX_THREADS; i++) {
 		CloseHandle(threads[i]);
 	}
 	free(threads);
@@ -440,12 +448,13 @@ int16_t alpha_beta_thrd(game_board *g, uint8_t depth, uint8_t maximize, int16_t 
 
 	// Recherche du meilleur coup
 	int16_t best_index = 0;
+
 	best_mv_min = INT16_MAX;
 	best_mv_max = INT16_MIN;
 	int32_t total_count = 0;
 
 	for (int i = 0; i < vsize; i++) {
-// 		printf("%d,%d=%d count=%d\n", threads_p[i].bm->from, threads_p[i].bm->to, threads_p[i].bm->eval, *(threads_p[i].count));
+		// 		printf("%d,%d=%d count=%d\n", threads_p[i].bm->from, threads_p[i].bm->to, threads_p[i].bm->eval, *(threads_p[i].count));
 		total_count += *(threads_p[i].count);
 
 		if (maximize) {
@@ -463,14 +472,15 @@ int16_t alpha_beta_thrd(game_board *g, uint8_t depth, uint8_t maximize, int16_t 
 		}
 	}
 
-// 	printf("  thrd %d,%d=%d\n", threads_p[best_index].bm->from, threads_p[best_index].bm->to, threads_p[best_index].bm->eval);
+	// 	printf("  thrd %d,%d=%d\n", threads_p[best_index].bm->from, threads_p[best_index].bm->to, threads_p[best_index].bm->eval);
 	move best_move;
-	vector_get_at(&best_move, g->moves, best_index)	;
-// 	printf("best %d,%d=%d count=%d\n", best_move.from, best_move.to, threads_p[best_index].bm->eval, total_count);
+
+	vector_get_at(&best_move, g->moves, best_index);
+	// 	printf("best %d,%d=%d count=%d\n", best_move.from, best_move.to, threads_p[best_index].bm->eval, total_count);
 
 	// Nettoyage
 	free_backup_game(backup);
-	
+
 	for (int i = 0; i < vsize; i++) {
 		vector_destroy(threads_p[i].g->moves);
 		free(threads_p[i].bm);
@@ -481,22 +491,210 @@ int16_t alpha_beta_thrd(game_board *g, uint8_t depth, uint8_t maximize, int16_t 
 	free(backup);
 	free(threads_p);
 
-    vector_get_at(bm, g->moves, best_index);
-    *count = total_count;
+	vector_get_at(bm, g->moves, best_index);
+	*count = total_count;
 	if (maximize) {
 		bm->eval = best_mv_max;
-        return best_mv_max;
-    } else {
-        bm->eval = best_mv_min;
-        return best_mv_min;
-    }
+		return best_mv_max;
+	} else {
+		bm->eval = best_mv_min;
+		return best_mv_min;
+	}
 }
 #endif
 
+
 #ifdef _ANDROID_
+void *thread_proc(void *params)
+{
+	alpha_beta_params *p = (alpha_beta_params *)params;
+
+	alpha_beta(p->g, p->depth, p->maximize, p->alpha, p->beta, p->bm, p->count);
+	return NULL;
+}
+
 int16_t alpha_beta_thrd(game_board *g, uint8_t depth, uint8_t maximize, int16_t alpha, int16_t beta, move *bm, uint32_t *count)
 {
-    printf("TODO\n");
+	// Version multi-threads posix
+	// Un thread par coup de premier niveau
+	move current_mv;
+
+	// parcours des coups possibles en gardant le max
+	backup_game *backup = malloc(sizeof(backup_game));
+
+	board_generate_moves(g);
+	size_t vsize = vector_size(g->moves);
+
+	alpha_beta_params *threads_p = malloc(sizeof(alpha_beta_params) * vsize);
+
+	do_backup_game(g, backup);
+
+	for (int i = 0; i < vsize; i++) {
+		vector_get_at(&current_mv, g->moves, i);
+		do_move(g, &current_mv);
+
+		// Reservation memoire et copie du board courant
+		game_board *board_copy = (game_board *)malloc(sizeof(game_board));
+		memcpy(&board_copy->b, &g->b, sizeof(Board));
+		board_copy->moves = vector_init(sizeof(move));
+		vector_clear(board_copy->moves);
+		memcpy(board_copy->en_passant, g->en_passant, 16);
+		memcpy(board_copy->castling_done, g->en_passant, 2);
+
+		// Reservation memoire pour le meilleur coup et le nombre de coups
+		move *bm_new = (move *)malloc(sizeof(move));
+		memcpy(bm_new, bm, sizeof(move));
+		uint32_t *count_new = malloc(sizeof(uint32_t));
+		*count_new = 0;
+
+		// Couleur opposee pour la recherche
+		board_copy->b.active_color = (g->b.active_color == WHITE ? BLACK : WHITE);
+
+		// Parametres alpha-beta a destination du thread
+		threads_p[i].g = board_copy;            // copy
+		threads_p[i].depth = depth - 1;
+		threads_p[i].maximize = maximize ? 0 : 1;
+		threads_p[i].alpha = alpha;
+		threads_p[i].beta = beta;
+
+		threads_p[i].bm = bm_new;               // reserved
+		threads_p[i].count = count_new;         // reserved
+
+		restore_backup_game(backup, g);
+	}
+
+	// Demarrage des threads par paquets de MAX_THREADS
+	// alpha et beta sont maj a chaque attente de MAX_THREADS
+	int thrd_count = 0;
+	int16_t best_mv_max = INT16_MIN;
+	int16_t best_mv_min = INT16_MAX;
+	int brk;
+
+	for (int j = 0; j < vsize / MAX_THREADS; j++) {
+		pthread_t *threads = malloc(sizeof(pthread_t) * (MAX_THREADS));
+		for (int i = 0; i < MAX_THREADS; i++) {
+			pthread_create(&threads[i],
+				       NULL,
+				       (void *)thread_proc,
+				       (void *)&threads_p[thrd_count]);
+			thrd_count++;
+		}
+		for (int i = 0; i < MAX_THREADS; i++) {
+			void *retval;
+			pthread_join(threads[i], &retval);
+		}
+
+		if (maximize) {
+			update_best_eval_max(&best_mv_max, threads_p, MAX_THREADS, thrd_count - MAX_THREADS);
+			if (alpha <= best_mv_max) {
+				alpha = best_mv_max;
+			}
+		} else {
+			update_best_eval_min(&best_mv_min, threads_p, MAX_THREADS, thrd_count - MAX_THREADS);
+			if (beta >= best_mv_min) {
+				beta = best_mv_min;
+			}
+		}
+
+		// MAJ des paramètres pour les prochains threads
+		for (int i = thrd_count - MAX_THREADS; i < vsize; i++) {
+			threads_p[i].alpha = alpha;
+			threads_p[i].beta = beta;
+		}
+
+		// Nettoyage
+		for (int i = 0; i < MAX_THREADS; i++) {
+			pthread_detach(threads[i]);
+		}
+		free(threads);
+	}
+	// Reste des paquets
+	pthread_t *threads = malloc(sizeof(pthread_t) * (vsize % MAX_THREADS));
+
+	for (int i = 0; i < vsize % MAX_THREADS; i++) {
+		pthread_create(&threads[i],
+			       NULL,
+			       (void *)thread_proc,
+			       (void *)&threads_p[thrd_count]);
+		thrd_count++;
+	}
+	for (int i = 0; i < vsize % MAX_THREADS; i++) {
+		void *retval;
+		pthread_join(threads[i], &retval);
+	}
+
+	if (maximize) {
+		update_best_eval_max(&best_mv_max, threads_p, vsize % MAX_THREADS, thrd_count - vsize % MAX_THREADS);
+		if (alpha <= best_mv_max) {
+			alpha = best_mv_max;
+		}
+	} else {
+		update_best_eval_min(&best_mv_min, threads_p, vsize % MAX_THREADS, thrd_count - vsize % MAX_THREADS);
+		if (beta >= best_mv_min) {
+			beta = best_mv_min;
+		}
+	}
+
+	for (int i = 0; i < vsize % MAX_THREADS; i++) {
+		pthread_detach(threads[i]);
+	}
+	free(threads);
+
+
+	// Recherche du meilleur coup
+	int16_t best_index = 0;
+
+	best_mv_min = INT16_MAX;
+	best_mv_max = INT16_MIN;
+	int32_t total_count = 0;
+
+	for (int i = 0; i < vsize; i++) {
+		// 		printf("%d,%d=%d count=%d\n", threads_p[i].bm->from, threads_p[i].bm->to, threads_p[i].bm->eval, *(threads_p[i].count));
+		total_count += *(threads_p[i].count);
+
+		if (maximize) {
+			int16_t eval = threads_p[i].bm->eval;
+			if (best_mv_max < eval) {
+				best_mv_max = eval;
+				best_index = i;
+			}
+		} else {
+			int16_t eval = threads_p[i].bm->eval;
+			if (best_mv_min > eval) {
+				best_mv_min = eval;
+				best_index = i;
+			}
+		}
+	}
+
+	// 	printf("  thrd %d,%d=%d\n", threads_p[best_index].bm->from, threads_p[best_index].bm->to, threads_p[best_index].bm->eval);
+	move best_move;
+
+	vector_get_at(&best_move, g->moves, best_index);
+	// 	printf("best %d,%d=%d count=%d\n", best_move.from, best_move.to, threads_p[best_index].bm->eval, total_count);
+
+	// Nettoyage
+	free_backup_game(backup);
+
+	for (int i = 0; i < vsize; i++) {
+		vector_destroy(threads_p[i].g->moves);
+		free(threads_p[i].bm);
+		free(threads_p[i].count);
+		free(threads_p[i].g);
+	}
+
+	free(backup);
+	free(threads_p);
+
+	vector_get_at(bm, g->moves, best_index);
+	*count = total_count;
+	if (maximize) {
+		bm->eval = best_mv_max;
+		return best_mv_max;
+	} else {
+		bm->eval = best_mv_min;
+		return best_mv_min;
+	}
 }
 #endif
 
@@ -623,20 +821,20 @@ int16_t apply_eval_filter(Board *board)
 		for (int j = 0; j < 8; j++) {   // file => left to right
 			char piece = board->placement[8 * i + j];
 			switch (piece) {
-				case 'P': filter_value += filter_pawn[j + (7 - i) * 8]; /*printf("P[%d,%d]%d%c%c", i, j, filter_pawn[j + (7 - i) * 8], 10, 13);*/ break;
-				case 'N': filter_value += filter_knight[j + (7 - i) * 8]; /*printf("N[%d,%d]%d%c%c", i, j, filter_knight[j + (7 - i) * 8], 10, 13);*/ break;
-				case 'B': filter_value += filter_bishop[j + (7 - i) * 8]; break;
-				case 'R': filter_value += filter_rook[j + (7 - i) * 8]; break;
-				case 'Q': filter_value += filter_queen[j + (7 - i) * 8]; break;
-				case 'K': filter_value += filter_king[j + (7 - i) * 8]; break;
+			case 'P': filter_value += filter_pawn[j + (7 - i) * 8]; /*printf("P[%d,%d]%d%c%c", i, j, filter_pawn[j + (7 - i) * 8], 10, 13);*/ break;
+			case 'N': filter_value += filter_knight[j + (7 - i) * 8]; /*printf("N[%d,%d]%d%c%c", i, j, filter_knight[j + (7 - i) * 8], 10, 13);*/ break;
+			case 'B': filter_value += filter_bishop[j + (7 - i) * 8]; break;
+			case 'R': filter_value += filter_rook[j + (7 - i) * 8]; break;
+			case 'Q': filter_value += filter_queen[j + (7 - i) * 8]; break;
+			case 'K': filter_value += filter_king[j + (7 - i) * 8]; break;
 
-				case 'p': filter_value -= filter_pawn[j + (i) * 8]; /*printf("p[%d,%d]%d%c%c", i, j, filter_pawn[j + (i) * 8], 10, 13);*/ break;
-				case 'n': filter_value -= filter_knight[j + (i) * 8]; break;
-				case 'b': filter_value -= filter_bishop[j + (i) * 8]; break;
-				case 'r': filter_value -= filter_rook[j + (i) * 8]; break;
-				case 'q': filter_value -= filter_queen[j + (i) * 8]; break;
-				case 'k': filter_value -= filter_king[j + (i) * 8]; break;
-				default: break;
+			case 'p': filter_value -= filter_pawn[j + (i) * 8]; /*printf("p[%d,%d]%d%c%c", i, j, filter_pawn[j + (i) * 8], 10, 13);*/ break;
+			case 'n': filter_value -= filter_knight[j + (i) * 8]; break;
+			case 'b': filter_value -= filter_bishop[j + (i) * 8]; break;
+			case 'r': filter_value -= filter_rook[j + (i) * 8]; break;
+			case 'q': filter_value -= filter_queen[j + (i) * 8]; break;
+			case 'k': filter_value -= filter_king[j + (i) * 8]; break;
+			default: break;
 			}
 			idx++;
 		}
@@ -671,19 +869,19 @@ int16_t evaluation(Board *board)
 		for (int j = 0; j < 8; j++) {   // file => left to right
 			char piece = board->placement[8 * i + j];
 			switch (piece) {
-				case 'P': val += 100; break;
-				case 'N': val += 320; break;
-				case 'B': val += 330; break;
-				case 'R': val += 500; break;
-				case 'Q': val += 900; break;
-				case 'K': val += 20000; break;
-				case 'p': val -= 100; break;
-				case 'n': val -= 320; break;
-				case 'b': val -= 330; break;
-				case 'r': val -= 500; break;
-				case 'q': val -= 900; break;
-				case 'k': val -= 20000; break;
-				default: break;
+			case 'P': val += 100; break;
+			case 'N': val += 320; break;
+			case 'B': val += 330; break;
+			case 'R': val += 500; break;
+			case 'Q': val += 900; break;
+			case 'K': val += 20000; break;
+			case 'p': val -= 100; break;
+			case 'n': val -= 320; break;
+			case 'b': val -= 330; break;
+			case 'r': val -= 500; break;
+			case 'q': val -= 900; break;
+			case 'k': val -= 20000; break;
+			default: break;
 			}
 		}
 	}
@@ -734,14 +932,14 @@ int is_check_mate(game_board *g)
 void init_chess_library()
 {
 	char sample_board[64] = {
-		'R',  'N',  'B',  'Q',	'K',   'B',  'N',  'R',
-		'P',  'P',  'P',  'P',	'P',   'P',  'P',  'P',
-		'\0', '\0', '\0', '\0', '\0',  '\0', '\0', '\0',
-		'\0', '\0', '\0', '\0', '\0',  '\0', '\0', '\0',
-		'\0', '\0', '\0', '\0', '\0',  '\0', '\0', '\0',
-		'\0', '\0', '\0', '\0', '\0',  '\0', '\0', '\0',
-		'p',  'p',  'p',  'p',	'p',   'p',  'p',  'p',
-		'r',  'n',  'b',  'q',	'k',   'b',  'n',  'r'
+		'R',  'N',  'B',  'Q',	'K',  'B',   'N',  'R',
+		'P',  'P',  'P',  'P',	'P',  'P',   'P',  'P',
+		'\0', '\0', '\0', '\0', '\0', '\0',  '\0', '\0',
+		'\0', '\0', '\0', '\0', '\0', '\0',  '\0', '\0',
+		'\0', '\0', '\0', '\0', '\0', '\0',  '\0', '\0',
+		'\0', '\0', '\0', '\0', '\0', '\0',  '\0', '\0',
+		'p',  'p',  'p',  'p',	'p',  'p',   'p',  'p',
+		'r',  'n',  'b',  'q',	'k',  'b',   'n',  'r'
 	};
 
 	// 	char sample_board[64] = {
@@ -815,33 +1013,33 @@ int main()
 	int16_t strokes_count_black = 0;
 
 	// Multi threaded test
-//     printf("\n~~--- MULTI THREAD %d---\n", MAX_THREADS);
-// 	chess_nodes_count = 0;
-// 	g.b.active_color = BLACK;
-// 	alpha = INT16_MIN;
-// 	beta = INT16_MAX;
-// 	tstart();
-// 	alpha_beta_thrd(&g, 5, 0, alpha, beta, &the_move, &chess_nodes_count);
-//     printf("@@Eval %d - Count %d - Move %d,%d\n", eval, chess_nodes_count, the_move.from, the_move.to);
-// 	printf("@@count %d\n", chess_nodes_count);
-// 	printf("@@move %d,%d = %d\n", the_move.from, the_move.to, the_move.eval);
-// 	tstop("multi threaded");
+	//     printf("\n~~--- MULTI THREAD %d---\n", MAX_THREADS);
+	// 	chess_nodes_count = 0;
+	// 	g.b.active_color = BLACK;
+	// 	alpha = INT16_MIN;
+	// 	beta = INT16_MAX;
+	// 	tstart();
+	// 	alpha_beta_thrd(&g, 5, 0, alpha, beta, &the_move, &chess_nodes_count);
+	//     printf("@@Eval %d - Count %d - Move %d,%d\n", eval, chess_nodes_count, the_move.from, the_move.to);
+	// 	printf("@@count %d\n", chess_nodes_count);
+	// 	printf("@@move %d,%d = %d\n", the_move.from, the_move.to, the_move.eval);
+	// 	tstop("multi threaded");
 
-// 	Single thread test
-// 	printf("\n~~--- SINGLE THREAD ---\n");
-// 	tstart();
-// 	g.b = STARTING_BOARD;
-// 	g.b.active_color = BLACK;
-// 	alpha = INT16_MIN;
-// 	beta = INT16_MAX;
-// 	chess_nodes_count = 0;
-// 	int e = alpha_beta(&g, 5, 0, alpha, beta, &the_move, &chess_nodes_count);
-// 	printf("~~Eval %d - Count %d - Move %d,%d\n", eval, chess_nodes_count, the_move.from, the_move.to);
-// 	printf("~~count %d\n", chess_nodes_count);
-// 	printf("~~move %d,%d = %d\n", the_move.from, the_move.to, the_move.eval);
-// 	tstop("single threaded");
-//
-// 	exit(0);
+	// 	Single thread test
+	// 	printf("\n~~--- SINGLE THREAD ---\n");
+	// 	tstart();
+	// 	g.b = STARTING_BOARD;
+	// 	g.b.active_color = BLACK;
+	// 	alpha = INT16_MIN;
+	// 	beta = INT16_MAX;
+	// 	chess_nodes_count = 0;
+	// 	int e = alpha_beta(&g, 5, 0, alpha, beta, &the_move, &chess_nodes_count);
+	// 	printf("~~Eval %d - Count %d - Move %d,%d\n", eval, chess_nodes_count, the_move.from, the_move.to);
+	// 	printf("~~count %d\n", chess_nodes_count);
+	// 	printf("~~move %d,%d = %d\n", the_move.from, the_move.to, the_move.eval);
+	// 	tstop("single threaded");
+	//
+	// 	exit(0);
 
 
 	while (1) {
@@ -849,8 +1047,8 @@ int main()
 		tstart();
 		alpha = INT16_MIN;
 		beta = INT16_MAX;
-// 		printf("alpha=%d beta=%d\n", alpha, beta);
-		eval = alpha_beta(&g, 5, 0, alpha, beta, &the_move, &chess_nodes_count);
+		// 		printf("alpha=%d beta=%d\n", alpha, beta);
+		eval = alpha_beta_thrd(&g, 5, 0, alpha, beta, &the_move, &chess_nodes_count);
 		tstop("alpha_beta");
 		print_move(&g, &the_move);
 		printf("count:%d->%d %d ep=%d%c%c", chess_nodes_count, eval, the_move.eval, the_move.en_passant, 10, 13);
@@ -874,7 +1072,7 @@ int main()
 		chess_nodes_count = 0;
 		alpha = INT16_MIN;
 		beta = INT16_MAX;
-		eval = alpha_beta(&g, 4, 1, alpha, beta, &the_move, &chess_nodes_count);
+		eval = alpha_beta_thrd(&g, 4, 1, alpha, beta, &the_move, &chess_nodes_count);
 		tstop("alpha_beta");
 		print_move(&g, &the_move);
 		printf("count:%d->%d %d ep=%d%c%c", chess_nodes_count, eval, the_move.eval, the_move.en_passant, 10, 13);
@@ -892,7 +1090,7 @@ int main()
 		}
 		tstop("is_check_mate");
 
-//         getchar();
+		//         getchar();
 	}
 
 	printf("white :%d\n", strokes_count_white);

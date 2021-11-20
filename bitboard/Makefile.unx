@@ -4,7 +4,7 @@ DEL=rm -f
 # sudo apt install liblua5.1-0-dev
 
 CFLAGS=-O3 -std=c99 -fPIC -Iubuntu_libs/Containers/src/include -I/usr/include/lua5.1
-LDFLAGS=-Lubuntu_libs/Containers -lcont -llua5.1
+LDFLAGS=-Lubuntu_libs/Containers -lcont -llua5.1 -lpthread
 
 # In this case:
 #

@@ -1,0 +1,6 @@
+-I.\Containers\src\include
+-I.\glew-2.1.0\include
+-I.\glfw-3.3.5.bin.WIN64\include
+-I..\bitboard
+-D_WINCHESS_
+-DRUBY_BACKWARD2_BOOL_H

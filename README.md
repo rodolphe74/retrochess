@@ -81,5 +81,4 @@ Le projet se compose :
 <img src="https://github.com/rodolphe74/retrochess/blob/main/win32/board.png" alt="teasing" style="width:400px;"/>
 
 Le code en cours de développement se trouve dans le sous répertoire win32.
-
-Cette interface permet de mettre en oeuvre OpenGL à travers [glfw](https://www.glfw.org/) [moonshine](https://github.com/vrld/moonshine).
+Cette interface permet de mettre en oeuvre OpenGL à travers [glfw](https://www.glfw.org/).

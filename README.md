@@ -78,4 +78,4 @@ Le projet se compose :
 * d'un script powershell permettant de créer l'apk Android. Il utilise pour cela [l'apk de base love2d](https://github.com/love2d/love/releases/download/11.3/love-11.3-android.apk). L'apk est d'abord décompressé dans un répertoire, le code lua du jeu d'échec y est copié. Le répertoire est ensuite recompressé et signé avec les outils présents dans le répertoire tools. Pour cela, le jdk java doit être présent sur la machine. 
 
 # Ajout d'une interface 3D
-<img src="win32/board.jpg" alt="teasing" style="width:300px;"/>
+<img src="https://github.com/rodolphe74/retrochess/blob/main/win32/board.png" alt="teasing" style="width:300px;"/>

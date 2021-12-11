@@ -446,3 +446,5 @@
 2021-12-11 08:04:06 DEBUG win32chesslib.c:63: g_close_chess_lib
 2021-12-11 08:05:23 DEBUG win32chesslib.c:52: g_init_chess_lib
 2021-12-11 08:05:34 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-11 08:10:06 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-11 08:11:03 DEBUG win32chesslib.c:63: g_close_chess_lib

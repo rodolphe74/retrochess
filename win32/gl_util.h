@@ -6,6 +6,7 @@
 #include "vector.h"
 #include "pixel.h"
 
+
 /*
  * A Vertex Array Object (VAO) is an object which contains one or more Vertex Buffer Objects and is designed 
  * to store the information for a complete rendered object.

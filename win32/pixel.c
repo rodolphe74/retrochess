@@ -321,34 +321,34 @@ IMAGE *bilinear_resize(IMAGE *image, unsigned short width, unsigned short height
 
 
 
-IMAGE *gamma(IMAGE *image, float gamma)
-{
-	PIXEL pixel, p;
+/* IMAGE *gamma(IMAGE *image, float gamma) */
+/* { */
+/* 	PIXEL pixel, p; */
 
-	IMAGE *gamma_img = (IMAGE *)malloc(sizeof(IMAGE));
-	PIXEL *pixels = (PIXEL *)malloc(sizeof(PIXEL) * image->width * image->height);
+/* 	IMAGE *gamma_img = (IMAGE *)malloc(sizeof(IMAGE)); */
+/* 	PIXEL *pixels = (PIXEL *)malloc(sizeof(PIXEL) * image->width * image->height); */
 
-	float gamma_correction;
+/* 	float gamma_correction; */
 
-	gamma_img->pixels = pixels;
-	gamma_img->width = image->width;
-	gamma_img->height = image->height;
+/* 	gamma_img->pixels = pixels; */
+/* 	gamma_img->width = image->width; */
+/* 	gamma_img->height = image->height; */
 
-	for (unsigned short y = 0; y < image->height; y++) {
-		for (unsigned short x = 0; x < image->width; x++) {
-			p = image->pixels[y * image->width + x];
+/* 	for (unsigned short y = 0; y < image->height; y++) { */
+/* 		for (unsigned short x = 0; x < image->width; x++) { */
+/* 			p = image->pixels[y * image->width + x]; */
 
-			gamma_correction = 1.0 / gamma;
-			p.r = 255 * powf((p.r / 255.0), gamma_correction);
-			p.g = 255 * powf((p.g / 255.0), gamma_correction);
-			p.b = 255 * powf((p.b / 255.0), gamma_correction);
+/* 			gamma_correction = 1.0 / gamma; */
+/* 			p.r = 255 * powf((p.r / 255.0), gamma_correction); */
+/* 			p.g = 255 * powf((p.g / 255.0), gamma_correction); */
+/* 			p.b = 255 * powf((p.b / 255.0), gamma_correction); */
 
-			gamma_img->pixels[y * image->width + x] = p;
-		}
-	}
+/* 			gamma_img->pixels[y * image->width + x] = p; */
+/* 		} */
+/* 	} */
 
-	return gamma_img;
-}
+/* 	return gamma_img; */
+/* } */
 
 
 IMAGE *brightness_and_contrast(IMAGE *image, float brightness, float contrast)

@@ -147,7 +147,7 @@ IMAGE *bilinear_resize(IMAGE *image, unsigned short width, unsigned short height
 //------------------------------------------------------------------------------
 // gamma de l'image
 //------------------------------------------------------------------------------
-IMAGE *gamma(IMAGE *image, float gamma);
+// IMAGE *gamma(IMAGE *image, float gamma);
 
 //------------------------------------------------------------------------------
 // luminosite et contraste de l'image

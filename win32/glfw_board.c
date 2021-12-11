@@ -1,11 +1,26 @@
 #include "3d.h"
 #include "gl_util.h"
 #include "colors.h"
-#include "win32chesslib.h"
 #include <GLFW/glfw3.h>
+
+#ifdef _WINCHESS_
+#include "win32chesslib.h"
+#endif
+#ifndef _WINCHESS_
+#include "linuxchesslib.h"
+#endif
+#include "mathc.h"
+#include "vector.h"
+#include <stddef.h>
 #include <stdio.h>
 
 #define SQUARE_SIZE 20
+#define SCREEN_W 800
+#define SCREEN_H 800
+
+#define MAX(x, y) (((x) > (y)) ? (x) : (y))
+#define MIN(x, y) (((x) < (y)) ? (x) : (y))
+
 
 // Globals
 int drag = 0;
@@ -21,23 +36,18 @@ gl_object glo_king_white, glo_king_black;
 gl_object glo_knight_white, glo_knight_black;
 gl_object glo_queen_white, glo_queen_black;
 gl_object glo_rook_white, glo_rook_black;
-gl_object glo_case_white, glo_case_black;
+gl_object glo_case_white, glo_case_black, glo_selected_case;
 
-// bounding_box
-bounding_box bb_pawn_white, bb_pawn_black;
-// ..
-
-// Matrices de translation associées aux pièces de l'échiquier
-mfloat_t pieces_translate[64][MAT4_SIZE];
-
-// bounding_box associées aux pièces
-bounding_box pieces_bb[64];
+// objet 3d case utilise pour creer une projection de chaque case
+// et savoir sur sur quelle case se trouve le pointeur de la souris
+object *original_square;
 
 
 // Matrice de projection
 mfloat_t position_start[VEC3_SIZE] = { 70.0, 80.0, 200.0 };
 mfloat_t target_start[VEC3_SIZE] = { 70.0, 0.0, 100 };
 mfloat_t up_start[VEC3_SIZE] = { 0.0, 1.0, 0.0 };
+mfloat_t projection[MAT4_SIZE];
 
 // position courante
 mfloat_t position[VEC3_SIZE];
@@ -48,13 +58,17 @@ mfloat_t view[MAT4_SIZE];
 // rotation courante
 float angle_x = 0;
 float angle_y = 0;
+mfloat_t rotation_view_x[MAT4_SIZE];
+mfloat_t rotation_view_y[MAT4_SIZE];
+mfloat_t translation_view_z[MAT4_SIZE];
+
 
 // mouvement souris
 double scrolly = 0;
 double mousex = 0, mousey = 0;
 double mousex_drag = 0, mousey_drag = 0;
 double mousedx = 0, mousedy = 0;
-
+double cursor_mousex = 0, cursor_mousey = 0;
 
 // game state
 game_board g;
@@ -94,15 +108,9 @@ void load_objects()
 	vector_get_at(&o, chess_set->objects, 3); // pawn
 	set_material_to_object(o, light_gray, light_gray, white, 32.0 * 1);
 	object_as_gl_unique_vertices_object(o, &glo_pawn_white);
-	find_bounding_box(o, &bb_pawn_white);
 	vector_get_at(&o, chess_set->objects, 3); // pawn
 	set_material_to_object(o, gray10, gray10, white, 32.0 * 1);
 	object_as_gl_unique_vertices_object(o, &glo_pawn_black);
-	find_bounding_box(o, &bb_pawn_black);
-	printf("pawn size %d\n", glo_pawn_white.size);
-	printf("bbw %f %f %f\n", bb_pawn_white.center_x, bb_pawn_white.center_y, bb_pawn_white.center_z);
-	printf("bbb %f %f %f\n", bb_pawn_black.center_x, bb_pawn_black.center_y, bb_pawn_black.center_z);
-
 
 	// bishop
 	vector_get_at(&o, chess_set->objects, 0); // bishop
@@ -111,7 +119,6 @@ void load_objects()
 	vector_get_at(&o, chess_set->objects, 0); // bishop
 	set_material_to_object(o, gray10, gray10, white, 32.0 * 1);
 	object_as_gl_unique_vertices_object(o, &glo_bishop_black);
-	printf("bishop size %d\n", glo_bishop_white.size);
 
 	// king
 	vector_get_at(&o, chess_set->objects, 1); // king
@@ -120,7 +127,6 @@ void load_objects()
 	vector_get_at(&o, chess_set->objects, 1); // king
 	set_material_to_object(o, gray10, gray10, white, 32.0 * 1);
 	object_as_gl_unique_vertices_object(o, &glo_king_black);
-	printf("king size %d\n", glo_king_white.size);
 
 	// knight
 	vector_get_at(&o, chess_set->objects, 2); // knight
@@ -129,7 +135,6 @@ void load_objects()
 	vector_get_at(&o, chess_set->objects, 2); // knight
 	set_material_to_object(o, gray10, gray10, white, 32.0 * 1);
 	object_as_gl_unique_vertices_object(o, &glo_knight_black);
-	printf("knight size %d\n", glo_knight_white.size);
 
 	// queen
 	vector_get_at(&o, chess_set->objects, 4); // queen
@@ -138,7 +143,6 @@ void load_objects()
 	vector_get_at(&o, chess_set->objects, 4); // queen
 	set_material_to_object(o, gray10, gray10, white, 32.0 * 1);
 	object_as_gl_unique_vertices_object(o, &glo_queen_black);
-	printf("knight size %d\n", glo_knight_white.size);
 
 	// rook
 	vector_get_at(&o, chess_set->objects, 5); // rook
@@ -147,7 +151,6 @@ void load_objects()
 	vector_get_at(&o, chess_set->objects, 5); // rook
 	set_material_to_object(o, gray10, gray10, white, 32.0 * 1);
 	object_as_gl_unique_vertices_object(o, &glo_rook_black);
-	printf("knight size %d\n", glo_knight_white.size);
 
 	// case
 	vector_get_at(&o, chess_set->objects, 6); // case
@@ -156,6 +159,12 @@ void load_objects()
 	vector_get_at(&o, chess_set->objects, 6); // case
 	set_material_to_object(o, black, black, white, 32.0 * 1);
 	object_as_gl_unique_vertices_object(o, &glo_case_black);
+	vector_get_at(&o, chess_set->objects, 6); // case
+	set_material_to_object(o, gray58, gray58, white, 32.0 * 1);
+	object_as_gl_unique_vertices_object(o, &glo_selected_case);
+
+	// garde une copie de case
+	original_square = copy_object(o);
 
 	free_super_object(chess_set);
 }
@@ -173,7 +182,7 @@ void init_lights()
 	/* printf("light 2 %p\n", l2); */
 	vector_add_last(lights, &l1);
 	// 	vector_add_last(lights, &l2);
-	printf("lights:%d\n", vector_size(lights));
+	printf("lights:%d\n", (int) vector_size(lights));
 }
 
 void free_all()
@@ -201,12 +210,14 @@ void free_all()
 	free_gl_object(&glo_knight_white);
 	free_gl_object(&glo_knight_black);
 
+	free_object(original_square);
+
 	g_close_chess_lib();
 }
 
 
 
-void draw_square(float x, float z, int color, GLfloat *position, GLfloat *view, GLfloat *projection, GLfloat *lights_array, int lights_count)
+int draw_square(int already_inside, float x, float z, int color, GLfloat *position, GLfloat *view, GLfloat *projection, GLfloat *lights_array, int lights_count)
 {
 	mfloat_t model_square[MAT4_SIZE];
 
@@ -217,25 +228,60 @@ void draw_square(float x, float z, int color, GLfloat *position, GLfloat *view, 
 	mat4_translation(model_pos, model_pos, vec3(p, x, 0.0, z));
 	mat4_multiply(model_square, model_square, model_pos);
 
+	point pt;
+
+	pt.x = (int) cursor_mousex;
+	pt.y = (int) cursor_mousey;
+	vector hull = vector_init(sizeof(point));
+	int inside = is_point_in_2d_convex_hull(original_square, &pt, model_square, view, projection, SCREEN_W, SCREEN_W, &hull);
+	vector_destroy(hull);
+
+	/* printf("%f,%f    %d,%d = %d\n", cursor_mousex, cursor_mousey, pt.x, pt.y, inside); */
+
 	if (color) {
-		set_gl_object_before_render(&glo_case_white, &program, (GLfloat *)position, (GLfloat *)model_square, (GLfloat *)view, (GLfloat *)projection, (GLfloat *)lights_array, lights_count);
-		glDrawArrays(GL_TRIANGLES, 0, glo_case_white.size);
+		if (already_inside) {
+			set_gl_object_before_render(&glo_case_white, &program, (GLfloat *)position, (GLfloat *)model_square, (GLfloat *)view, (GLfloat *)projection, (GLfloat *)lights_array, lights_count);
+			glDrawArrays(GL_TRIANGLES, 0, glo_case_white.size);
+			return 0;
+		} else {
+			if (!inside) {
+				set_gl_object_before_render(&glo_case_white, &program, (GLfloat *)position, (GLfloat *)model_square, (GLfloat *)view, (GLfloat *)projection, (GLfloat *)lights_array, lights_count);
+				glDrawArrays(GL_TRIANGLES, 0, glo_case_white.size);
+				return 0;
+			} else {
+				set_gl_object_before_render(&glo_selected_case, &program, (GLfloat *)position, (GLfloat *)model_square, (GLfloat *)view, (GLfloat *)projection, (GLfloat *)lights_array, lights_count);
+				glDrawArrays(GL_TRIANGLES, 0, glo_selected_case.size);
+				return 1;
+			}
+		}
 	} else {
-		set_gl_object_before_render(&glo_case_black, &program, (GLfloat *)position, (GLfloat *)model_square, (GLfloat *)view, (GLfloat *)projection, (GLfloat *)lights_array, lights_count);
-		glDrawArrays(GL_TRIANGLES, 0, glo_case_black.size);
+		if (already_inside) {
+			set_gl_object_before_render(&glo_case_black, &program, (GLfloat *)position, (GLfloat *)model_square, (GLfloat *)view, (GLfloat *)projection, (GLfloat *)lights_array, lights_count);
+			glDrawArrays(GL_TRIANGLES, 0, glo_case_black.size);
+			return 0;
+		} else {
+			if (!inside) {
+				set_gl_object_before_render(&glo_case_black, &program, (GLfloat *)position, (GLfloat *)model_square, (GLfloat *)view, (GLfloat *)projection, (GLfloat *)lights_array, lights_count);
+				glDrawArrays(GL_TRIANGLES, 0, glo_case_black.size);
+				return 0;
+			} else {
+				set_gl_object_before_render(&glo_selected_case, &program, (GLfloat *)position, (GLfloat *)model_square, (GLfloat *)view, (GLfloat *)projection, (GLfloat *)lights_array, lights_count);
+				glDrawArrays(GL_TRIANGLES, 0, glo_selected_case.size);
+				return 1;
+			}
+		}
 	}
 }
 
 
-// TODO Translate_bounding_box et sauvegarde dans le tableau global
-void draw_piece(char piece, float x, float z, GLfloat *position, GLfloat *view, GLfloat *projection, GLfloat *lights_array, int lights_count, mfloat_t translation_matrix[MAT4_SIZE], bounding_box *bb)
+void draw_piece(char piece, float x, float z, GLfloat *position, GLfloat *view, GLfloat *projection, GLfloat *lights_array, int lights_count)
 {
 	mfloat_t p[VEC3_SIZE];
 	mfloat_t model_piece[MAT4_SIZE];
-	bounding_box b;
 
 	if (piece == 0) {
 		mat4_identity(model_piece);
+		mat4_translation(model_piece, model_piece, vec3(p, x, 0.0, z));
 	}
 
 	if (piece == 'p') {
@@ -258,7 +304,6 @@ void draw_piece(char piece, float x, float z, GLfloat *position, GLfloat *view, 
 		mat4_translation(model_piece, model_piece, vec3(p, x, 0.0, z));
 		set_gl_object_before_render(&glo_bishop_black, &program, (GLfloat *)position, (GLfloat *)model_piece, (GLfloat *)view, (GLfloat *)projection, (GLfloat *)lights_array, lights_count);
 		glDrawArrays(GL_TRIANGLES, 0, glo_bishop_white.size);
-		return;
 	}
 
 	if (piece == 'B') {
@@ -273,7 +318,6 @@ void draw_piece(char piece, float x, float z, GLfloat *position, GLfloat *view, 
 		mat4_translation(model_piece, model_piece, vec3(p, x, 0.0, z));
 		set_gl_object_before_render(&glo_king_black, &program, (GLfloat *)position, (GLfloat *)model_piece, (GLfloat *)view, (GLfloat *)projection, (GLfloat *)lights_array, lights_count);
 		glDrawArrays(GL_TRIANGLES, 0, glo_king_white.size);
-		return;
 	}
 
 	if (piece == 'K') {
@@ -288,7 +332,6 @@ void draw_piece(char piece, float x, float z, GLfloat *position, GLfloat *view, 
 		mat4_translation(model_piece, model_piece, vec3(p, x, 0.0, z));
 		set_gl_object_before_render(&glo_knight_black, &program, (GLfloat *)position, (GLfloat *)model_piece, (GLfloat *)view, (GLfloat *)projection, (GLfloat *)lights_array, lights_count);
 		glDrawArrays(GL_TRIANGLES, 0, glo_knight_white.size);
-		return;
 	}
 
 	if (piece == 'N') {
@@ -303,7 +346,6 @@ void draw_piece(char piece, float x, float z, GLfloat *position, GLfloat *view, 
 		mat4_translation(model_piece, model_piece, vec3(p, x, 0.0, z));
 		set_gl_object_before_render(&glo_queen_black, &program, (GLfloat *)position, (GLfloat *)model_piece, (GLfloat *)view, (GLfloat *)projection, (GLfloat *)lights_array, lights_count);
 		glDrawArrays(GL_TRIANGLES, 0, glo_queen_white.size);
-		return;
 	}
 
 	if (piece == 'Q') {
@@ -318,7 +360,6 @@ void draw_piece(char piece, float x, float z, GLfloat *position, GLfloat *view, 
 		mat4_translation(model_piece, model_piece, vec3(p, x, 0.0, z));
 		set_gl_object_before_render(&glo_rook_black, &program, (GLfloat *)position, (GLfloat *)model_piece, (GLfloat *)view, (GLfloat *)projection, (GLfloat *)lights_array, lights_count);
 		glDrawArrays(GL_TRIANGLES, 0, glo_rook_white.size);
-		return;
 	}
 
 	if (piece == 'R') {
@@ -328,8 +369,6 @@ void draw_piece(char piece, float x, float z, GLfloat *position, GLfloat *view, 
 		glDrawArrays(GL_TRIANGLES, 0, glo_rook_black.size);
 	}
 
-	memcpy(translation_matrix, model_piece, MAT4_SIZE * sizeof(mfloat_t));
-	*bb=b;
 }
 
 void draw_pieces(GLfloat *position, GLfloat *view, GLfloat *projection, GLfloat *lights_array, int lights_count)
@@ -338,15 +377,9 @@ void draw_pieces(GLfloat *position, GLfloat *view, GLfloat *projection, GLfloat 
 		for (int x = 0; x < 8; x++) { // file => left to right
 			int board_index = 8 * (7-z) + x;
 			char piece = g.b.placement[board_index];
-			draw_piece(piece, x*SQUARE_SIZE, z*SQUARE_SIZE, (GLfloat *)position, (GLfloat *)view, (GLfloat *)projection, (GLfloat *)lights_array, lights_count, pieces_translate[board_index], &pieces_bb[board_index]);
+			draw_piece(piece, x*SQUARE_SIZE, z*SQUARE_SIZE, (GLfloat *)position, (GLfloat *)view, (GLfloat *)projection, (GLfloat *)lights_array, lights_count);
 		}
 	}
-
-	// debug
-// 	for (int i = 0; i < 64; i++) {
-		// print_mat4(pieces_translate[i]);
-// 		printf("%f %f %f\n", pieces_bb[i]);
-// 	}
 }
 
 
@@ -360,8 +393,6 @@ void rotate_xy()
 	mat4_multiply(view, view, translation_view);
 
 	// rotation on x board center (x and y axes)
-	mfloat_t rotation_view_x[MAT4_SIZE];
-	mfloat_t rotation_view_y[MAT4_SIZE];
 	mat4_identity(rotation_view_x);
 	mat4_identity(rotation_view_y);
 	mat4_rotation_y(rotation_view_x, to_radians(angle_x + mousedx/1000.0));
@@ -375,6 +406,12 @@ void rotate_xy()
 }
 
 
+void cursor_callback(GLFWwindow* window, double xpos, double ypos)
+{
+	glfwGetCursorPos(window, &cursor_mousex, &cursor_mousey);
+}
+
+
 void mouse_callback(GLFWwindow* window, int button, int action, int mods)
 {
 	if (glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_RIGHT) == GLFW_PRESS) {
@@ -385,15 +422,12 @@ void mouse_callback(GLFWwindow* window, int button, int action, int mods)
 	}
 
 	if (glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_LEFT) == GLFW_PRESS) {
-
-		printf("press");
 		drag = 1;
 		glfwGetCursorPos(window, &mousex, &mousey);
 		printf("mousex %f / mousey %f\n", mousex, mousey);
 	}
 
 	if (glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_LEFT) == GLFW_RELEASE) {
-		printf("release");
 		drag = 0;
 		return;
 	}
@@ -401,16 +435,24 @@ void mouse_callback(GLFWwindow* window, int button, int action, int mods)
 
 void mouse_scroll(GLFWwindow* window, double xoffset, double yoffset)
 {
-// 	mat4_look_at(view,
-// 			vec3(position, position[0], position[1], position[2] + yoffset * 10),
-// 			vec3(target, target[0], target[1], target[2]),
-// 			vec3(up, up[0], up[1], up[2]));
-
-	mfloat_t translation_view_z[MAT4_SIZE];
 	mfloat_t p[VEC3_SIZE];
 	mat4_identity(translation_view_z);
 	mat4_translation(translation_view_z, translation_view_z,  vec3(p, 0, 0, yoffset * 10));
 	mat4_multiply(view, view, translation_view_z);
+}
+
+
+void key_callback(GLFWwindow *window, int key, int scancode, int action, int mods) 
+{
+	if (key == GLFW_KEY_E && action == GLFW_PRESS) {
+		print_mat4_str("view", view);
+		print_mat4_str("projection", projection);
+
+
+		print_mat4_str("rotation_view_x", rotation_view_x);
+		print_mat4_str("rotation_view_y", rotation_view_y);
+		print_mat4_str("translation_view_z", translation_view_z);
+	}
 }
 
 
@@ -429,7 +471,7 @@ int main(void)
 	glfwWindowHint(GLFW_SAMPLES, 4);
 
 	/* Create a windowed mode window and its OpenGL context */
-	window = glfwCreateWindow(800, 800, "3D Chess", NULL, NULL);
+	window = glfwCreateWindow(SCREEN_W, SCREEN_H, "3D Chess", NULL, NULL);
 	if (!window) {
 		glfwTerminate();
 		return -1;
@@ -453,25 +495,36 @@ int main(void)
 
 	glClearColor(1.0f / 255, 36.0f / 255, 86.0f / 255, 1.0f);
 
+	// perspective par defaut
 	mat4_look_at(view,
 			vec3(position, position_start[0], position_start[1], position_start[2]),
 			vec3(target, target_start[0], target_start[1], target_start[2]),
 			vec3(up, up_start[0], up_start[1], up_start[2]));
 	print_vec3(position);
 
-	mfloat_t projection[MAT4_SIZE];
 
+	// changement de perspective
+	mat4(view, 
+			0.845355,0.000000,0.534205,-100.364822,
+			0.333715,0.780869,-0.528090,28.043837,
+			-0.417144,0.624695,0.660112,-163.117279,
+			0.000000,0.000000,0.000000,1.000000);
+
+	
 	mat4_perspective(projection, to_radians(90.0), 1, 0.1, 400.0);
-
-
+	
+	print_mat4(view);
+	print_mat4(projection);
 
 	lights_array = get_lights_array(&lights);
 	lights_count = vector_size(lights);
 
-	glfwSwapInterval(1);
+	/* glfwSwapInterval(1); */
 
 	glfwSetMouseButtonCallback(window, mouse_callback);
 	glfwSetScrollCallback(window, mouse_scroll);
+	glfwSetCursorPosCallback(window, cursor_callback);
+	glfwSetKeyCallback(window, key_callback);
 
 	/* Loop until the user closes the window */
 	while (!glfwWindowShouldClose(window)) {
@@ -479,9 +532,10 @@ int main(void)
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 		// Draw board
+		int global_inside = 0;
 		for (int y = 0; y < 8; y++) {
 			for (int x = 0; x < 8; x++) {
-				draw_square(x * SQUARE_SIZE, y * SQUARE_SIZE, (y + x + 1) % 2, position, view, projection, lights_array, lights_count);
+				global_inside += draw_square(global_inside, x * SQUARE_SIZE, y * SQUARE_SIZE, (y + x + 1) % 2, position, view, projection, lights_array, lights_count);
 			}
 		}
 		draw_pieces(position, view, projection, lights_array, lights_count);

@@ -85,7 +85,7 @@ void main()
     int tid = int(fTid);
     int which = int(fWhich);
     if (which == 0) {
-        vec3 result;
+        vec3 result = vec3(0, 0, 0);
         for (int i = 0; i < lights_count; i++) {
             vec3 lightColor = vec3(lights[i*7+3], lights[i*7+4], lights[i*7+5]);
             vec3 lightPos = vec3(lights[i*7], lights[i*7+1], lights[i*7+2]);
@@ -94,7 +94,7 @@ void main()
         }
         outColor = vec4(result, 1.0);
     } else if (which == 1) {
-        vec3 result;
+        vec3 result = vec3(0, 0, 0);
         for (int i = 0; i < lights_count; i++) {
             vec3 lightColor = vec3(lights[i*7+3], lights[i*7+4], lights[i*7+5]);
             vec3 lightPos = vec3(lights[i*7], lights[i*7+1], lights[i*7+2]);
@@ -278,7 +278,7 @@ void main()
         vec4 firstColor = vec4(fMaterial_ambient, 1.0);
         vec4 secondColor;
 // 		vec3 result = (ambient + diffuse);
-        vec3 result;
+        vec3 result = vec3(0, 0, 0);
         for (int i = 0; i < lights_count; i++) {
             vec3 lightColor = vec3(lights[i*7+3], lights[i*7+4], lights[i*7+5]);
             vec3 lightPos = vec3(lights[i*7], lights[i*7+1], lights[i*7+2]);

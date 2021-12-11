@@ -1,3 +1,5 @@
+#include <GL/gl.h>
+#include <GL/glu.h>
 #include <stdarg.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -6,6 +8,7 @@
 #include "3d.h"
 #include "colors.h"
 #include "mathc.h"
+#include "vector.h"
 
 
 static int compare_c_string(const void *const one, const void *const two)
@@ -76,7 +79,6 @@ vertex *create_vertex(double x, double y, double z) {
 
 vertex *create_vertex_with_color(double x, double y, double z, color c) {
     vertex *v = create_vertex(x, y, z);
-    // v->m.ambient = c;
 
     color ambient = c;
 	color diffuse = c;
@@ -400,9 +402,11 @@ object *get_faces_normals(object *o, float size)
         }
         add_face_to_object(no, nf);
     }
-    printf("normals size %d\n", map_size(no->vertices_lis));
+    printf("normals size %d\n", (int) map_size(no->vertices_lis));
     return no;
 }
+
+
 
 
 void free_face(face *f) {
@@ -435,6 +439,31 @@ object *create_object(int length, ...)
     return o;
 }
 
+
+object *copy_object(object *o)
+{
+	object *copy = create_object(0);
+
+	strcpy(copy->name, o->name);
+	vertex *v, *vf;
+
+	for (int i = 0; i < o->length; i++) {
+		face *f;
+		vector_get_at(&f, o->faces, i);
+		face *f_copy = create_face(0);
+		for (int j = 0; j < f->length; j++) {
+			vector_get_at(&v, f->vertices, j);
+			vertex *v_copy = copy_vertex(v);
+			/* printf("  1 %p = %f,%f,%f\n", v_copy, v_copy->pos[0], v_copy->pos[1], v_copy->pos[2]); */
+			/* printf("  2 %p = %f,%f,%f\n", v, v->pos[0], v->pos[1], v->pos[2]); */
+			add_vertex_to_face(f_copy, v_copy);
+		}
+		add_face_to_object(copy, f_copy);
+	}
+	update_vertices_list(copy);
+
+	return copy;
+}
 
 super_object *create_super_object()
 {
@@ -587,61 +616,6 @@ object *triangulate_object(object *o)
 }
 
 
-
-void find_bounding_box(object *o, bounding_box *bb)
-{
-    mfloat_t min_x = FLT_MAX;
-    mfloat_t max_x = FLT_MIN;
-    mfloat_t min_y = FLT_MAX;
-    mfloat_t max_y = FLT_MIN;
-    mfloat_t min_z = FLT_MAX;
-    mfloat_t max_z = FLT_MIN;
-    face *f;
-    vertex *v;
-    for (int i = 0; i < o->length; i++) {
-        vector_get_at(&f, o->faces, i);
-        for (int j = 0; j < f->length; j++) {
-            vector_get_at(&v, f->vertices, j);
-            if (v->pos[0] < min_x) {
-                bb->min_x = v->pos[0];
-                min_x = v->pos[0];
-            }
-            if (v->pos[0] > max_x) {
-                bb->max_x = v->pos[0];
-                max_x = v->pos[0];
-            }
-            if (v->pos[1] < min_y) {
-                bb->min_y = v->pos[1];
-                min_y = v->pos[1];
-            }
-            if (v->pos[1] > max_y) {
-                bb->max_y = v->pos[1];
-                max_y = v->pos[1];
-            }
-            if (v->pos[2] < min_z) {
-                bb->min_z = v->pos[2];
-                min_z = v->pos[2];
-            }
-            if (v->pos[2] > max_z) {
-                bb->max_z = v->pos[2];
-                max_z = v->pos[2];
-            }
-        }
-    }
-
-    bb->center_x = (min_x + max_x) / 2.0;
-    bb->center_y = (min_y + max_y) / 2.0;
-    bb->center_z = (min_z + max_z) / 2.0;
-}
-
-void update_bounding_box(bounding_box *bb, mfloat_t *view, mfloat_t projection, mfloat_t *translation, mfloat_t rotation)
-{
-	// Gestion des transformations (translation et rotation)
-	// Maj des coordonnées projetées de la bounding box
-
-}
-
-
 void free_object(object *o) {
     char *current_key = map_first(o->vertices_lis);
     vertex *v;
@@ -682,7 +656,6 @@ void free_super_object(super_object *so)
 void free_light(light *l) {
     free(l);
 }
-
 
 
 void create_sphere(object *o, int sectors, int stacks, float radius) {
@@ -920,8 +893,6 @@ void create_object_from_obj_file(object *o, char *filename) {
 }
 
 
-
-
 void create_super_object_from_obj_file(super_object *so, char *filename) {
     FILE* filePointer;
     int bufferLength = 1024;
@@ -1098,13 +1069,9 @@ void create_super_object_from_obj_file(super_object *so, char *filename) {
     }
     free(normals_list);
 
-    printf("super_object:%d\n", vector_size(so->objects));
+    printf("super_object:%d\n", (int) vector_size(so->objects));
 
 }
-
-
-
-
 
 
 void print_mat4(mfloat_t *m) {
@@ -1112,6 +1079,12 @@ void print_mat4(mfloat_t *m) {
     printf("  %f %f %f %f\n", m[1], m[5], m[9], m[13]);
     printf("  %f %f %f %f\n", m[2], m[6], m[10], m[14]);
     printf("  %f %f %f %f  ]\n", m[3], m[7], m[11], m[15]);
+}
+
+void print_mat4_str(char *title, mfloat_t *m) {
+	printf("-== %s ==-\n", title);
+	print_mat4(m);
+	printf("\n");
 }
 
 void print_vec4(mfloat_t *v) {
@@ -1131,96 +1104,265 @@ void print_vec3(mfloat_t *v) {
 }
 
 
-/* void render_object(SDL_Renderer *r, object *o, mfloat_t *camera, mfloat_t *projection, int w, int h, int only_vertices, int vertice_size) { */
-
-/*     for (int i = 0; i < o->length; i++) { */
-
-/*         face *f; */
-/*         vector_get_at(&f, o->faces, i); */
-
-/*         int paint_polygon = 1; */
-/*         mfloat_t center_face[VEC3_SIZE]; */
-/*         mfloat_t normal_face[VEC3_SIZE]; */
-/*         vec3(center_face, 0, 0, 0); */
-/*         vec3(normal_face, 0, 0, 0); */
-/*         Sint16 *xs = malloc(sizeof(Sint16) * f->length); */
-/*         Sint16 *ys = malloc(sizeof(Sint16) * f->length); */
-/*         color c; */
-/*         vertex *world_vertex; */
-
-/* 		for (int j = 0; j < f->length; j++) { */
-
-/*             vector_get_at(&world_vertex, f->vertices, j); */
-
-/* 			float_t *world_pos = world_vertex->pos; */
-/*             float_t *world_norm = world_vertex->normal; */
-/*             vec3_add(center_face, center_face, world_pos); */
-/*             vec3_add(normal_face, normal_face, world_norm); */
-
-/* 			float_t camera_pos[4]; */
-/* 			vec4_multiply_mat4(camera_pos, world_pos, camera); */
-
-/* 			float_t projection_pos[4]; */
-/* 			vec4_multiply_mat4(projection_pos, camera_pos, projection); */
-
-/* 			vec4_divide_f(projection_pos, projection_pos, projection_pos[3]); */
-            
-/*             if (projection_pos[0] < -1 */ 
-/*                 || projection_pos[0] > 1 */ 
-/*                 || projection_pos[1] < -1 */ 
-/*                 || projection_pos[1] > 1) */
-/*                 paint_polygon = 0; */
-                    
-/*             // creation du polygon x,y projete et z non projete */
-/*             mfloat_t *vertex_poly = malloc(3 * sizeof(mfloat_t)); */
-/*             vertex_poly[0] = MIN(w - 1, (uint32_t)((projection_pos[0] + 1) * 0.5 * w)); */
-/*             vertex_poly[1] = MIN(h - 1, (uint32_t)((1 - (projection_pos[1] + 1) * 0.5) * h)); */
-/*             vertex_poly[2] = camera_pos[2]; */
-/*             // polygon_proj[j] = vertex_poly; */
-/*             xs[j] = vertex_poly[0]; */
-/*             ys[j] = vertex_poly[1]; */
-/*             // c = world_vertex->colour; */
-/*             c = world_vertex->m.ambient; */
-
-/*             if (only_vertices && paint_polygon) { */
-/*                 if (vertice_size <= 1) { */
-/*                     // pixelRGBA(r, xs[j], ys[j], world_vertex->colour.r, world_vertex->colour.g, world_vertex->colour.b, 255); */
-/*                     pixelRGBA(r, xs[j], ys[j], world_vertex->m.ambient.r, world_vertex->m.ambient.g, world_vertex->m.ambient.b, 255); */
-/*                 } else { */
-/*                     filledCircleRGBA(r, xs[j], ys[j], vertice_size, world_vertex->m.ambient.r, world_vertex->m.ambient.g, world_vertex->m.ambient.b, 255); */
-/*                     aacircleRGBA(r, xs[j], ys[j], vertice_size, 255, 255, 255, 255); */
-/*                 } */
-/*             } */
-/*             free(vertex_poly); */
-/* 		} */
-
-/*         if (paint_polygon && !only_vertices) { */
-/*             aapolygonRGBA(r, xs, ys, f->length, 64, 64, 64, 128); */
-/*         } */
-
-/*         free(xs); */
-/*         free(ys); */
-/* 	} */
-/* } */
 
 
-/* void render_vertices(SDL_Renderer *r, vertex **vertices, int length, mfloat_t *camera, mfloat_t *projection, int w, int h) { */
-/*     for (int j = 0; j < length; j++) { */
-/*         vertex *world_vertex = vertices[j]; */
-/*         float_t *world_pos = world_vertex->pos; */
 
-/*         float_t camera_pos[4]; */
-/*         vec4_multiply_mat4(camera_pos, world_pos, camera); */
 
-/*         float_t projection_pos[4]; */
-/*         vec4_multiply_mat4(projection_pos, camera_pos, projection); */
+/*
+ * Fonctions permettant de projeter un objet 3d en 2d
+ * De creer un polygon enveloppant
+ * Et de savoir si un point se trouve à l'interieur de ce polygone
+ */
 
-/*         vec4_divide_f(projection_pos, projection_pos, projection_pos[3]); */
+int find_side(point p1, point p2, point p)
+{
+	// Returns the side of point p with respect to line
+	// joining points p1 and p2.
 
-/*         float x = MIN(w - 1, (uint32_t)((projection_pos[0] + 1) * 0.5 * w)); */ 
-/*         float y = MIN(h - 1, (uint32_t)((1 - (projection_pos[1] + 1) * 0.5) * h)); */
+	int val = (p.y - p1.y) * (p2.x - p1.x) -
+		(p2.y - p1.y) * (p.x - p1.x);
 
-/*         // pixelRGBA(r, x, y, world_vertex->colour.r, world_vertex->colour.g, world_vertex->colour.b, 255); */
-/*         pixelRGBA(r, x, y, world_vertex->m.ambient.r, world_vertex->m.ambient.g, world_vertex->m.ambient.b, 255); */
-/*     } */
-/* } */
+	if (val > 0)
+		return 1;
+	if (val < 0)
+		return -1;
+	return 0;
+}
+
+int line_dist(point p1, point p2, point p)
+{
+	// returns a value proportional to the distance
+	// between the point p and the line joining the
+	// points p1 and p2
+
+	return abs ((p.y - p1.y) * (p2.x - p1.x) -
+			(p2.y - p1.y) * (p.x - p1.x));
+}
+
+void quick_hull(point a[], int n, point p1, point p2, int side, vector *hull)
+{
+	// End points of line L are p1 and p2.  side can have value
+	// 1 or -1 specifying each of the parts made by the line L
+
+    int ind = -1;
+    int max_dist = 0;
+  
+    // finding the point with maximum distance
+    // from L and also on the specified side of L.
+    for (int i=0; i<n; i++)
+    {
+        int temp = line_dist(p1, p2, a[i]);
+        if (find_side(p1, p2, a[i]) == side && temp > max_dist)
+        {
+            ind = i;
+            max_dist = temp;
+        }
+    }
+  
+    // If no point is found, add the end points
+    // of L to the convex hull.
+    if (ind == -1)
+    {
+		vector_add_last(*hull, &p1);
+        /* hull.insert(p1); */
+        /* hull.insert(p2); */
+		vector_add_last(*hull, &p2);
+        return;
+    }
+  
+    // Recur for the two parts divided by a[ind]
+    quick_hull(a, n, a[ind], p1, -find_side(a[ind], p1, p2), hull);
+    quick_hull(a, n, a[ind], p2, -find_side(a[ind], p2, p1), hull);
+}
+
+int float_comparator(const void *p, const void *q)
+{
+    float l = ((const point_with_angle *) p)->a;
+    float r = ((const point_with_angle *) q)->a;
+  
+	if (l == r) {
+		return 0;
+	}
+
+	if (l > r) {
+		return 1;
+	}
+  
+    return -1;
+}
+
+void get_hull(point a[], int n, vector *result)
+{
+    // a[i].second -> y-coordinate of the ith point
+    if (n < 3)
+    {
+        return;
+    }
+  
+    // Finding the point with minimum and
+    // maximum x-coordinate
+    int min_x = 0, max_x = 0;
+    for (int i=1; i<n; i++)
+    {
+        if (a[i].x < a[min_x].x)
+            min_x = i;
+        if (a[i].x > a[max_x].x)
+            max_x = i;
+    }
+  
+    // Recursively find convex hull points on
+    // one side of line joining a[min_x] and
+    // a[max_x]
+	vector hull_points = vector_init(sizeof(point));
+    quick_hull(a, n, a[min_x], a[max_x], 1, &hull_points);
+  
+    // Recursively find convex hull points on
+    // other side of line joining a[min_x] and
+    // a[max_x]
+    quick_hull(a, n, a[min_x], a[max_x], -1, &hull_points);
+
+
+	// find center
+	point pt, center;
+	int x = 0, y = 0;
+	int hull_size = vector_size(hull_points);
+	for (int i = 0; i < hull_size; i++) {
+		vector_get_at(&pt, hull_points, i);
+		x += pt.x;
+		y += pt.y;
+	}
+	center.x = x / hull_size;
+	center.y = y / hull_size;
+	/* printf("## center %d,%d\n", center.x, center.y); */
+
+	// reorder point in clockwise order
+	point_with_angle *pa = (point_with_angle *) malloc(vector_size(hull_points) * sizeof(point_with_angle));
+	int count = 0;
+	for (int i = 0; i < vector_size(hull_points); i++) {
+		vector_get_at(&pt, hull_points, i);
+
+		float a, b;
+		a = pt.y - center.y;
+		b = pt.x - center.x;
+		float angle = atan2(a, b);
+
+		pa[i].a = angle;
+		pa[i].p.x = pt.x;
+		pa[i].p.y = pt.y;
+    }
+	qsort((void*)pa, hull_size, sizeof(pa[0]), float_comparator);
+
+	/* for (int i = 0; i < vector_size(hull_points); i++) { */
+	/* 	vector_add_last(*result, &(pa[i].p)); */
+    /* } */
+
+	for (int i = 0; i < vector_size(hull_points); i++) {
+		int add = 1;
+		for (int j = 0; j < vector_size(*result); j++) {
+			point cp;
+			vector_get_at(&cp, *result, j);
+			if (cp.x == pa[i].p.x && cp.y == pa[i].p.y) {
+				add = 0;
+				break;
+			}
+		}
+		if (add)
+			vector_add_last(*result, &(pa[i].p));
+	}
+
+	free(pa);
+}
+
+
+
+int pnpoly(int nvert, fpoint *p, fpoint t) {
+	// https://wrf.ecse.rpi.edu/Research/Short_Notes/pnpoly.html
+	int i, j, c = 0;
+	for (i = 0, j = nvert - 1; i < nvert; j = i++) {
+		if (((p[i].y > t.y) != (p[j].y > t.y)) &&
+				(t.x < (p[j].x - p[i].x) * (t.y - p[i].y) / (p[j].y - p[i].y) +
+				 p[i].x))
+			c = !c;
+	}
+	return c;
+}
+
+
+int is_point_in_2d_convex_hull(object *o, point *p, mfloat_t *model, mfloat_t *camera, mfloat_t *projection, int w, int h, vector *hull)
+{
+	mfloat_t center_face[VEC3_SIZE];
+	mfloat_t normal_face[VEC3_SIZE];
+	vec3(center_face, 0, 0, 0);
+	vec3(normal_face, 0, 0, 0);
+
+	object *object_copy = copy_object(o);
+
+	// D'abord projection de l'objet 3d en 2d
+	// par rapport aux matrices MVP
+	if (model) {
+		transform_object(object_copy, model);
+	}
+
+
+	vector points_list = vector_init(sizeof(point));
+
+	for (int i = 0; i < object_copy->length; i++) {
+		face *f;
+		vector_get_at(&f, object_copy->faces, i);
+
+		vertex *world_vertex;
+		for (int j = 0; j < f->length; j++) {
+			vector_get_at(&world_vertex, f->vertices, j);
+			vector_get_at(&world_vertex, f->vertices, j);
+
+			float_t *world_pos = world_vertex->pos;
+			float_t *world_norm = world_vertex->normal;
+			vec3_add(center_face, center_face, world_pos);
+			vec3_add(normal_face, normal_face, world_norm);
+
+			float_t camera_pos[4];
+			vec4_multiply_mat4(camera_pos, world_pos, camera);
+
+			float_t projection_pos[4];
+			vec4_multiply_mat4(projection_pos, camera_pos, projection);
+
+			vec4_divide_f(projection_pos, projection_pos, projection_pos[3]);
+
+			// creation du polygon x,y projete et z non projete
+			mfloat_t *vertex_poly = malloc(3 * sizeof(mfloat_t));
+			vertex_poly[0] = MIN(w - 1, (uint32_t)((projection_pos[0] + 1) * 0.5 * w));
+			vertex_poly[1] = MIN(h - 1, (uint32_t)((1 - (projection_pos[1] + 1) * 0.5) * h));
+			vertex_poly[2] = camera_pos[2];
+			point pt;
+			pt.x = vertex_poly[0];
+			pt.y = vertex_poly[1];
+			vector_add_last(points_list, &pt);
+		}
+	}
+
+	// Le resultat est un polygone
+	/* printf("Polygon size :%d\n", vector_size(points_list)); */
+	point *data = (point *) vector_get_data(points_list);
+
+	// Recherche de l'enveloppe convexe du polygone
+	get_hull(data, vector_size(points_list), hull);
+
+	int hull_size = vector_size(*hull);
+
+	free_object(object_copy);
+
+	// Teste si le point se trouve a l'interieur de l'enveloppe
+	point *polygon = (point *) vector_get_data(*hull);
+	fpoint *fpolygon = (fpoint *) malloc(sizeof(fpoint) * hull_size);
+	for (int i = 0; i < vector_size(*hull); i++) {
+		fpolygon[i].x = (float) polygon[i].x;
+		fpolygon[i].y = (float) polygon[i].y;
+	}
+	fpoint t;
+	t.x = p->x;
+	t.y = p->y;
+	int inside = pnpoly(hull_size, fpolygon, t);
+	free(fpolygon);
+
+	return inside;
+}

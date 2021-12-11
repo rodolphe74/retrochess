@@ -1,6 +1,11 @@
+-IC:\Users\rodoc\HOME\msys64\mingw64\x86_64-w64-mingw32\include
+-IC:\Users\rodoc\HOME\msys64\usr\include\w32api
+-D_MSC_VER
 -I.\Containers\src\include
 -I.\glew-2.1.0\include
 -I.\glfw-3.3.5.bin.WIN64\include
 -I..\bitboard
 -D_WINCHESS_
+-DGLFW_EXPOSE_NATIVE_WIN32
 -DRUBY_BACKWARD2_BOOL_H
+-std=c99

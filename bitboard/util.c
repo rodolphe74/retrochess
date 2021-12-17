@@ -24,3 +24,9 @@ void str_tstop(char *result)
 	time_taken = ((double)t) / CLOCKS_PER_SEC; // in seconds
 	sprintf(result, "%f", time_taken);
 }
+
+double f_tstop()
+{
+	t = clock() - t;
+	return ((double)t) / CLOCKS_PER_SEC; 
+}

@@ -448,3 +448,2630 @@
 2021-12-11 08:05:34 DEBUG win32chesslib.c:63: g_close_chess_lib
 2021-12-11 08:10:06 DEBUG win32chesslib.c:52: g_init_chess_lib
 2021-12-11 08:11:03 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-11 10:13:05 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-11 10:14:48 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-12 07:51:48 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-12 07:51:55 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-12 13:11:47 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-12 13:12:00 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-12 13:56:36 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-12 13:56:43 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-12 14:08:33 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-12 14:08:45 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-12 14:09:41 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-12 14:10:10 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-12 14:26:20 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-12 14:26:26 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:26:32 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-12 14:26:55 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-12 14:27:01 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:27:03 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:27:06 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:27:07 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:27:08 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:27:08 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:27:09 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:27:09 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:27:10 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:27:12 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-12 14:27:15 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-12 14:27:20 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-12 14:27:21 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-12 14:27:22 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-12 14:27:23 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-12 14:27:23 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-12 14:27:24 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-12 14:27:25 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-12 14:27:25 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-12 14:27:25 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-12 14:27:27 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:27:28 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:27:28 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:27:29 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:27:29 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:27:29 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:27:30 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:27:30 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:27:31 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:27:31 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:27:32 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:27:32 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:27:39 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-12 14:41:05 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-12 14:41:10 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:41:12 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:41:13 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:41:13 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:41:14 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:41:14 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:41:15 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:41:15 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-12 14:42:13 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-12 14:42:18 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:42:20 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-12 14:42:48 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-12 14:42:54 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:42:55 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:42:56 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:42:57 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:42:59 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:43:01 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-12 14:43:54 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-12 14:44:00 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:44:04 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-12 14:44:32 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-12 14:44:38 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:44:39 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-12 14:45:50 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-12 14:45:56 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:45:57 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:45:58 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:45:59 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-12 14:46:34 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-12 14:46:40 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:46:42 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:46:43 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:46:44 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-12 14:46:49 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-12 14:46:54 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:46:58 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:46:59 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:47:00 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:47:01 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:47:03 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:47:04 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:47:05 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:47:06 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:47:07 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:47:07 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:47:11 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-12 14:48:22 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-12 14:48:27 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:48:28 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:48:29 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:48:29 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:48:30 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:48:30 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-12 14:48:38 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-12 14:48:43 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:48:45 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-12 14:49:45 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-12 14:49:51 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:49:54 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:49:56 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:49:57 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:49:58 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:49:58 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:49:59 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:49:59 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:50:00 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-12 14:51:09 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-12 14:51:17 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:51:18 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:51:19 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:51:19 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:51:19 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:51:20 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:51:20 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:51:20 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:51:20 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:51:20 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:51:21 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:51:21 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:51:21 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:51:21 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:51:21 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:51:22 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:51:22 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:51:22 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:51:22 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:51:22 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:51:22 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:51:23 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:51:23 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:51:23 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:51:23 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:51:23 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:51:23 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:51:24 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:51:24 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:51:24 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:51:24 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:51:25 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-12 14:54:39 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-12 14:54:45 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:54:47 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:54:48 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:54:49 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:54:50 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:54:51 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:54:52 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-12 14:55:18 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-12 14:55:22 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:55:23 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:55:24 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:55:25 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:55:28 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:55:30 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:55:31 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:55:32 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:55:33 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:55:33 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-12 14:55:34 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-12 14:55:35 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:55:36 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-12 14:55:37 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-12 14:55:45 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-12 14:56:05 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-12 14:56:11 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:56:12 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:56:12 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:56:13 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:56:20 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:56:23 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:56:24 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:56:31 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:56:32 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:56:32 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-12 14:56:34 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-12 14:56:35 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-12 14:56:36 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:56:37 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:56:38 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:56:39 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:56:40 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:56:51 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-12 14:58:15 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-12 14:58:28 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:58:29 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:58:30 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:58:34 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:58:41 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:58:42 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:58:47 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:58:48 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-12 14:58:51 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-12 14:58:52 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 14:59:02 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-12 16:38:02 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-12 16:38:07 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 16:38:16 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-12 16:40:43 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-12 16:40:47 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 16:40:48 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-12 16:43:13 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-12 16:43:18 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 16:43:21 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 16:43:30 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-12 16:45:39 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-12 16:45:43 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 16:45:45 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 16:45:46 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 16:45:48 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 16:45:50 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 16:45:55 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 16:45:58 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 16:46:04 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 16:46:06 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 16:46:07 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 16:46:07 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 16:46:12 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 16:46:13 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 16:46:14 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 16:46:15 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 16:46:28 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 16:46:31 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-12 16:47:41 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-12 16:47:45 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 16:47:58 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-12 16:48:54 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-12 16:48:59 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 16:49:16 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-12 16:50:41 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-12 16:50:46 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 16:51:02 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 16:51:13 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 16:51:14 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-12 16:51:22 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-12 16:51:28 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 16:51:53 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 16:51:55 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 16:51:57 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 16:51:58 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 16:51:58 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 16:52:01 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 16:52:02 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-12 16:52:06 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 04:38:20 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 04:38:27 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 04:38:46 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 04:51:05 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 04:51:10 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 04:51:25 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 04:52:01 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 04:52:08 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 04:54:18 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 04:54:19 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 04:54:25 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 04:54:33 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 04:54:33 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 04:54:43 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-13 04:54:44 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-13 04:54:46 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-13 04:54:50 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 04:55:02 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 04:55:04 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 04:55:07 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 04:55:28 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 04:55:29 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 04:55:30 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 04:55:31 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 04:55:34 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 04:55:36 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 04:55:40 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 04:55:45 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 04:55:47 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 04:56:11 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 04:56:35 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 04:56:35 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 04:56:37 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 04:56:38 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 04:56:42 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 04:57:02 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 04:58:35 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 04:58:45 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 04:58:50 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 05:02:10 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 05:02:15 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:02:25 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 05:04:53 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 05:04:58 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:05:01 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 05:05:48 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 05:05:53 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:06:05 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:06:06 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:06:07 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:06:08 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:06:09 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:06:09 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:06:10 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:06:11 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:06:11 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:06:28 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 05:07:39 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 05:07:44 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:07:46 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:07:48 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:07:51 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:07:52 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:07:53 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:08:06 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:08:07 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:08:07 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:08:07 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:08:08 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:08:10 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:08:11 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:08:12 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:08:13 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:08:15 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:08:21 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:08:22 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:08:23 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:08:23 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:08:24 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:08:25 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:08:26 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:08:27 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:08:27 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:08:28 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:08:28 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:08:32 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:08:36 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:08:55 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:08:59 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:09:14 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-13 05:09:16 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-13 05:09:50 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:09:51 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:09:52 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:09:53 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:09:54 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:10:04 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:21:23 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 05:48:25 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 05:48:41 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:48:42 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:48:47 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:48:49 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:48:52 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:48:54 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:49:09 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:49:10 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:49:13 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:49:13 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:49:14 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:49:14 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:49:15 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:49:16 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:49:18 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 05:49:19 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 06:39:25 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 06:40:05 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-13 06:40:10 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 11:38:51 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 11:38:56 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 11:38:56 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 11:38:57 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 11:38:57 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 11:38:58 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 11:38:58 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 11:39:00 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 11:39:01 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 11:39:02 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 11:42:47 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 11:42:57 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 11:43:00 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 11:43:38 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 11:44:01 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 11:44:49 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 11:44:55 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 11:45:18 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 11:46:43 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 11:46:50 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 11:47:09 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 11:47:30 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 11:47:41 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 11:47:50 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 13:30:56 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 13:31:00 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 13:31:05 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 13:43:33 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 13:43:52 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 14:24:51 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 14:24:56 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 14:26:13 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 14:26:28 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 14:40:20 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 14:40:34 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 14:40:39 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 14:40:47 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 14:41:09 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 14:41:16 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 14:41:19 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 14:41:21 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 14:41:29 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 14:43:16 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 14:43:51 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 14:50:10 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 14:50:15 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 14:50:20 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 14:51:49 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 14:51:54 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 14:53:43 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 14:53:48 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 14:55:03 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 14:55:10 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 15:04:41 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 15:04:59 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 15:05:31 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 15:10:50 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 15:10:52 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 15:12:01 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 15:12:06 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 15:13:04 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 15:13:40 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 15:15:16 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 15:15:20 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 15:15:28 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 15:17:04 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 15:17:11 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 15:22:31 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 15:23:10 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 15:24:37 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 15:24:45 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 15:25:23 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 15:25:41 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 15:26:00 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 15:26:14 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 15:26:15 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 15:26:24 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 17:00:14 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 17:00:29 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 17:00:31 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 17:00:41 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 17:00:53 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 17:00:59 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 17:01:05 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 17:05:06 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 17:05:23 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 17:05:33 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 17:05:54 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 17:07:20 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 17:07:36 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 17:08:12 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 17:08:29 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 17:08:49 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 17:09:25 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 17:10:59 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 17:11:09 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 17:11:28 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 17:11:50 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 17:12:26 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 17:13:00 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 17:13:23 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 17:14:24 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 17:14:43 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 17:15:18 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 17:15:31 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 17:15:44 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 17:16:00 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-13 17:16:11 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-13 17:16:40 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-13 17:17:22 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 04:50:06 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 04:50:21 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 05:46:46 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 05:46:52 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 05:52:51 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 05:52:57 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 05:52:59 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 05:53:01 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 05:53:03 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 05:53:05 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 05:53:25 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 05:53:35 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 05:53:41 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 05:53:42 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 05:54:22 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 05:54:28 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 05:54:32 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 05:54:32 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 05:54:56 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 05:55:02 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 05:55:03 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 05:55:06 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 05:55:15 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 05:55:41 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 05:55:47 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 05:55:48 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 05:55:52 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 05:55:54 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 05:55:55 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 05:56:01 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 05:56:02 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 05:56:26 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 05:56:31 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 05:56:35 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 05:57:32 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 05:57:39 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 05:57:41 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 05:58:00 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 05:58:04 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 05:58:21 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 05:58:26 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 05:58:31 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 05:58:34 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 05:58:49 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 05:58:51 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 05:59:28 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 06:00:09 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 06:00:15 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:00:17 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:00:19 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:00:20 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:00:20 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:00:21 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:00:22 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:00:27 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 06:00:31 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 06:00:37 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:02:44 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:02:58 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 06:09:08 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 06:09:22 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:09:24 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:09:27 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:09:28 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:09:29 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:09:30 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:09:34 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:09:36 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 06:11:42 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 06:11:48 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:11:50 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:11:54 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:11:54 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:12:09 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-14 06:12:10 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:12:13 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 06:12:42 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 06:12:55 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:12:56 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:13:46 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 06:14:54 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 06:15:04 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:15:05 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:15:15 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-14 06:15:15 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:15:17 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:15:18 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:15:20 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 06:16:48 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 06:16:53 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:16:56 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:16:58 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 06:17:43 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 06:17:49 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:17:50 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:18:02 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 06:18:11 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 06:18:16 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:18:17 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:18:21 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:18:23 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:18:24 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:18:25 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:18:27 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:18:28 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:18:32 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:18:32 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:18:35 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:18:35 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-14 06:18:37 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:18:42 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-14 06:18:43 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:18:45 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 06:20:02 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 06:20:08 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:20:10 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:20:19 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:20:20 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:20:22 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:20:23 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:20:25 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-14 06:20:26 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:20:29 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-14 06:20:29 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:20:32 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-14 06:20:33 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-14 06:20:35 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 06:23:05 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 06:23:10 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:23:10 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:23:13 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:23:15 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:23:17 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:23:19 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:23:31 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-14 06:23:33 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-14 06:23:34 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-14 06:23:35 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-14 06:23:37 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-14 06:23:39 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 06:26:46 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 06:26:51 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:26:52 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:26:54 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:27:00 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 06:29:33 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 06:29:37 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:29:39 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:29:48 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:29:49 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:29:59 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:30:03 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 06:30:34 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 06:30:40 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:30:40 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:30:43 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:31:07 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 06:31:34 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 06:31:39 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:31:44 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:31:54 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:32:02 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 06:33:17 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 06:33:22 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:33:24 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:33:26 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:33:29 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:33:33 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:33:36 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 06:34:17 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 06:34:24 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:34:28 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:34:31 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 06:35:06 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 06:35:12 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:35:19 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 06:35:42 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 06:35:46 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:35:48 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:35:49 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:35:50 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:35:51 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:35:52 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:35:53 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:35:53 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:35:54 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:35:54 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:35:55 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:35:56 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 06:36:20 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 06:36:24 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:36:27 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:36:36 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 06:39:42 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 06:39:47 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:39:51 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:39:54 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 06:42:15 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 06:42:25 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:42:33 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:42:43 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 06:43:03 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 06:43:07 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:43:08 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:43:11 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:43:12 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:43:12 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:43:13 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:43:13 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:43:15 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:43:15 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:43:16 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:43:17 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:43:18 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:43:18 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:43:20 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 06:45:35 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 06:45:38 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:45:42 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:45:45 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:45:47 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:45:51 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:45:55 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 06:47:04 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 06:47:09 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:47:20 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:47:25 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 06:49:01 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 06:49:06 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:49:25 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 06:52:07 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 06:52:11 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:52:15 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:52:23 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:52:26 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 06:52:43 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 06:52:56 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:53:20 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:53:28 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:53:39 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 06:53:54 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 06:53:59 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:54:00 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:54:01 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:54:01 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:54:03 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:54:04 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:54:07 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:54:24 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:54:25 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:54:25 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:54:27 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:54:28 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:54:30 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:54:32 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 06:56:32 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 06:56:36 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:56:37 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:56:39 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:56:40 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:56:41 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:56:41 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:56:42 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:56:43 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:56:43 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:56:44 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:56:45 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:56:45 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:56:46 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:56:47 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:56:49 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:56:50 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:56:51 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:59:06 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 06:59:10 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 06:59:15 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 06:59:44 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 07:00:02 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 07:00:35 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 07:03:11 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 07:03:15 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 07:03:19 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 07:03:21 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 07:03:24 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 07:03:25 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 07:04:01 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 07:04:06 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 07:04:10 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 07:04:11 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 07:04:14 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 07:04:19 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 07:04:24 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 07:04:26 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 07:04:32 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 07:04:38 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 07:05:19 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 07:05:39 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 07:05:52 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 07:06:05 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 07:07:01 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 07:07:09 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 07:07:18 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 07:07:23 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 07:07:25 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 07:07:27 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 07:07:33 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 07:07:34 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 07:09:03 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 07:09:09 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 07:09:59 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 07:10:00 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 07:10:05 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 07:10:50 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 07:10:55 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 07:10:58 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 07:11:00 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 07:11:03 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 07:13:05 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 07:13:16 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 07:13:34 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 07:13:42 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 07:14:11 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 07:14:17 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 07:14:51 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 07:14:56 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 07:14:59 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 07:15:02 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 07:21:49 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 07:22:12 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 07:25:45 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 07:25:50 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 07:25:52 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 07:25:53 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 07:25:55 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 07:25:57 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 07:25:59 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 07:28:10 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 07:28:18 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 07:28:19 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 07:28:52 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 07:29:02 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 07:29:22 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 07:29:38 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 07:29:44 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 07:31:10 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 07:31:29 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 07:31:31 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 07:32:47 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 07:33:17 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 07:33:43 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 07:33:54 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 07:34:43 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 07:34:53 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 07:34:55 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 12:41:29 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 12:41:34 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 12:41:37 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 12:41:43 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 12:41:46 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 12:41:48 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 12:41:52 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 12:41:53 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-14 12:41:54 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-14 12:41:59 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 12:42:01 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 12:42:03 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 12:42:06 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 12:42:10 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 12:42:12 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 12:42:15 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 12:42:18 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 12:42:21 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 12:42:31 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 12:42:34 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 12:42:37 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 12:42:39 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 12:42:41 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-14 12:42:44 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 12:42:46 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 12:42:49 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-14 12:42:56 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 10:27:24 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 10:27:31 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 10:27:36 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 10:27:39 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 10:33:28 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 10:33:34 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 10:33:36 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 10:33:39 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 10:33:45 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 10:33:48 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 10:38:37 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 10:38:43 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 10:39:07 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 10:39:11 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 10:39:14 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 10:39:17 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 10:44:16 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 10:44:20 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 10:45:10 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 10:45:15 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 10:46:53 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 10:46:57 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 10:47:52 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 10:47:56 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 10:48:38 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 10:48:43 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 10:49:10 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 10:49:14 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 10:49:44 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 10:49:52 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 10:53:15 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 10:53:20 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 10:54:29 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 10:54:33 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 10:55:15 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 10:55:21 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:06:24 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 11:06:38 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:07:43 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 11:07:47 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:08:35 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 11:08:39 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:09:31 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 11:09:35 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:10:02 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 11:10:06 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:18:56 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 11:20:01 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 11:20:08 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:24:30 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 11:24:36 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:25:24 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 11:25:30 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:25:32 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:25:33 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 11:31:08 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 11:31:25 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:31:28 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:31:32 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:31:35 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 11:32:06 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 11:32:11 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:32:15 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:32:23 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 11:32:44 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 11:32:48 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:32:55 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:33:05 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 11:33:49 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 11:33:53 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:33:56 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:33:58 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:34:01 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:34:04 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:34:07 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:34:11 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:34:14 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 11:34:53 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 11:34:58 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:35:00 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:35:03 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:35:06 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:35:09 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:35:12 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:35:15 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:35:24 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:35:27 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:35:30 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:35:32 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:35:35 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:35:41 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:35:43 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-15 11:35:46 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:35:49 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:35:52 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:35:54 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-15 11:35:58 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:36:01 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-15 11:36:03 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:36:05 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-15 11:36:09 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:36:25 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-15 11:36:28 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-15 11:36:31 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-15 11:36:34 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-15 11:36:36 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-15 11:36:39 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-15 11:36:42 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 11:40:17 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 11:40:39 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 11:41:40 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 11:41:45 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 11:41:47 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 11:42:18 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 11:50:28 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 11:51:01 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 11:53:23 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 11:53:54 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 11:54:02 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 11:54:21 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 11:54:25 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 11:54:56 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 11:55:00 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 11:55:24 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 11:55:28 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 11:56:44 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 11:56:48 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 11:57:18 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 11:57:21 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 11:58:50 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 11:59:35 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 12:00:26 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 13:05:23 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 13:05:54 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 13:07:45 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 13:08:49 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 13:09:04 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 13:09:42 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 13:12:35 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 13:12:43 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 13:15:24 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 13:23:47 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 13:24:26 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 13:26:16 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 13:28:36 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 13:28:40 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 13:29:54 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 13:30:22 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 13:30:26 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 13:31:26 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 13:31:30 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 13:32:27 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 13:36:43 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 13:36:51 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 13:37:09 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 13:37:18 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 13:40:01 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 13:40:09 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 13:40:12 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 13:40:16 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 13:40:39 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 13:40:44 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 13:40:47 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 13:40:50 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 13:40:52 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 13:40:56 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 13:41:00 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 13:41:02 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 13:41:05 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 13:41:07 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 13:41:10 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 13:41:12 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 13:41:14 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 13:41:16 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 13:41:25 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 13:41:27 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 13:41:30 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-15 13:41:33 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 13:41:35 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 13:41:40 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 13:41:42 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 13:41:46 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 13:41:54 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 13:41:57 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 13:41:59 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 13:42:01 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 13:42:03 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 13:42:17 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 14:13:50 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 14:14:00 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 14:14:08 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 14:14:10 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 14:14:12 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 14:14:14 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 14:15:25 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-15 14:15:28 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-15 14:15:33 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-15 14:15:38 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-15 14:15:41 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 14:15:44 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-15 14:15:48 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-15 14:15:51 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-15 14:15:55 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-15 14:15:59 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-15 14:16:02 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-15 14:16:07 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-15 14:16:32 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 14:16:35 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 14:16:38 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 14:16:41 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 14:16:43 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 14:17:01 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 14:17:04 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 14:17:07 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 14:17:10 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 17:52:49 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 17:52:59 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 17:53:28 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 17:53:29 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 17:53:34 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 17:53:49 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 17:58:39 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 17:58:45 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 18:02:02 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 18:02:12 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:02:20 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:02:27 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 18:02:29 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 18:02:34 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:02:38 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 18:03:07 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 18:03:12 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:03:18 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:03:25 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 18:04:05 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 18:04:09 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:04:13 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:04:15 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:04:20 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:04:34 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 18:05:13 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 18:05:18 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:05:19 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:05:21 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 18:05:23 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 18:05:27 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 18:06:06 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 18:06:10 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:06:13 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:06:17 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:06:19 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:06:20 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:06:21 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 18:08:55 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 18:09:00 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:09:03 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:09:04 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:09:05 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:09:06 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:09:09 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:09:10 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:09:11 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:09:12 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:09:13 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:09:13 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:09:15 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:09:18 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:09:21 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:09:22 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:09:23 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:09:23 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:09:24 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:09:25 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:09:25 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:09:25 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:09:26 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:09:29 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:09:30 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:09:30 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:09:31 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:09:32 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:09:33 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:09:33 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:09:33 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:09:35 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:09:35 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:09:36 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:09:37 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:09:37 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:09:41 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:09:42 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:09:43 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 18:11:05 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 18:11:11 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:11:14 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:11:17 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:11:29 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:11:32 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 18:11:49 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 18:11:55 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:12:09 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:12:15 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:12:21 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 18:12:50 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 18:12:58 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:13:12 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 18:15:24 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 18:15:30 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:15:31 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:15:32 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:15:32 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:15:33 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:15:33 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:15:34 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:15:34 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:15:35 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:15:36 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:15:37 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 18:16:20 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 18:16:25 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:16:28 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:16:32 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 18:17:06 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 18:17:12 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:17:14 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:17:23 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 18:17:47 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 18:17:51 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:17:52 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:18:10 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:18:12 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:18:13 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:18:14 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 18:18:33 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 18:18:40 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:19:01 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:19:09 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 18:19:26 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 18:19:32 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:19:34 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:19:36 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:19:38 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:19:42 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 18:20:43 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 18:20:48 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:20:50 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:20:51 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:20:52 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:20:53 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:20:54 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:20:57 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 18:20:58 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 18:21:03 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:21:16 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 18:21:24 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 18:21:29 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:21:31 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:21:32 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 18:21:47 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 18:21:52 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:21:55 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:21:56 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:21:58 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:22:02 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:22:03 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:22:04 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 18:22:48 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 18:22:53 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:23:08 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:23:10 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 18:23:12 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 18:23:32 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:24:40 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:24:49 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:24:51 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 18:27:42 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 18:27:46 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:27:47 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:27:47 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:27:48 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:27:51 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:27:52 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:27:53 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:27:54 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:27:54 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:27:55 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:27:55 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:27:57 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:27:57 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:27:58 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:28:01 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:28:02 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:28:03 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:28:03 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:28:05 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:28:06 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:28:06 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:28:06 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:28:10 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:28:11 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:28:12 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:28:14 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:28:15 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:28:15 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:28:16 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:28:16 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:28:17 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:28:17 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:28:18 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:28:18 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:28:19 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:28:19 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:28:19 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:28:20 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:28:20 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:28:21 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:28:22 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:28:22 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:28:23 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-15 18:28:25 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:28:25 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-15 18:28:26 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-15 18:28:26 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-15 18:28:26 DEBUG win32chesslib.c:233: g_get_moves_list | color = 0
+2021-12-15 18:28:31 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:28:34 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:28:37 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:28:37 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:28:38 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:28:46 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:28:47 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:28:48 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 18:32:59 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 18:33:05 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:33:06 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:33:07 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:33:08 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:33:09 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:33:10 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:33:12 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:33:14 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:33:15 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:33:16 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:33:17 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 18:37:52 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 18:37:56 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 18:40:02 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 18:40:07 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:40:07 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:40:10 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:40:12 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:40:18 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 18:42:55 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 18:43:00 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:43:01 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:43:01 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:43:02 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:43:04 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:43:05 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:43:11 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:43:15 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-15 18:43:54 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-15 18:43:59 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:44:04 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:44:08 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-15 18:44:10 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-16 04:31:00 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 04:31:04 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-16 04:31:06 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-16 04:31:08 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-16 04:31:10 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-16 04:31:10 DEBUG win32chesslib.c:233: g_get_moves_list | color = 1
+2021-12-16 04:31:12 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-16 04:31:18 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 04:31:27 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-16 04:38:14 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 04:38:19 DEBUG win32chesslib.c:236: g_get_moves_list | color = 1
+2021-12-16 04:38:29 DEBUG win32chesslib.c:236: g_get_moves_list | color = 1
+2021-12-16 04:38:33 DEBUG win32chesslib.c:236: g_get_moves_list | color = 1
+2021-12-16 04:38:50 DEBUG win32chesslib.c:236: g_get_moves_list | color = 1
+2021-12-16 04:38:56 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-16 04:40:32 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 04:40:37 DEBUG win32chesslib.c:237: g_get_moves_list | color = 1
+2021-12-16 04:40:46 DEBUG win32chesslib.c:237: g_get_moves_list | color = 1
+2021-12-16 04:40:57 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-16 04:44:40 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 04:44:45 DEBUG win32chesslib.c:237: g_get_moves_list | color = 1
+2021-12-16 04:45:16 DEBUG win32chesslib.c:63: g_close_chess_lib
+2021-12-16 04:50:51 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 04:51:01 DEBUG win32chesslib.c:238: g_get_moves_list | color = 1
+2021-12-16 04:51:02 DEBUG win32chesslib.c:238: g_get_moves_list | color = 1
+2021-12-16 04:51:02 DEBUG win32chesslib.c:238: g_get_moves_list | color = 1
+2021-12-16 04:57:15 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 04:57:47 DEBUG win32chesslib.c:238: g_get_moves_list | color = 1
+2021-12-16 04:57:56 DEBUG win32chesslib.c:64: g_close_chess_lib
+2021-12-16 04:58:11 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 04:58:25 DEBUG win32chesslib.c:238: g_get_moves_list | color = 1
+2021-12-16 04:58:36 DEBUG win32chesslib.c:238: g_get_moves_list | color = 1
+2021-12-16 04:58:39 DEBUG win32chesslib.c:64: g_close_chess_lib
+2021-12-16 05:01:01 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 05:01:07 DEBUG win32chesslib.c:238: g_get_moves_list | color = 1
+2021-12-16 05:02:25 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 05:02:37 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:05:08 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 05:12:03 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 05:12:50 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 05:15:17 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 05:17:01 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 05:17:37 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 05:17:49 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 05:19:46 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 05:29:17 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 05:30:17 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 05:30:26 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 05:30:36 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 05:32:55 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 05:33:03 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:33:06 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:33:08 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:33:12 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:33:14 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:33:17 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:33:23 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:33:28 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:34:13 DEBUG win32chesslib.c:65: g_close_chess_lib
+2021-12-16 05:35:38 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 05:35:44 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:35:46 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:35:48 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:35:50 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:35:51 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:35:52 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:35:53 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:35:57 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:36:00 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:36:00 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:36:02 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:36:04 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:36:04 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:36:05 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:36:07 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:36:08 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:36:08 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:36:08 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:36:08 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:36:10 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:36:10 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:36:11 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:36:11 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:36:12 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:36:12 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:36:13 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:36:14 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:36:16 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:36:17 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:36:17 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:36:21 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:36:29 DEBUG win32chesslib.c:65: g_close_chess_lib
+2021-12-16 05:38:58 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 05:39:04 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:39:10 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:39:21 DEBUG win32chesslib.c:65: g_close_chess_lib
+2021-12-16 05:40:32 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 05:40:39 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:40:44 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:40:49 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:41:19 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:41:22 DEBUG win32chesslib.c:65: g_close_chess_lib
+2021-12-16 05:41:55 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 05:41:59 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:42:07 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:42:11 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:42:15 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:42:17 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:42:18 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:42:21 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:42:23 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:42:27 DEBUG win32chesslib.c:65: g_close_chess_lib
+2021-12-16 05:42:29 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 05:42:34 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:42:35 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:42:50 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:42:58 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:42:59 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:42:59 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:43:00 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:43:00 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:43:01 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:43:02 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:43:08 DEBUG win32chesslib.c:65: g_close_chess_lib
+2021-12-16 05:43:53 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 05:44:00 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:44:20 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:44:26 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:44:34 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:44:39 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:44:48 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:45:33 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:45:35 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:45:36 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:45:36 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:45:42 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:45:43 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:45:43 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:45:44 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:45:44 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:45:46 DEBUG win32chesslib.c:65: g_close_chess_lib
+2021-12-16 05:45:48 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 05:45:54 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:45:58 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:46:00 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:46:02 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:46:03 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:46:29 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:46:32 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:46:33 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:46:33 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:46:34 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:46:35 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:46:35 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:46:36 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:46:36 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:46:36 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:46:37 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:46:38 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:46:38 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:46:38 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:46:39 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:46:39 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:46:42 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:46:43 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:46:43 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:46:44 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:46:45 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:46:45 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:46:46 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:46:47 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:46:47 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:46:48 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:46:48 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:46:52 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:46:53 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:46:53 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:46:54 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:46:55 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:47:07 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:47:13 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:47:18 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:49:33 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 05:49:42 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:49:46 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:49:49 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:49:53 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:49:53 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:49:56 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:49:57 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:49:57 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:49:58 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:49:59 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:49:59 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:50:00 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:50:00 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:50:01 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:50:01 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:50:02 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:50:02 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:50:03 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:50:04 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:50:04 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:50:07 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:50:13 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:50:15 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:50:16 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:50:16 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:50:17 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:50:17 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:50:18 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:50:18 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:50:19 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:50:19 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:50:20 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:50:21 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:50:21 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:50:22 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:50:22 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:50:23 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:50:23 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:50:24 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:50:24 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:50:25 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:50:25 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:50:26 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:50:27 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:50:28 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:50:29 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:50:29 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:50:29 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:50:30 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:50:30 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:50:31 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:50:31 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:50:32 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:50:32 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:50:34 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:50:34 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:50:35 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:50:35 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:50:36 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:50:36 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:50:37 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:50:37 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:50:38 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:50:38 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:50:39 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:51:05 DEBUG win32chesslib.c:65: g_close_chess_lib
+2021-12-16 05:53:26 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 05:53:31 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:53:36 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:53:49 DEBUG win32chesslib.c:65: g_close_chess_lib
+2021-12-16 05:54:04 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 05:54:09 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:54:14 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:54:17 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:54:24 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:54:25 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:54:27 DEBUG win32chesslib.c:239: g_get_moves_list | color = 0
+2021-12-16 05:54:28 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:54:29 DEBUG win32chesslib.c:65: g_close_chess_lib
+2021-12-16 05:57:13 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 05:57:19 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:57:31 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:57:33 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:57:50 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:57:59 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:58:14 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:58:23 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:58:24 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:58:26 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:58:29 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:58:30 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:58:33 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:58:44 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:58:49 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:58:51 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:58:52 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:58:58 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:58:59 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 05:59:13 DEBUG win32chesslib.c:65: g_close_chess_lib
+2021-12-16 06:03:40 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 06:03:44 DEBUG win32chesslib.c:65: g_close_chess_lib
+2021-12-16 06:03:51 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 06:03:56 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:04:12 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:04:17 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:04:31 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:04:42 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:04:42 DEBUG win32chesslib.c:65: g_close_chess_lib
+2021-12-16 06:06:12 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 06:06:33 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:06:35 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:06:36 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:06:36 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:06:37 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:06:37 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:06:37 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:06:37 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:06:38 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:06:38 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:06:38 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:06:39 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:06:39 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:06:39 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:06:39 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:06:40 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:06:40 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:06:40 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:06:40 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:06:41 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:06:41 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:06:42 DEBUG win32chesslib.c:65: g_close_chess_lib
+2021-12-16 06:06:55 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 06:08:37 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 06:08:57 DEBUG win32chesslib.c:65: g_close_chess_lib
+2021-12-16 06:09:19 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 06:09:39 DEBUG win32chesslib.c:65: g_close_chess_lib
+2021-12-16 06:10:02 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 06:11:23 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 06:11:44 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:14:49 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:16:17 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:19:09 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 06:19:14 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:19:17 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:19:21 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:19:22 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:19:40 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:19:43 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:19:45 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:19:46 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:19:47 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:19:47 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:19:48 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:19:48 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:19:49 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:19:49 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:19:50 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:19:50 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:19:51 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:19:51 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:19:53 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:19:54 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:19:55 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 06:19:59 DEBUG win32chesslib.c:65: g_close_chess_lib
+2021-12-16 06:24:55 DEBUG win32chesslib.c:52: g_init_chess_lib
+2021-12-16 06:25:31 DEBUG win32chesslib.c:239: g_get_moves_list | color = 1
+2021-12-16 07:02:54 DEBUG win32chesslib.c:40: g_init_chess_lib
+2021-12-16 07:02:58 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 07:03:00 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 07:03:00 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 07:03:00 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 07:03:00 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 07:03:02 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 07:03:10 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 07:03:11 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 07:03:12 DEBUG win32chesslib.c:52: g_close_chess_lib
+2021-12-16 07:03:55 DEBUG win32chesslib.c:40: g_init_chess_lib
+2021-12-16 07:04:00 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 07:04:03 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 07:04:03 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 07:04:03 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 07:04:03 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 07:04:13 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 07:04:16 DEBUG win32chesslib.c:52: g_close_chess_lib
+2021-12-16 07:04:33 DEBUG win32chesslib.c:40: g_init_chess_lib
+2021-12-16 07:04:39 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 07:04:43 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 07:04:43 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 07:04:43 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 07:04:43 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 07:04:50 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 07:04:50 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 07:04:51 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 07:04:51 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 07:04:51 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 07:05:07 DEBUG win32chesslib.c:52: g_close_chess_lib
+2021-12-16 07:05:36 DEBUG win32chesslib.c:40: g_init_chess_lib
+2021-12-16 07:05:40 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 07:05:43 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 07:05:43 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 07:05:43 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 07:05:43 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 07:05:57 DEBUG win32chesslib.c:52: g_close_chess_lib
+2021-12-16 07:06:30 DEBUG win32chesslib.c:40: g_init_chess_lib
+2021-12-16 07:06:38 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 07:06:40 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 07:06:40 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 07:06:40 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 07:06:40 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 07:06:47 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 07:06:55 DEBUG win32chesslib.c:52: g_close_chess_lib
+2021-12-16 07:06:57 DEBUG win32chesslib.c:40: g_init_chess_lib
+2021-12-16 07:07:02 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 07:07:12 DEBUG win32chesslib.c:52: g_close_chess_lib
+2021-12-16 07:07:16 DEBUG win32chesslib.c:40: g_init_chess_lib
+2021-12-16 07:07:23 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 07:07:26 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 07:07:26 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 07:07:26 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 07:07:26 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 07:07:30 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 07:07:31 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 07:07:32 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 07:07:33 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 07:07:35 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 07:07:35 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 07:07:37 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 07:07:37 DEBUG win32chesslib.c:52: g_close_chess_lib
+2021-12-16 08:20:19 DEBUG win32chesslib.c:40: g_init_chess_lib
+2021-12-16 08:20:41 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 08:20:49 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 08:20:49 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 08:20:49 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 08:20:49 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 08:21:02 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 08:21:05 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 08:21:05 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 08:21:05 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 08:21:05 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 08:22:59 DEBUG win32chesslib.c:40: g_init_chess_lib
+2021-12-16 08:23:28 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 08:23:31 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 08:23:31 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 08:23:31 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 08:23:31 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 08:30:20 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 08:30:33 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 08:30:36 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 08:30:36 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 08:30:36 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 08:30:36 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 08:33:39 DEBUG win32chesslib.c:40: g_init_chess_lib
+2021-12-16 08:33:46 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 08:33:50 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 08:33:50 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 08:33:50 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 08:33:50 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 08:36:04 DEBUG win32chesslib.c:40: g_init_chess_lib
+2021-12-16 08:36:19 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 08:36:22 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 08:36:33 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 08:36:34 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 08:36:39 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 08:36:39 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 08:36:39 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 08:36:39 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 08:36:39 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:37:18 DEBUG win32chesslib.c:40: g_init_chess_lib
+2021-12-16 08:37:24 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 08:37:39 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:37:39 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 08:37:39 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 08:37:39 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 08:37:39 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 08:37:39 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:37:56 DEBUG win32chesslib.c:40: g_init_chess_lib
+2021-12-16 08:38:02 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 08:38:16 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 08:38:25 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 08:38:26 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 08:38:26 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 08:38:27 DEBUG win32chesslib.c:52: g_close_chess_lib
+2021-12-16 08:40:13 DEBUG win32chesslib.c:40: g_init_chess_lib
+2021-12-16 08:40:18 DEBUG win32chesslib.c:52: g_close_chess_lib
+2021-12-16 08:41:37 DEBUG win32chesslib.c:40: g_init_chess_lib
+2021-12-16 08:41:42 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 08:41:49 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 08:41:50 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 08:41:51 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 08:41:52 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 08:41:53 DEBUG win32chesslib.c:52: g_close_chess_lib
+2021-12-16 08:42:02 DEBUG win32chesslib.c:40: g_init_chess_lib
+2021-12-16 08:42:07 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 08:42:09 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 08:42:10 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 08:42:10 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 08:42:11 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 08:42:11 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 08:42:12 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 08:42:15 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 08:42:16 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 08:42:18 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:42:34 DEBUG win32chesslib.c:52: g_close_chess_lib
+2021-12-16 08:43:08 DEBUG win32chesslib.c:40: g_init_chess_lib
+2021-12-16 08:43:35 DEBUG win32chesslib.c:52: g_close_chess_lib
+2021-12-16 08:43:49 DEBUG win32chesslib.c:40: g_init_chess_lib
+2021-12-16 08:43:55 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:43:56 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:43:56 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:43:56 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:43:57 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:43:57 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:43:57 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:43:57 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:43:57 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:43:57 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:43:58 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:43:58 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:43:58 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:43:58 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:43:58 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:43:58 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:43:59 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:43:59 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:43:59 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:44:00 DEBUG win32chesslib.c:52: g_close_chess_lib
+2021-12-16 08:44:19 DEBUG win32chesslib.c:40: g_init_chess_lib
+2021-12-16 08:44:28 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:44:32 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:44:33 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:44:34 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:44:35 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:44:37 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:44:38 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:44:49 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:44:51 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:44:51 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:44:52 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:44:52 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:44:53 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:44:57 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:44:57 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 08:44:57 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 08:44:57 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 08:44:57 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 08:44:57 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:47:44 DEBUG win32chesslib.c:40: g_init_chess_lib
+2021-12-16 08:47:51 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:47:56 DEBUG win32chesslib.c:52: g_close_chess_lib
+2021-12-16 08:51:28 DEBUG win32chesslib.c:40: g_init_chess_lib
+2021-12-16 08:51:32 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 08:51:34 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:51:38 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:51:40 DEBUG win32chesslib.c:52: g_close_chess_lib
+2021-12-16 08:54:04 DEBUG win32chesslib.c:40: g_init_chess_lib
+2021-12-16 08:54:09 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:54:13 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:54:14 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:54:14 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:54:14 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:54:15 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:54:17 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:54:17 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 08:54:17 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 08:54:17 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 08:54:17 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 08:54:17 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:54:21 DEBUG win32chesslib.c:40: g_init_chess_lib
+2021-12-16 08:54:26 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:54:28 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:54:28 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 08:54:28 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 08:54:28 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 08:54:28 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 08:54:28 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:54:36 DEBUG win32chesslib.c:40: g_init_chess_lib
+2021-12-16 08:54:47 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:54:49 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:54:53 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:54:54 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:54:55 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:54:56 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:54:56 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:54:56 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:54:57 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:54:57 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:54:59 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:54:59 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:54:59 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:54:59 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:54:59 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:55:00 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:55:00 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:55:00 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:55:01 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:55:14 DEBUG win32chesslib.c:52: g_close_chess_lib
+2021-12-16 08:57:15 DEBUG win32chesslib.c:40: g_init_chess_lib
+2021-12-16 08:57:30 DEBUG win32chesslib.c:52: g_close_chess_lib
+2021-12-16 08:59:00 DEBUG win32chesslib.c:40: g_init_chess_lib
+2021-12-16 08:59:05 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:59:15 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:59:15 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 08:59:15 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 08:59:15 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 08:59:15 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 08:59:15 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:59:52 DEBUG win32chesslib.c:40: g_init_chess_lib
+2021-12-16 08:59:57 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:59:58 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:59:58 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 08:59:58 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 08:59:58 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 08:59:58 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 08:59:58 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 08:59:58 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 09:00:31 DEBUG win32chesslib.c:40: g_init_chess_lib
+2021-12-16 09:00:36 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 09:00:38 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 09:00:38 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 09:00:38 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 09:00:38 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 09:00:38 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 09:00:40 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 09:00:41 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 09:00:42 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 09:00:42 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 09:00:45 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 09:00:45 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 09:00:45 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 09:00:45 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 09:00:46 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 09:00:47 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 09:00:50 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 09:00:51 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 09:00:52 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 09:00:54 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 09:00:55 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 09:00:57 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 09:00:57 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 09:00:57 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 09:00:57 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 09:00:58 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 09:01:01 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 09:01:01 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 09:01:01 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 09:01:01 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 09:01:02 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 09:01:03 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 09:01:04 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 09:01:05 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 09:01:07 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 09:01:10 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 09:01:10 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 09:01:10 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 09:01:10 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 09:01:11 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 09:01:13 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 09:01:13 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 09:01:13 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 09:01:13 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 09:01:14 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 09:01:17 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 09:01:17 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 09:01:17 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 09:01:17 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 09:01:18 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 09:01:20 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 09:01:20 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 09:01:20 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 09:01:20 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 09:01:27 DEBUG win32chesslib.c:52: g_close_chess_lib
+2021-12-16 09:01:56 DEBUG win32chesslib.c:40: g_init_chess_lib
+2021-12-16 09:02:01 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 09:02:03 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 09:02:03 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 09:02:03 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 09:02:03 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 09:02:03 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 09:02:05 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 09:02:05 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 09:02:05 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 09:02:05 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 09:02:05 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 09:02:08 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 09:02:10 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 09:02:10 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 09:02:10 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 09:02:10 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 09:02:10 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 09:02:11 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 09:02:12 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 09:02:12 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 09:02:12 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 09:02:12 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 09:02:13 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 09:02:13 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 09:02:16 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 09:02:16 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 09:02:16 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 09:02:16 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 09:02:17 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 09:02:18 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 09:02:18 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 09:02:18 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 09:02:18 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 09:02:19 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 09:02:21 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 09:02:21 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 09:02:21 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 09:02:21 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 09:02:58 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 09:02:59 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 09:03:01 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 09:03:01 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 09:03:01 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 09:03:01 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 09:03:02 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 09:03:05 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 09:03:05 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 09:03:05 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 09:03:05 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 09:03:05 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 09:03:07 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 09:03:07 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 09:03:07 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 09:03:07 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 09:03:08 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 09:03:10 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 09:03:10 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 09:03:10 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 09:03:10 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 09:03:11 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 09:03:13 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 09:03:13 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 09:03:13 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 09:03:13 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 09:03:14 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 09:03:15 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 09:03:16 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 09:03:18 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 09:03:18 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 09:03:18 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 09:03:18 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 09:03:40 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 09:03:42 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 09:03:42 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 09:03:42 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 09:03:42 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 09:03:42 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 09:03:43 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 09:03:45 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 09:03:45 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 09:03:45 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 09:03:45 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 09:03:46 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 09:03:48 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 09:03:48 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 09:03:48 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 09:03:48 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 09:03:49 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 09:03:51 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 09:03:51 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 09:03:51 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 09:03:51 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 09:03:52 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 09:03:55 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 09:03:55 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 09:03:55 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 09:03:55 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 09:03:56 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 09:03:57 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 09:03:58 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 09:03:59 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 09:03:59 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 09:04:00 DEBUG win32chesslib.c:215: g_get_moves_list | color = 0
+2021-12-16 09:04:02 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 09:04:02 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 09:04:02 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 09:04:02 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 09:04:03 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 09:04:04 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 09:04:04 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 09:04:04 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 09:04:04 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 09:04:05 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 09:04:07 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 09:04:07 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 09:04:07 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 09:04:07 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 09:04:08 DEBUG win32chesslib.c:215: g_get_moves_list | color = 1
+2021-12-16 09:04:10 DEBUG win32chesslib.c:136: g_move_to | color = 0
+2021-12-16 09:04:10 DEBUG win32chesslib.c:137: g_move_to | en_passant = 0
+2021-12-16 09:04:10 DEBUG win32chesslib.c:138: g_move_to | is_castling = 0
+2021-12-16 09:04:10 DEBUG win32chesslib.c:139: g_move_to | global castling = 0-0
+2021-12-16 09:04:11 DEBUG win32chesslib.c:52: g_close_chess_lib
+2021-12-16 09:06:54 DEBUG win32chesslib.c:40: g_init_chess_lib
+2021-12-16 09:06:59 DEBUG win32chesslib.c:206: g_get_moves_list | color = 0
+2021-12-16 09:07:01 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:07:01 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:07:01 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:07:01 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:07:01 DEBUG win32chesslib.c:206: g_get_moves_list | color = 0
+2021-12-16 09:07:03 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:07:03 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:07:03 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:07:03 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:07:03 DEBUG win32chesslib.c:206: g_get_moves_list | color = 0
+2021-12-16 09:07:05 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:07:05 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:07:05 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:07:05 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:07:06 DEBUG win32chesslib.c:206: g_get_moves_list | color = 0
+2021-12-16 09:07:07 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:07:08 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:07:08 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:07:08 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:07:10 DEBUG win32chesslib.c:206: g_get_moves_list | color = 0
+2021-12-16 09:07:12 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:07:12 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:07:12 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:07:12 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:07:14 DEBUG win32chesslib.c:206: g_get_moves_list | color = 0
+2021-12-16 09:07:16 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:07:16 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:07:16 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:07:16 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:07:18 DEBUG win32chesslib.c:206: g_get_moves_list | color = 0
+2021-12-16 09:07:20 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:07:20 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:07:20 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:07:20 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:07:24 DEBUG win32chesslib.c:206: g_get_moves_list | color = 0
+2021-12-16 09:07:26 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:07:26 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:07:26 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:07:26 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:07:26 DEBUG win32chesslib.c:206: g_get_moves_list | color = 0
+2021-12-16 09:07:27 DEBUG win32chesslib.c:206: g_get_moves_list | color = 0
+2021-12-16 09:07:29 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:07:29 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:07:29 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:07:29 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:07:44 DEBUG win32chesslib.c:206: g_get_moves_list | color = 0
+2021-12-16 09:07:46 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:07:46 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:07:46 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:07:46 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:07:48 DEBUG win32chesslib.c:206: g_get_moves_list | color = 0
+2021-12-16 09:07:50 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:07:50 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:07:50 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:07:50 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:07:51 DEBUG win32chesslib.c:206: g_get_moves_list | color = 0
+2021-12-16 09:07:53 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:07:53 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:07:53 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:07:53 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:07:55 DEBUG win32chesslib.c:206: g_get_moves_list | color = 0
+2021-12-16 09:07:57 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:07:57 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:07:57 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:07:57 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:07:59 DEBUG win32chesslib.c:206: g_get_moves_list | color = 0
+2021-12-16 09:08:01 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:08:01 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:08:01 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:08:01 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:08:08 DEBUG win32chesslib.c:206: g_get_moves_list | color = 0
+2021-12-16 09:08:10 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:08:10 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:08:10 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:08:10 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:08:15 DEBUG win32chesslib.c:206: g_get_moves_list | color = 0
+2021-12-16 09:08:18 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:08:18 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:08:18 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:08:18 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:08:24 DEBUG win32chesslib.c:206: g_get_moves_list | color = 0
+2021-12-16 09:08:26 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:08:26 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:08:26 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:08:26 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:08:32 DEBUG win32chesslib.c:206: g_get_moves_list | color = 0
+2021-12-16 09:08:57 DEBUG win32chesslib.c:50: g_close_chess_lib
+2021-12-16 09:09:39 DEBUG win32chesslib.c:40: g_init_chess_lib
+2021-12-16 09:09:46 DEBUG win32chesslib.c:206: g_get_moves_list | color = 0
+2021-12-16 09:09:47 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:09:47 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:09:47 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:09:47 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:09:48 DEBUG win32chesslib.c:206: g_get_moves_list | color = 0
+2021-12-16 09:09:50 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:09:50 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:09:50 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:09:50 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:09:50 DEBUG win32chesslib.c:206: g_get_moves_list | color = 0
+2021-12-16 09:09:52 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:09:52 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:09:52 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:09:52 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:09:53 DEBUG win32chesslib.c:206: g_get_moves_list | color = 0
+2021-12-16 09:09:54 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:09:54 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:09:54 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:09:54 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:09:55 DEBUG win32chesslib.c:206: g_get_moves_list | color = 1
+2021-12-16 09:09:55 DEBUG win32chesslib.c:206: g_get_moves_list | color = 0
+2021-12-16 09:09:56 DEBUG win32chesslib.c:206: g_get_moves_list | color = 0
+2021-12-16 09:09:58 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:09:58 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:09:58 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:09:58 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:09:58 DEBUG win32chesslib.c:206: g_get_moves_list | color = 1
+2021-12-16 09:10:00 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:10:00 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:10:00 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:10:00 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:10:00 DEBUG win32chesslib.c:206: g_get_moves_list | color = 1
+2021-12-16 09:10:02 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:10:02 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:10:02 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:10:02 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:10:03 DEBUG win32chesslib.c:206: g_get_moves_list | color = 0
+2021-12-16 09:10:04 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:10:04 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:10:04 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:10:04 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:10:05 DEBUG win32chesslib.c:206: g_get_moves_list | color = 0
+2021-12-16 09:10:07 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:10:07 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:10:07 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:10:07 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:10:08 DEBUG win32chesslib.c:206: g_get_moves_list | color = 0
+2021-12-16 09:10:10 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:10:10 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:10:10 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:10:10 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:10:11 DEBUG win32chesslib.c:206: g_get_moves_list | color = 1
+2021-12-16 09:10:12 DEBUG win32chesslib.c:206: g_get_moves_list | color = 1
+2021-12-16 09:10:12 DEBUG win32chesslib.c:206: g_get_moves_list | color = 1
+2021-12-16 09:10:14 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:10:14 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:10:14 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:10:14 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:10:15 DEBUG win32chesslib.c:206: g_get_moves_list | color = 1
+2021-12-16 09:10:17 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:10:17 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:10:17 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:10:17 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:10:17 DEBUG win32chesslib.c:206: g_get_moves_list | color = 1
+2021-12-16 09:10:18 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:10:18 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:10:18 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:10:18 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:10:19 DEBUG win32chesslib.c:206: g_get_moves_list | color = 1
+2021-12-16 09:10:20 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:10:20 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:10:20 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:10:20 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:10:21 DEBUG win32chesslib.c:206: g_get_moves_list | color = 1
+2021-12-16 09:10:21 DEBUG win32chesslib.c:206: g_get_moves_list | color = 1
+2021-12-16 09:10:22 DEBUG win32chesslib.c:206: g_get_moves_list | color = 1
+2021-12-16 09:10:23 DEBUG win32chesslib.c:206: g_get_moves_list | color = 1
+2021-12-16 09:10:25 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:10:25 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:10:25 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:10:25 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:10:25 DEBUG win32chesslib.c:206: g_get_moves_list | color = 1
+2021-12-16 09:10:28 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:10:28 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:10:28 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:10:28 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:10:28 DEBUG win32chesslib.c:206: g_get_moves_list | color = 1
+2021-12-16 09:10:30 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:10:30 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:10:30 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:10:30 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:10:31 DEBUG win32chesslib.c:206: g_get_moves_list | color = 1
+2021-12-16 09:10:33 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:10:33 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:10:33 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:10:33 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:10:34 DEBUG win32chesslib.c:206: g_get_moves_list | color = 1
+2021-12-16 09:10:35 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:10:35 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:10:35 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:10:35 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:10:35 DEBUG win32chesslib.c:206: g_get_moves_list | color = 1
+2021-12-16 09:10:37 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:10:37 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:10:37 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:10:37 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:10:38 DEBUG win32chesslib.c:206: g_get_moves_list | color = 1
+2021-12-16 09:10:39 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:10:39 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:10:39 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:10:39 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:10:40 DEBUG win32chesslib.c:206: g_get_moves_list | color = 1
+2021-12-16 09:10:41 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:10:41 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:10:41 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:10:41 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:10:42 DEBUG win32chesslib.c:206: g_get_moves_list | color = 1
+2021-12-16 09:10:43 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:10:43 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:10:43 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:10:43 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:10:44 DEBUG win32chesslib.c:206: g_get_moves_list | color = 1
+2021-12-16 09:10:45 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:10:45 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:10:45 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:10:45 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:10:46 DEBUG win32chesslib.c:206: g_get_moves_list | color = 1
+2021-12-16 09:10:47 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:10:47 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:10:47 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:10:47 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:10:48 DEBUG win32chesslib.c:206: g_get_moves_list | color = 1
+2021-12-16 09:10:49 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:10:49 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:10:49 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:10:49 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:10:50 DEBUG win32chesslib.c:206: g_get_moves_list | color = 1
+2021-12-16 09:10:50 DEBUG win32chesslib.c:206: g_get_moves_list | color = 1
+2021-12-16 09:10:52 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:10:52 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:10:52 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:10:52 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:10:52 DEBUG win32chesslib.c:206: g_get_moves_list | color = 1
+2021-12-16 09:10:54 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:10:54 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:10:54 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:10:54 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:10:54 DEBUG win32chesslib.c:206: g_get_moves_list | color = 1
+2021-12-16 09:10:56 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:10:56 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:10:56 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:10:56 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:10:56 DEBUG win32chesslib.c:206: g_get_moves_list | color = 1
+2021-12-16 09:10:58 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 09:10:58 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 09:10:58 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 09:10:58 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 09:10:59 DEBUG win32chesslib.c:50: g_close_chess_lib
+2021-12-16 10:00:37 DEBUG win32chesslib.c:40: g_init_chess_lib
+2021-12-16 10:00:45 DEBUG win32chesslib.c:206: g_get_moves_list | color = 0
+2021-12-16 10:00:47 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 10:00:47 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 10:00:47 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 10:00:47 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 10:00:48 DEBUG win32chesslib.c:206: g_get_moves_list | color = 1
+2021-12-16 10:00:48 DEBUG win32chesslib.c:206: g_get_moves_list | color = 1
+2021-12-16 10:00:50 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 10:00:50 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 10:00:50 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 10:00:50 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 10:00:52 DEBUG win32chesslib.c:206: g_get_moves_list | color = 1
+2021-12-16 10:00:52 DEBUG win32chesslib.c:206: g_get_moves_list | color = 0
+2021-12-16 10:00:53 DEBUG win32chesslib.c:206: g_get_moves_list | color = 1
+2021-12-16 10:00:54 DEBUG win32chesslib.c:206: g_get_moves_list | color = 0
+2021-12-16 10:00:56 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 10:00:56 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 10:00:56 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 10:00:56 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 10:00:59 DEBUG win32chesslib.c:206: g_get_moves_list | color = 0
+2021-12-16 10:01:00 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-16 10:01:00 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-16 10:01:00 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-16 10:01:00 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-16 10:01:10 DEBUG win32chesslib.c:50: g_close_chess_lib
+2021-12-17 05:12:36 DEBUG win32chesslib.c:40: g_init_chess_lib
+2021-12-17 05:12:44 DEBUG win32chesslib.c:206: g_get_moves_list | color = 0
+2021-12-17 05:12:47 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-17 05:12:47 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-17 05:12:47 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-17 05:12:47 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-17 05:12:47 DEBUG win32chesslib.c:206: g_get_moves_list | color = 1
+2021-12-17 05:12:49 DEBUG win32chesslib.c:134: g_move_to | color = 0
+2021-12-17 05:12:49 DEBUG win32chesslib.c:135: g_move_to | en_passant = 0
+2021-12-17 05:12:49 DEBUG win32chesslib.c:136: g_move_to | is_castling = 0
+2021-12-17 05:12:49 DEBUG win32chesslib.c:137: g_move_to | global castling = 0-0
+2021-12-17 05:12:49 DEBUG win32chesslib.c:206: g_get_moves_list | color = 0
+2021-12-17 05:12:51 DEBUG win32chesslib.c:50: g_close_chess_lib
+2021-12-17 07:46:06 DEBUG win32chesslib.c:40: g_init_chess_lib
+2021-12-17 07:46:12 DEBUG win32chesslib.c:200: g_get_moves_list | color = 0
+2021-12-17 07:46:14 DEBUG win32chesslib.c:128: g_move_to | color = 0
+2021-12-17 07:46:14 DEBUG win32chesslib.c:129: g_move_to | en_passant = 0
+2021-12-17 07:46:14 DEBUG win32chesslib.c:130: g_move_to | is_castling = 0
+2021-12-17 07:46:14 DEBUG win32chesslib.c:131: g_move_to | global castling = 0-0
+2021-12-17 07:46:15 DEBUG win32chesslib.c:50: g_close_chess_lib
+2021-12-17 09:13:49 DEBUG win32chesslib.c:40: g_init_chess_lib
+2021-12-17 09:13:55 DEBUG win32chesslib.c:200: g_get_moves_list | color = 0
+2021-12-17 09:13:58 DEBUG win32chesslib.c:128: g_move_to | color = 0
+2021-12-17 09:13:58 DEBUG win32chesslib.c:129: g_move_to | en_passant = 0
+2021-12-17 09:13:58 DEBUG win32chesslib.c:130: g_move_to | is_castling = 0
+2021-12-17 09:13:58 DEBUG win32chesslib.c:131: g_move_to | global castling = 0-0
+2021-12-17 09:13:58 DEBUG win32chesslib.c:94: g_alpha_beta | 1 3 
+2021-12-17 09:13:58 DEBUG win32chesslib.c:113: g_alpha_beta | 1316 1530919158 57 42 0 0 8.762000 
+2021-12-17 09:14:08 DEBUG win32chesslib.c:50: g_close_chess_lib
+2021-12-17 09:15:23 DEBUG win32chesslib.c:40: g_init_chess_lib
+2021-12-17 09:15:29 DEBUG win32chesslib.c:200: g_get_moves_list | color = 0
+2021-12-17 09:15:31 DEBUG win32chesslib.c:128: g_move_to | color = 0
+2021-12-17 09:15:31 DEBUG win32chesslib.c:129: g_move_to | en_passant = 0
+2021-12-17 09:15:31 DEBUG win32chesslib.c:130: g_move_to | is_castling = 0
+2021-12-17 09:15:31 DEBUG win32chesslib.c:131: g_move_to | global castling = 0-0
+2021-12-17 09:15:31 DEBUG win32chesslib.c:94: g_alpha_beta | 1 3 
+2021-12-17 09:15:31 DEBUG win32chesslib.c:113: g_alpha_beta | 1316 -1790968970 57 42 0 0 7.542000 
+2021-12-17 09:15:31 DEBUG win32chesslib.c:128: g_move_to | color = 1
+2021-12-17 09:15:31 DEBUG win32chesslib.c:129: g_move_to | en_passant = 0
+2021-12-17 09:15:31 DEBUG win32chesslib.c:130: g_move_to | is_castling = 0
+2021-12-17 09:15:31 DEBUG win32chesslib.c:131: g_move_to | global castling = 0-0
+2021-12-17 09:15:32 DEBUG win32chesslib.c:200: g_get_moves_list | color = 1
+2021-12-17 09:15:33 DEBUG win32chesslib.c:200: g_get_moves_list | color = 0
+2021-12-17 09:15:35 DEBUG win32chesslib.c:128: g_move_to | color = 0
+2021-12-17 09:15:35 DEBUG win32chesslib.c:129: g_move_to | en_passant = 0
+2021-12-17 09:15:35 DEBUG win32chesslib.c:130: g_move_to | is_castling = 0
+2021-12-17 09:15:35 DEBUG win32chesslib.c:131: g_move_to | global castling = 0-0
+2021-12-17 09:15:35 DEBUG win32chesslib.c:94: g_alpha_beta | 1 3 
+2021-12-17 09:15:35 DEBUG win32chesslib.c:113: g_alpha_beta | 2251 -1790968970 62 45 0 0 11.513000 
+2021-12-17 09:15:35 DEBUG win32chesslib.c:128: g_move_to | color = 1
+2021-12-17 09:15:35 DEBUG win32chesslib.c:129: g_move_to | en_passant = 0
+2021-12-17 09:15:35 DEBUG win32chesslib.c:130: g_move_to | is_castling = 0
+2021-12-17 09:15:35 DEBUG win32chesslib.c:131: g_move_to | global castling = 0-0
+2021-12-17 09:15:40 DEBUG win32chesslib.c:200: g_get_moves_list | color = 0
+2021-12-17 09:15:42 DEBUG win32chesslib.c:128: g_move_to | color = 0
+2021-12-17 09:15:42 DEBUG win32chesslib.c:129: g_move_to | en_passant = 0
+2021-12-17 09:15:42 DEBUG win32chesslib.c:130: g_move_to | is_castling = 0
+2021-12-17 09:15:42 DEBUG win32chesslib.c:131: g_move_to | global castling = 0-0
+2021-12-17 09:15:42 DEBUG win32chesslib.c:94: g_alpha_beta | 1 3 
+2021-12-17 09:15:43 DEBUG win32chesslib.c:113: g_alpha_beta | 2895 -1790968970 52 44 0 0 19.254000 
+2021-12-17 09:15:43 DEBUG win32chesslib.c:128: g_move_to | color = 1
+2021-12-17 09:15:43 DEBUG win32chesslib.c:129: g_move_to | en_passant = 0
+2021-12-17 09:15:43 DEBUG win32chesslib.c:130: g_move_to | is_castling = 0
+2021-12-17 09:15:43 DEBUG win32chesslib.c:131: g_move_to | global castling = 0-0
+2021-12-17 09:15:50 DEBUG win32chesslib.c:200: g_get_moves_list | color = 1
+2021-12-17 09:16:02 DEBUG win32chesslib.c:50: g_close_chess_lib
+2021-12-17 09:16:32 DEBUG win32chesslib.c:40: g_init_chess_lib
+2021-12-17 09:16:40 DEBUG win32chesslib.c:200: g_get_moves_list | color = 0
+2021-12-17 09:16:42 DEBUG win32chesslib.c:128: g_move_to | color = 0
+2021-12-17 09:16:42 DEBUG win32chesslib.c:129: g_move_to | en_passant = 0
+2021-12-17 09:16:42 DEBUG win32chesslib.c:130: g_move_to | is_castling = 0
+2021-12-17 09:16:42 DEBUG win32chesslib.c:131: g_move_to | global castling = 0-0
+2021-12-17 09:16:42 DEBUG win32chesslib.c:94: g_alpha_beta | 1 3 
+2021-12-17 09:16:42 DEBUG win32chesslib.c:113: g_alpha_beta | 1316 -2095056762 57 42 0 0 9.739000 
+2021-12-17 09:16:42 DEBUG win32chesslib.c:128: g_move_to | color = 1
+2021-12-17 09:16:42 DEBUG win32chesslib.c:129: g_move_to | en_passant = 0
+2021-12-17 09:16:42 DEBUG win32chesslib.c:130: g_move_to | is_castling = 0
+2021-12-17 09:16:42 DEBUG win32chesslib.c:131: g_move_to | global castling = 0-0
+2021-12-17 09:16:49 DEBUG win32chesslib.c:200: g_get_moves_list | color = 0
+2021-12-17 09:16:51 DEBUG win32chesslib.c:128: g_move_to | color = 0
+2021-12-17 09:16:51 DEBUG win32chesslib.c:129: g_move_to | en_passant = 0
+2021-12-17 09:16:51 DEBUG win32chesslib.c:130: g_move_to | is_castling = 0
+2021-12-17 09:16:51 DEBUG win32chesslib.c:131: g_move_to | global castling = 0-0
+2021-12-17 09:16:51 DEBUG win32chesslib.c:94: g_alpha_beta | 1 3 
+2021-12-17 09:16:51 DEBUG win32chesslib.c:113: g_alpha_beta | 2251 -2095056762 62 45 0 0 18.361000 
+2021-12-17 09:16:51 DEBUG win32chesslib.c:128: g_move_to | color = 1
+2021-12-17 09:16:51 DEBUG win32chesslib.c:129: g_move_to | en_passant = 0
+2021-12-17 09:16:51 DEBUG win32chesslib.c:130: g_move_to | is_castling = 0
+2021-12-17 09:16:51 DEBUG win32chesslib.c:131: g_move_to | global castling = 0-0
+2021-12-17 09:17:03 DEBUG win32chesslib.c:200: g_get_moves_list | color = 0
+2021-12-17 09:17:05 DEBUG win32chesslib.c:128: g_move_to | color = 0
+2021-12-17 09:17:05 DEBUG win32chesslib.c:129: g_move_to | en_passant = 0
+2021-12-17 09:17:05 DEBUG win32chesslib.c:130: g_move_to | is_castling = 0
+2021-12-17 09:17:05 DEBUG win32chesslib.c:131: g_move_to | global castling = 0-0
+2021-12-17 09:17:05 DEBUG win32chesslib.c:94: g_alpha_beta | 1 3 
+2021-12-17 09:17:05 DEBUG win32chesslib.c:113: g_alpha_beta | 1960 -2095056762 52 44 0 0 32.585999 
+2021-12-17 09:17:05 DEBUG win32chesslib.c:128: g_move_to | color = 1
+2021-12-17 09:17:05 DEBUG win32chesslib.c:129: g_move_to | en_passant = 0
+2021-12-17 09:17:05 DEBUG win32chesslib.c:130: g_move_to | is_castling = 0
+2021-12-17 09:17:05 DEBUG win32chesslib.c:131: g_move_to | global castling = 0-0
+2021-12-17 09:17:12 DEBUG win32chesslib.c:50: g_close_chess_lib
+2021-12-17 09:18:09 DEBUG win32chesslib.c:40: g_init_chess_lib
+2021-12-17 09:18:13 DEBUG win32chesslib.c:200: g_get_moves_list | color = 0
+2021-12-17 09:18:15 DEBUG win32chesslib.c:128: g_move_to | color = 0
+2021-12-17 09:18:15 DEBUG win32chesslib.c:129: g_move_to | en_passant = 0
+2021-12-17 09:18:15 DEBUG win32chesslib.c:130: g_move_to | is_castling = 0
+2021-12-17 09:18:15 DEBUG win32chesslib.c:131: g_move_to | global castling = 0-0
+2021-12-17 09:18:15 DEBUG win32chesslib.c:94: g_alpha_beta | 1 3 
+2021-12-17 09:18:15 DEBUG win32chesslib.c:113: g_alpha_beta | 1295 2023750310 62 45 0 0 0.047000 
+2021-12-17 09:18:15 DEBUG win32chesslib.c:128: g_move_to | color = 1
+2021-12-17 09:18:15 DEBUG win32chesslib.c:129: g_move_to | en_passant = 0
+2021-12-17 09:18:15 DEBUG win32chesslib.c:130: g_move_to | is_castling = 0
+2021-12-17 09:18:15 DEBUG win32chesslib.c:131: g_move_to | global castling = 0-0
+2021-12-17 09:18:17 DEBUG win32chesslib.c:200: g_get_moves_list | color = 0
+2021-12-17 09:18:19 DEBUG win32chesslib.c:128: g_move_to | color = 0
+2021-12-17 09:18:19 DEBUG win32chesslib.c:129: g_move_to | en_passant = 0
+2021-12-17 09:18:19 DEBUG win32chesslib.c:130: g_move_to | is_castling = 0
+2021-12-17 09:18:19 DEBUG win32chesslib.c:131: g_move_to | global castling = 0-0
+2021-12-17 09:18:19 DEBUG win32chesslib.c:94: g_alpha_beta | 1 3 
+2021-12-17 09:18:19 DEBUG win32chesslib.c:113: g_alpha_beta | 2797 2023750310 57 42 0 0 0.104000 
+2021-12-17 09:18:19 DEBUG win32chesslib.c:128: g_move_to | color = 1
+2021-12-17 09:18:19 DEBUG win32chesslib.c:129: g_move_to | en_passant = 0
+2021-12-17 09:18:19 DEBUG win32chesslib.c:130: g_move_to | is_castling = 0
+2021-12-17 09:18:19 DEBUG win32chesslib.c:131: g_move_to | global castling = 0-0
+2021-12-17 09:18:36 DEBUG win32chesslib.c:200: g_get_moves_list | color = 0
+2021-12-17 09:18:37 DEBUG win32chesslib.c:128: g_move_to | color = 0
+2021-12-17 09:18:37 DEBUG win32chesslib.c:129: g_move_to | en_passant = 0
+2021-12-17 09:18:37 DEBUG win32chesslib.c:130: g_move_to | is_castling = 0
+2021-12-17 09:18:37 DEBUG win32chesslib.c:131: g_move_to | global castling = 0-0
+2021-12-17 09:18:37 DEBUG win32chesslib.c:94: g_alpha_beta | 1 3 
+2021-12-17 09:18:38 DEBUG win32chesslib.c:113: g_alpha_beta | 1719 2023750310 52 36 0 0 0.062000 
+2021-12-17 09:18:38 DEBUG win32chesslib.c:128: g_move_to | color = 1
+2021-12-17 09:18:38 DEBUG win32chesslib.c:129: g_move_to | en_passant = 0
+2021-12-17 09:18:38 DEBUG win32chesslib.c:130: g_move_to | is_castling = 0
+2021-12-17 09:18:38 DEBUG win32chesslib.c:131: g_move_to | global castling = 0-0
+2021-12-17 09:18:42 DEBUG win32chesslib.c:200: g_get_moves_list | color = 0
+2021-12-17 09:18:44 DEBUG win32chesslib.c:128: g_move_to | color = 0
+2021-12-17 09:18:44 DEBUG win32chesslib.c:129: g_move_to | en_passant = 0
+2021-12-17 09:18:44 DEBUG win32chesslib.c:130: g_move_to | is_castling = 0
+2021-12-17 09:18:44 DEBUG win32chesslib.c:131: g_move_to | global castling = 0-0
+2021-12-17 09:18:44 DEBUG win32chesslib.c:94: g_alpha_beta | 1 3 
+2021-12-17 09:18:44 DEBUG win32chesslib.c:113: g_alpha_beta | 1618 2023750310 36 27 0 0 0.047000 
+2021-12-17 09:18:44 DEBUG win32chesslib.c:128: g_move_to | color = 1
+2021-12-17 09:18:44 DEBUG win32chesslib.c:129: g_move_to | en_passant = 0
+2021-12-17 09:18:44 DEBUG win32chesslib.c:130: g_move_to | is_castling = 0
+2021-12-17 09:18:44 DEBUG win32chesslib.c:131: g_move_to | global castling = 0-0
+2021-12-17 09:18:45 DEBUG win32chesslib.c:200: g_get_moves_list | color = 0
+2021-12-17 09:18:47 DEBUG win32chesslib.c:128: g_move_to | color = 0
+2021-12-17 09:18:47 DEBUG win32chesslib.c:129: g_move_to | en_passant = 0
+2021-12-17 09:18:47 DEBUG win32chesslib.c:130: g_move_to | is_castling = 0
+2021-12-17 09:18:47 DEBUG win32chesslib.c:131: g_move_to | global castling = 0-0
+2021-12-17 09:18:47 DEBUG win32chesslib.c:94: g_alpha_beta | 1 3 
+2021-12-17 09:18:47 DEBUG win32chesslib.c:113: g_alpha_beta | 5683 2023750310 27 18 0 0 0.171000 
+2021-12-17 09:18:47 DEBUG win32chesslib.c:128: g_move_to | color = 1
+2021-12-17 09:18:47 DEBUG win32chesslib.c:129: g_move_to | en_passant = 0
+2021-12-17 09:18:47 DEBUG win32chesslib.c:130: g_move_to | is_castling = 0
+2021-12-17 09:18:47 DEBUG win32chesslib.c:131: g_move_to | global castling = 0-0
+2021-12-17 09:18:50 DEBUG win32chesslib.c:200: g_get_moves_list | color = 0
+2021-12-17 09:18:52 DEBUG win32chesslib.c:128: g_move_to | color = 0
+2021-12-17 09:18:52 DEBUG win32chesslib.c:129: g_move_to | en_passant = 0
+2021-12-17 09:18:52 DEBUG win32chesslib.c:130: g_move_to | is_castling = 0
+2021-12-17 09:18:52 DEBUG win32chesslib.c:131: g_move_to | global castling = 0-0
+2021-12-17 09:18:52 DEBUG win32chesslib.c:94: g_alpha_beta | 1 3 
+2021-12-17 09:18:52 DEBUG win32chesslib.c:113: g_alpha_beta | 2708 2023750310 51 43 0 0 0.062000 
+2021-12-17 09:18:52 DEBUG win32chesslib.c:128: g_move_to | color = 1
+2021-12-17 09:18:52 DEBUG win32chesslib.c:129: g_move_to | en_passant = 0
+2021-12-17 09:18:52 DEBUG win32chesslib.c:130: g_move_to | is_castling = 0
+2021-12-17 09:18:52 DEBUG win32chesslib.c:131: g_move_to | global castling = 0-0
+2021-12-17 09:20:24 DEBUG win32chesslib.c:200: g_get_moves_list | color = 1
+2021-12-17 09:20:33 DEBUG win32chesslib.c:50: g_close_chess_lib
+2021-12-17 09:23:15 DEBUG win32chesslib.c:40: g_init_chess_lib
+2021-12-17 09:23:22 DEBUG win32chesslib.c:200: g_get_moves_list | color = 1
+2021-12-17 09:23:29 DEBUG win32chesslib.c:200: g_get_moves_list | color = 0
+2021-12-17 09:23:31 DEBUG win32chesslib.c:128: g_move_to | color = 0
+2021-12-17 09:23:31 DEBUG win32chesslib.c:129: g_move_to | en_passant = 0
+2021-12-17 09:23:31 DEBUG win32chesslib.c:130: g_move_to | is_castling = 0
+2021-12-17 09:23:31 DEBUG win32chesslib.c:131: g_move_to | global castling = 0-0
+2021-12-17 09:23:31 DEBUG win32chesslib.c:94: g_alpha_beta | 1 3 
+2021-12-17 09:23:31 DEBUG win32chesslib.c:113: g_alpha_beta | 1626 727709270 57 42 0 0 0.047000 
+2021-12-17 09:23:31 DEBUG win32chesslib.c:128: g_move_to | color = 1
+2021-12-17 09:23:31 DEBUG win32chesslib.c:129: g_move_to | en_passant = 0
+2021-12-17 09:23:31 DEBUG win32chesslib.c:130: g_move_to | is_castling = 0
+2021-12-17 09:23:31 DEBUG win32chesslib.c:131: g_move_to | global castling = 0-0
+2021-12-17 09:23:46 DEBUG win32chesslib.c:200: g_get_moves_list | color = 0
+2021-12-17 09:23:47 DEBUG win32chesslib.c:128: g_move_to | color = 0
+2021-12-17 09:23:47 DEBUG win32chesslib.c:129: g_move_to | en_passant = 0
+2021-12-17 09:23:47 DEBUG win32chesslib.c:130: g_move_to | is_castling = 0
+2021-12-17 09:23:47 DEBUG win32chesslib.c:131: g_move_to | global castling = 0-0
+2021-12-17 09:23:47 DEBUG win32chesslib.c:94: g_alpha_beta | 1 3 
+2021-12-17 09:23:47 DEBUG win32chesslib.c:113: g_alpha_beta | 793 727709270 42 25 0 0 0.016000 
+2021-12-17 09:23:47 DEBUG win32chesslib.c:128: g_move_to | color = 1
+2021-12-17 09:23:47 DEBUG win32chesslib.c:129: g_move_to | en_passant = 0
+2021-12-17 09:23:47 DEBUG win32chesslib.c:130: g_move_to | is_castling = 0
+2021-12-17 09:23:47 DEBUG win32chesslib.c:131: g_move_to | global castling = 0-0
+2021-12-17 09:23:55 DEBUG win32chesslib.c:50: g_close_chess_lib
+2021-12-17 09:24:45 DEBUG win32chesslib.c:40: g_init_chess_lib
+2021-12-17 09:24:49 DEBUG win32chesslib.c:200: g_get_moves_list | color = 1
+2021-12-17 09:24:51 DEBUG win32chesslib.c:200: g_get_moves_list | color = 0
+2021-12-17 09:24:54 DEBUG win32chesslib.c:128: g_move_to | color = 0
+2021-12-17 09:24:54 DEBUG win32chesslib.c:129: g_move_to | en_passant = 0
+2021-12-17 09:24:54 DEBUG win32chesslib.c:130: g_move_to | is_castling = 0
+2021-12-17 09:24:54 DEBUG win32chesslib.c:131: g_move_to | global castling = 0-0
+2021-12-17 09:24:54 DEBUG win32chesslib.c:94: g_alpha_beta | 1 3 
+2021-12-17 09:24:54 DEBUG win32chesslib.c:113: g_alpha_beta | 1316 362806630 57 42 0 0 0.047000 
+2021-12-17 09:24:54 DEBUG win32chesslib.c:128: g_move_to | color = 1
+2021-12-17 09:24:54 DEBUG win32chesslib.c:129: g_move_to | en_passant = 0
+2021-12-17 09:24:54 DEBUG win32chesslib.c:130: g_move_to | is_castling = 0
+2021-12-17 09:24:54 DEBUG win32chesslib.c:131: g_move_to | global castling = 0-0
+2021-12-17 09:24:57 DEBUG win32chesslib.c:200: g_get_moves_list | color = 0
+2021-12-17 09:24:58 DEBUG win32chesslib.c:128: g_move_to | color = 0
+2021-12-17 09:24:58 DEBUG win32chesslib.c:129: g_move_to | en_passant = 0
+2021-12-17 09:24:58 DEBUG win32chesslib.c:130: g_move_to | is_castling = 0
+2021-12-17 09:24:58 DEBUG win32chesslib.c:131: g_move_to | global castling = 0-0
+2021-12-17 09:24:58 DEBUG win32chesslib.c:94: g_alpha_beta | 1 3 
+2021-12-17 09:24:58 DEBUG win32chesslib.c:113: g_alpha_beta | 2251 362806630 62 45 0 0 0.078000 
+2021-12-17 09:24:58 DEBUG win32chesslib.c:128: g_move_to | color = 1
+2021-12-17 09:24:58 DEBUG win32chesslib.c:129: g_move_to | en_passant = 0
+2021-12-17 09:24:58 DEBUG win32chesslib.c:130: g_move_to | is_castling = 0
+2021-12-17 09:24:58 DEBUG win32chesslib.c:131: g_move_to | global castling = 0-0
+2021-12-17 09:25:04 DEBUG win32chesslib.c:200: g_get_moves_list | color = 0
+2021-12-17 09:25:05 DEBUG win32chesslib.c:128: g_move_to | color = 0
+2021-12-17 09:25:05 DEBUG win32chesslib.c:129: g_move_to | en_passant = 0
+2021-12-17 09:25:05 DEBUG win32chesslib.c:130: g_move_to | is_castling = 0
+2021-12-17 09:25:05 DEBUG win32chesslib.c:131: g_move_to | global castling = 0-0
+2021-12-17 09:25:05 DEBUG win32chesslib.c:94: g_alpha_beta | 1 3 
+2021-12-17 09:25:05 DEBUG win32chesslib.c:113: g_alpha_beta | 2010 362806630 52 44 0 0 0.078000 
+2021-12-17 09:25:05 DEBUG win32chesslib.c:128: g_move_to | color = 1
+2021-12-17 09:25:05 DEBUG win32chesslib.c:129: g_move_to | en_passant = 0
+2021-12-17 09:25:05 DEBUG win32chesslib.c:130: g_move_to | is_castling = 0
+2021-12-17 09:25:05 DEBUG win32chesslib.c:131: g_move_to | global castling = 0-0
+2021-12-17 09:25:09 DEBUG win32chesslib.c:50: g_close_chess_lib
+2021-12-17 09:25:20 DEBUG win32chesslib.c:40: g_init_chess_lib
+2021-12-17 09:25:25 DEBUG win32chesslib.c:200: g_get_moves_list | color = 0
+2021-12-17 09:25:27 DEBUG win32chesslib.c:128: g_move_to | color = 0
+2021-12-17 09:25:27 DEBUG win32chesslib.c:129: g_move_to | en_passant = 0
+2021-12-17 09:25:27 DEBUG win32chesslib.c:130: g_move_to | is_castling = 0
+2021-12-17 09:25:27 DEBUG win32chesslib.c:131: g_move_to | global castling = 0-0
+2021-12-17 09:25:27 DEBUG win32chesslib.c:94: g_alpha_beta | 1 5 
+2021-12-17 09:25:31 DEBUG win32chesslib.c:113: g_alpha_beta | 162537 -1627392362 57 42 0 0 4.342000 
+2021-12-17 09:25:31 DEBUG win32chesslib.c:128: g_move_to | color = 1
+2021-12-17 09:25:31 DEBUG win32chesslib.c:129: g_move_to | en_passant = 0
+2021-12-17 09:25:31 DEBUG win32chesslib.c:130: g_move_to | is_castling = 0
+2021-12-17 09:25:31 DEBUG win32chesslib.c:131: g_move_to | global castling = 0-0
+2021-12-17 09:25:31 DEBUG win32chesslib.c:200: g_get_moves_list | color = 1
+2021-12-17 09:25:41 DEBUG win32chesslib.c:50: g_close_chess_lib

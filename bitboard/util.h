@@ -7,5 +7,6 @@
 void tstart();
 void tstop(char *label);
 void str_tstop(char *result);
+double f_tstop();
 
 #endif

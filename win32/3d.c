@@ -1328,6 +1328,21 @@ int is_point_in_2d_convex_hull(object *o, point *p, mfloat_t *model, mfloat_t *c
 
 			vec4_divide_f(projection_pos, projection_pos, projection_pos[3]);
 
+			// En attendant de trouver mieux
+			// gestion des pixels en dehors de l'ecran
+			if (projection_pos[0] < -1) {
+				projection_pos[0] = -1;
+			}
+			if (projection_pos[0] > 1) {
+				projection_pos[0] = 1;
+			}
+			if (projection_pos[1] < -1) {
+				projection_pos[1] = -1;
+			}
+			if (projection_pos[1] > 1) {
+				projection_pos[1] = 1;
+			}
+
 			// creation du polygon x,y projete et z non projete
 			mfloat_t *vertex_poly = malloc(3 * sizeof(mfloat_t));
 			vertex_poly[0] = MIN(w - 1, (uint32_t)((projection_pos[0] + 1) * 0.5 * w));

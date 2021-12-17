@@ -2,7 +2,7 @@ CC=gcc
 # DEL=rm -f
 DEL=rm
 
-CFLAGS=-O3 -std=c99 -fPIC -IContainers/src/include -Ilua-5.1.4_Win64_dll12_lib/include
+CFLAGS=-g -std=c99 -fPIC -IContainers/src/include -Ilua-5.1.4_Win64_dll12_lib/include
 LDFLAGS=-LContainers -lcontm64 -Llua-5.1.4_Win64_dll12_lib -llua51
 
 # In this case:

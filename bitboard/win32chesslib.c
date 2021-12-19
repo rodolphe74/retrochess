@@ -3,10 +3,22 @@
 #include "log.h"
 #include "util.h"
 #include <stdint.h>
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
 #include <vector.h>
+#include <windows.h>
+#include <handleapi.h>
+
 
 Board STARTING_BOARD;
+
+// variables globales
 game_board g;
+int thinking_state;
+alpha_beta_result last_result;
 
 #ifdef _CHESSLIB_LOG_
 #include "log.h"
@@ -87,7 +99,62 @@ void g_close_chess_lib() {
 // }
 //
 
-int g_alpha_beta(uint8_t color, uint8_t depth, uint16_t *eval, uint8_t *from, uint8_t *to, uint8_t *en_passant, uint8_t *castling_type, double *time)
+
+DWORD WINAPI thread_alpha_beta(LPVOID params)
+{
+	alpha_beta_params *p = (alpha_beta_params *)params;
+	int16_t eval;
+	thinking_state = 1;
+
+	// Reservation memoire et copie du board courant
+	game_board *board_copy = (game_board *)malloc(sizeof(game_board));
+	memcpy(&board_copy->b, &g.b, sizeof(Board));
+	board_copy->moves = vector_init(sizeof(move));
+	vector_clear(board_copy->moves);
+	memcpy(board_copy->en_passant, g.en_passant, 16);
+	memcpy(board_copy->castling_done, g.en_passant, 2);
+
+	// Reservation memoire pour le meilleur coup et le nombre de coups
+	move *bm_new = (move *)malloc(sizeof(move));
+	uint32_t *count_new = malloc(sizeof(uint32_t));
+	*count_new = 0;
+
+
+	tstart();
+	printf("###### Recherche ...\n");
+
+	print_board_stdout("***", &board_copy->b);
+	printf("depth %d\n", p->depth);
+	printf("max %d\n", p->maximize);
+	printf("alpha %d\n", p->alpha);
+	printf("beta %d\n", p->beta);
+
+	eval = alpha_beta(board_copy, p->depth, p->maximize, p->alpha, p->beta, bm_new, count_new);
+	printf("###### Termine\n");
+	float tstop = f_tstop();
+
+	last_result.eval = eval;
+	last_result.chesslib_nodes_count = *count_new;
+	last_result.from = bm_new->from;
+	last_result.to = bm_new->to;
+	last_result.en_passant = bm_new->en_passant;
+	last_result.castling_type = bm_new->castling_type;
+	last_result.time = tstop;
+
+	printf("e:%d f:%d t:%d  c:%d tps:%f\n", eval, bm_new->from, bm_new->to, *count_new, tstop);
+
+	thinking_state = 0;
+
+	(*p->callback_function)(); 
+
+	free(board_copy);
+	free(bm_new);
+	free(count_new);
+	free(params);
+	return TRUE;
+}
+
+void g_alpha_beta(uint8_t color, uint8_t depth, void (*callback_function)(void))
 {
 
 #ifdef _CHESSLIB_LOG_
@@ -105,22 +172,36 @@ int g_alpha_beta(uint8_t color, uint8_t depth, uint16_t *eval, uint8_t *from, ui
     move the_move;
 	uint32_t chesslib_nodes_count = 0;
 	tstart();
-    *eval = alpha_beta(&g, depth, maximize, alpha, beta, &the_move, &chesslib_nodes_count);
+
+	alpha_beta_params *params = malloc(sizeof(alpha_beta_params));
+	params->g = &g;
+	params->depth = depth;
+	printf("*****depth %d\n", depth);
+	params->maximize = maximize;
+	params->alpha = alpha;
+	printf("*****alpha %d\n", alpha);
+	params->beta = beta;
+	params->count = &chesslib_nodes_count;
+	params->callback_function = callback_function;
+	DWORD thread_id;
+	
+	HANDLE threads = CreateThread(
+			NULL,									// default security attributes
+			0,       								// default stack size
+			(LPTHREAD_START_ROUTINE) thread_alpha_beta,
+			(LPVOID) params,						// thread function arguments
+			0,										// default creation flags
+			&thread_id);							// receive thread identifier
 
 	float tstop = f_tstop();
-
-#ifdef _CHESSLIB_LOG_
-	log_debug("g_alpha_beta | %d %d %d %d %d %d %f ", chesslib_nodes_count, eval, the_move.from, the_move.to, the_move.en_passant, the_move.castling_type, tstop);
-#endif
-
-	*from = the_move.from;
-	*to = the_move.to;
-	*en_passant = the_move.en_passant;
-	*castling_type = the_move.castling_type;
-	*time = tstop;
-
-    return chesslib_nodes_count;
 }
+
+
+alpha_beta_result g_get_alpha_beta_result()
+{
+	return last_result;
+}
+
 
 void g_move_to(uint8_t from, uint8_t to, uint8_t en_passant, uint8_t is_castling, uint8_t color)
 {

@@ -45,6 +45,7 @@ typedef struct alpha_beta_params_struct {
 	int16_t beta;
 	move *bm;
 	uint32_t *count;
+	void (*callback_function)(void);
 } alpha_beta_params;
 
 

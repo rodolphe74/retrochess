@@ -27,11 +27,15 @@
 #define MAX(x, y) (((x) > (y)) ? (x) : (y))
 #define MIN(x, y) (((x) < (y)) ? (x) : (y))
 
+
+enum gaming_state { human = 0, computer = 1, computer_thinking = 2, move_animation = 3 };
+
 // Globals
 int drag = 0;
 int wait_move_click = 0;
 int selected = 0, from_selected, to_selected;
 vector moves_list;
+
 
 // Mouvements des pieces
 // Variables globales utilisees dans la boucle principale glfw (game loop)
@@ -43,7 +47,8 @@ mfloat_t move_direction[VEC3_SIZE];
 mfloat_t pieces_positions[64][MAT4_SIZE];
 
 // indique qui peut jouer
-int computer_turn = 0;
+enum gaming_state state = human;
+int c_est_a_qui = human; // pour le changent de joueur
 
 // Objets 3d
 GLuint vs, fs, program;
@@ -590,6 +595,7 @@ void do_move(int from, int to, GLfloat *position, GLfloat *view,
 
 	piece_index_to_move = from;
 	moves_step = 100;
+	state = move_animation;
 
 	/* g.b.placement[to] = piece; */
 	piece_to = to;
@@ -626,17 +632,10 @@ void cursor_callback(GLFWwindow *window, double xpos, double ypos) {
 }
 
 void mouse_callback(GLFWwindow *window, int button, int action, int mods) {
-	/* if (glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_RIGHT) == GLFW_PRESS) { */
-	/* 	mat4_look_at( */
-	/* 			view, */
-	/* 			vec3(position, position_start[0], position_start[1], position_start[2]), */
-	/* 			vec3(target, target_start[0], target_start[1], target_start[2]), */
-	/* 			vec3(up, up_start[0], up_start[1], up_start[2])); */
-	/* } */
 
 
 	// bouton gauche : choix des pieces
-	if (glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_LEFT) == GLFW_PRESS) {
+	if (glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_LEFT) == GLFW_PRESS && state == human) {
 
 		// le coup doit etre valide
 		int playable = 0;
@@ -702,6 +701,22 @@ void key_callback(GLFWwindow *window, int key, int scancode, int action,
 		print_mat4_str("rotation_view_y", rotation_view_y);
 		print_mat4_str("translation_view_z", translation_view_z);
 	}
+
+	if (key == GLFW_KEY_SPACE && action == GLFW_PRESS) {
+		mat4_look_at(
+				view,
+				vec3(position, position_start[0], position_start[1], position_start[2]),
+				vec3(target, target_start[0], target_start[1], target_start[2]),
+				vec3(up, up_start[0], up_start[1], up_start[2]));
+
+	}
+}
+
+void callback_alpha_beta_thread()
+{
+	printf("thread ended\n");
+	alpha_beta_result r = g_get_alpha_beta_result(); 
+	do_move(r.from, r.to, position, view, projection, lights_array, lights_count);
 }
 
 int main(void) {
@@ -812,7 +827,7 @@ int main(void) {
 		}
 
 
-		if (moves_step) {
+		if (state == move_animation) {
 			// s'il y a un mouvement, moves-step est > 0,
 			// il est decremente jusque 0
 			// la piece est translatee a chaque decrement de boucle
@@ -832,26 +847,33 @@ int main(void) {
 			moves_step--;
 
 			if (moves_step == 0) {
+				// Fin de l'animation, gestion du changement de joueur
 				vector_clear(moves_list);
-				g_move_to(piece_from, piece_to, 0, 0, WHITE);
+				g_move_to(piece_from, piece_to, 0, 0, state == human ? WHITE : BLACK);
 				wait_move_click = 0;
 
-				// L'humain a joue - A la machine...
-				computer_turn = 1;
+				if (c_est_a_qui == human) c_est_a_qui = computer;
+				else /*if (c_est_a_qui == computer)*/ c_est_a_qui = human;
+				state = c_est_a_qui;
 			}
 		}
 
-		if (computer_turn) {
+		else if (state == computer) {
 			// black
-			// prevoir un thread d'attente pour ne pas bloquer la boucle
+			// le clique souris est desactive
+			// le thread de recherche est lance
 			uint16_t eval;
 			uint8_t from, to, en_passant, castling_type;
 			double time;
-			int count = g_alpha_beta(BLACK, 5, &eval, &from, &to, &en_passant, &castling_type, &time);
-			printf("count %d\n", count);
-			printf("from %d -> to %d in %f\n", from, to, time);
-			g_move_to(from, to, en_passant, castling_type, BLACK);
-			computer_turn = 0;
+			void (*cabt)(void) = callback_alpha_beta_thread;
+			g_alpha_beta(BLACK, 5, cabt);
+			state = computer_thinking;
+		}
+
+		else if (state == human) {
+			// white
+			// le clique souris est active dans ce cas
+			// l'humain peut jouer
 		}
 
 		/* Swap front and back buffers */

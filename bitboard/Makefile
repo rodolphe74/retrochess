@@ -12,6 +12,7 @@ LDFLAGS=-LContainers -lcontm64 -Llua-5.1.4_Win64_dll12_lib -llua51
 # $^ evaluates to library.cpp main.cpp
 
 all: chess game chesslib.dll win32chesslib.dll dlltest
+# all: chess game chesslib.dll dlltest
 
 
 game: game.c bitboard.o board.o common.o special.o util.o
@@ -33,7 +34,7 @@ chesslib.dll: chesslib.c chess.o bitboard.o board.o common.o special.o util.o lo
 
 # win32 only - no lua deps
 win32chesslib.dll: win32chesslib.c chess.o bitboard.o board.o common.o special.o util.o log.o
-	$(CC) $(CFLAGS) -D_WINCHESS_ -D_WINDOWS_ -D_CHESSLIB_LOG_  -shared -Wl,--subsystem,windows $^ -o $@  $(LDFLAGS)
+	$(CC) $(CFLAGS) -D_WINCHESS_ -D_CHESSLIB_LOG_  -shared -Wl,--subsystem,windows $^ -o $@  $(LDFLAGS)
 
 chess.o: chess.c
 	$(CC) $(CFLAGS) -D_WINCHESS_ -c -o $@ $<

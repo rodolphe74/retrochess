@@ -1,9 +1,13 @@
 #include "gl_util.h"
-#include <stdio.h>
 
+#define STB_IMAGE_IMPLEMENTATION
+#include "stb/stb_image.h"
+#define STB_IMAGE_WRITE_IMPLEMENTATION
+#include "stb/stb_image_write.h"
+#define STB_IMAGE_RESIZE_IMPLEMENTATION
+#include "stb/stb_image_resize.h"
 
-
-int compile_shader(char *filename, GLenum type, GLuint *shader)
+int compile_shader(const char *filename, GLenum type, GLuint *shader)
 {
 	FILE *f = fopen(filename, "r");
 
@@ -17,7 +21,7 @@ int compile_shader(char *filename, GLenum type, GLuint *shader)
 	printf("Chargement du shader %s -> %d\n", filename, size);
 
 	char *shader_string = malloc(sizeof(char) * size);
-	int read = fread(shader_string, sizeof(char), size, f);
+	/*int read =*/ fread(shader_string, sizeof(char), size, f);
 
 	(*shader) = glCreateShader(type);
 	printf("Compilation du shader %d\n", (*shader));
@@ -52,7 +56,6 @@ void object_as_gl_unique_vertices_object(object *o, gl_object *glo)
 		face *f;
 		vector_get_at(&f, o->faces, i);
 
-		vertex *world_vertex;
 		for (int j = 0; j < f->length; j++)
 			count++;
 
@@ -299,6 +302,334 @@ void set_gl_object_before_render(gl_object *glo, GLuint *program, GLfloat *camer
 /* } */
 
 
+#define WIDTH   800
+#define HEIGHT  15
+unsigned char image[HEIGHT][WIDTH];
+
+FT_Int draw_bitmap(FT_Bitmap* bitmap,
+	FT_Int x,
+	FT_Int y)
+{
+	FT_Int i, j, p, q;
+	FT_Int x_max = x + bitmap->width;
+	FT_Int y_max = y + bitmap->rows;
+
+	for (i = x, p = 0; i < x_max; i++, p++) {
+		for (j = y, q = 0; j < y_max; j++, q++) {
+			if (i < 0 || j < 0 ||
+				i >= WIDTH || j >= HEIGHT)
+				continue;
+
+			image[j][i] |= bitmap->buffer[q * bitmap->width + p];
+		}
+	}
+	return i;
+}
+
+int create_texture_from_text(const char *font, const wchar_t *text, int text_size)
+{
+	FT_Library library;
+	FT_Face face;
+
+	FT_GlyphSlot slot;
+	FT_Matrix matrix;               /* transformation matrix */
+	FT_Vector pen;                  /* untransformed origin  */
+	FT_Error error;
+
+
+	double angle;
+	int target_height;
+	int n, num_chars;
+
+	num_chars = text_size;
+	angle = 0;
+	target_height = HEIGHT;
+
+	error = FT_Init_FreeType(&library);        /* initialize library */
+	error = FT_New_Face(library, font, 0, &face);/* create face object */
+	error = FT_Set_Char_Size(face, 10 * 64, 0, 100, 0);
+
+	slot = face->glyph;
+
+
+	//matrix.xx = (FT_Fixed)(cos(angle) * 0x10000L);
+	//matrix.xy = (FT_Fixed)(-sin(angle) * 0x10000L);
+	//matrix.yx = (FT_Fixed)(sin(angle) * 0x10000L);
+	//matrix.yy = (FT_Fixed)(cos(angle) * 0x10000L);
+
+	matrix.xx = (FT_Fixed)(1.0f * 0x10000L);
+	matrix.xy = (FT_Fixed)(0.0f * 0x10000L);
+	matrix.yx = (FT_Fixed)(0.0f * 0x10000L);
+	matrix.yy = (FT_Fixed)(1.0f * 0x10000L);
+
+	pen.x = 0 * 64;
+	pen.y = 3 * 64;
+
+	FT_Select_Charmap(face, ft_encoding_unicode);
+
+	int wsize = 0;
+	for (n = 0; n < num_chars; n++) {
+		/* set transformation */
+		FT_Set_Transform(face, &matrix, &pen);
+
+		/* load glyph image into the slot (erase previous one) */
+		error = FT_Load_Char(face, text[n], FT_LOAD_RENDER);
+		if (error)
+			continue; /* ignore errors */
+
+		/* now, draw to our target surface (convert position) */
+		wsize = draw_bitmap(&slot->bitmap,
+			slot->bitmap_left,
+			target_height - slot->bitmap_top);
+
+		/* increment pen position */
+		pen.x += slot->advance.x;
+		pen.y += slot->advance.y;
+	}
+
+	// en N&B
+	stbi_write_png("test.png", wsize, HEIGHT, 1, image, WIDTH);
+
+	unsigned char *crop = (unsigned char *) malloc(wsize * 4 * HEIGHT);
+
+	int count = 0;
+	for (int y = HEIGHT-1; y >= 0; y--) {
+ 		for (int x = 0; x < wsize; x++) {
+			unsigned char c = image[y][x];
+ 			crop[count + 0] = c;
+			crop[count + 1] = c;
+			crop[count + 2] = c;
+ 			crop[count + 3] = 255;
+ 			count += 4;
+ 		}
+	}
+
+	
+	GLuint texture_id;
+	glGenTextures(1, &texture_id);	// le shader peut recupérer plusieurs textures (ici 1)
+	glBindTexture(GL_TEXTURE_2D, texture_id);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, wsize, HEIGHT, 0, GL_RGBA, GL_UNSIGNED_BYTE, crop);
+
+	FT_Done_Face(face);
+	FT_Done_FreeType(library);
+
+	free(crop);
+
+	return texture_id;
+}
+
+
+
+
+void create_panel(int width, int height, gl_panel *panel)
+{
+	FT_Library library;
+	FT_Face face;
+	FT_GlyphSlot slot;
+
+	FT_Error error = FT_Init_FreeType(&library);
+
+	error = FT_New_Face(library, FONT_PANEL, 0, &face);
+	error = FT_Set_Char_Size(face, 10 * 64, 0, 100, 0);
+	slot = face->glyph;
+
+	panel->width = width;
+	panel->height = height;
+	panel->font_width = FONT_WIDTH;
+	panel->font_height = FONT_HEIGHT;
+	panel->matrix = (FT_Matrix *) malloc(sizeof(FT_Matrix));
+	panel->matrix->xx = (FT_Fixed)(1.0f * 0x10000L);
+	panel->matrix->xy = (FT_Fixed)(0.0f * 0x10000L);
+	panel->matrix->yx = (FT_Fixed)(0.0f * 0x10000L);
+	panel->matrix->yy = (FT_Fixed)(1.0f * 0x10000L);
+
+	panel->pen = (FT_Vector *) malloc(sizeof(FT_Vector));
+	panel->pen->x = 0 * 64;
+	panel->pen->y = 3 * 64;
+
+	FT_Select_Charmap(face, ft_encoding_unicode);
+
+	unsigned char *image = (unsigned char *) malloc(sizeof(unsigned char) * height * FONT_HEIGHT * width * FONT_WIDTH);
+	if (image) memset(image, 0, height * FONT_HEIGHT * width * FONT_WIDTH);
+
+	wchar_t **screen = (wchar_t **) malloc(sizeof(wchar_t *) * height);
+	for (int y = 0; y < height; y++) {
+		screen[y] = (wchar_t *) malloc(sizeof(wchar_t) * width);
+		for (int x = 0; x < width; x++)
+			screen[y][x] = 0;
+	}
+	
+	panel->library = library;
+	panel->face = face;
+	panel->image = image;
+	panel->screen = screen;
+}
+
+
+FT_Int _draw_bitmap(FT_Bitmap *bitmap,
+	FT_Int x,
+	FT_Int y, unsigned char *img, int width, int height)
+{
+	FT_Int i, j, p, q;
+	FT_Int x_max = x + bitmap->width;
+	FT_Int y_max = y + bitmap->rows;
+
+	for (i = x, p = 0; i < x_max; i++, p++) {
+		for (j = y, q = 0; j < y_max; j++, q++) {
+			if (i < 0 || j < 0 ||
+				i >= width || j >= height)
+				continue;
+
+			img[j * width + i] |= bitmap->buffer[q * bitmap->width + p];
+		}
+	}
+
+	return i;
+}
+
+void render_text(gl_panel *panel, int x, int y, wchar_t *text, int num_chars)
+{
+	int wsize = 0;
+	int img_width = panel->width * panel->font_width;
+	int img_height = panel->height * panel->font_height;
+
+	FT_GlyphSlot slot = panel->face->glyph;
+
+	panel->pen->x = 0 * 64;
+	panel->pen->y = 3 * 64;
+
+	for (int n = 0; n < num_chars; n++) {
+		FT_Set_Transform(panel->face, panel->matrix, panel->pen);
+
+		FT_Error error = FT_Load_Char(panel->face, text[n], FT_LOAD_RENDER);
+		if (error)
+			continue;
+
+		int target_height = (y + 1) * panel->font_height;
+		//FT_GlyphSlot slot = panel->face->glyph;
+		wsize = _draw_bitmap(&slot->bitmap,
+			slot->bitmap_left + x * panel->font_width,
+			target_height - slot->bitmap_top, panel->image, img_width, img_height);
+
+		panel->pen->x += slot->advance.x;
+		panel->pen->y += slot->advance.y;
+	}
+
+	// en N&B
+	// stbi_write_png("test2.png", img_width, img_height, 1, panel->image, img_width);
+}
+
+
+void render_char(gl_panel *panel, int x, int y, wchar_t chr)
+{
+	int wsize = 0;
+	int img_width = panel->width * panel->font_width;
+	int img_height = panel->height * panel->font_height;
+
+	//FT_GlyphSlot slot = panel->face->glyph;
+
+	panel->pen->x = 0 * 64;
+	panel->pen->y = 3 * 64;
+
+
+	FT_Set_Transform(panel->face, panel->matrix, panel->pen);
+
+	FT_Error error = FT_Load_Char(panel->face, chr, FT_LOAD_RENDER);
+	if (error)
+		return;
+
+	int target_height = (y + 1) * panel->font_height;
+	FT_GlyphSlot slot = panel->face->glyph;
+	wsize = _draw_bitmap(&slot->bitmap,
+		slot->bitmap_left + x * panel->font_width,
+		target_height - slot->bitmap_top, panel->image, img_width, img_height);
+
+	panel->pen->x += slot->advance.x;
+	panel->pen->y += slot->advance.y;
+
+}
+
+
+wchar_t *get_wc(const char *c)
+{
+	const size_t c_size = strlen(c) + 1;
+	wchar_t *wc = (wchar_t *) malloc(sizeof(wchar_t) * c_size);
+	mbstowcs(wc, c, c_size);
+
+	return wc;
+}
+
+void write_text(gl_panel *panel, int x, int y, const wchar_t *text, int num_chars)
+{
+	for (int i = 0; i < num_chars; i++) {
+		if (x + i < panel->width)
+			panel->screen[y][x + i] = text[i];
+	}
+}
+
+int render_panel_as_texture(gl_panel *panel)
+{
+	if (image) memset(panel->image, 0, panel->height * FONT_HEIGHT * panel->width * FONT_WIDTH);
+	for (int y = 0; y < panel->height; y++) {
+		for (int x = 0; x < panel->width; x++) {
+			if (panel->screen[y][x] != 0)
+				render_char(panel, x, y, panel->screen[y][x]);
+		}
+	}
+
+	int img_width = panel->width * panel->font_width;
+	int img_height = panel->height * panel->font_height;
+
+	// Debug texture
+	//stbi_write_png("test2.png", img_width, img_height, 1, panel->image, img_width);
+
+	unsigned char *crop = (unsigned char *) malloc(img_width * 4 * img_height);
+
+	int count = 0;
+	for (int y = img_height - 1; y >= 0; y--) {
+		for (int x = 0; x < img_width; x++) {
+			unsigned char c = panel->image[y * img_width + x];
+			crop[count + 0] = c;
+			crop[count + 1] = c;
+			crop[count + 2] = c;
+			crop[count + 3] = 255;
+			count += 4;
+		}
+	}
+
+	GLuint texture_id = 1;
+	glGenTextures(1, &texture_id);	// le shader peut recupérer plusieurs textures (ici 1)
+	glBindTexture(GL_TEXTURE_2D, texture_id);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, img_width, img_height, 0, GL_RGBA, GL_UNSIGNED_BYTE, crop);
+
+	free(crop);
+
+	return texture_id;
+}
+
+void free_panel(gl_panel *panel)
+{
+	free(panel->image);
+
+	for (int y = 0; y < panel->height; y++) {
+		free(panel->screen[y]);
+	}
+	free(panel->screen);
+
+	free(panel->matrix);
+	free(panel->pen);
+	FT_Done_Face(panel->face);
+	FT_Done_FreeType(panel->library);
+}
+
 
 
 
@@ -315,6 +646,64 @@ void set_texture_before_render(GLuint texture_id, GLuint *program, GLenum textur
 	glUniform1i(uniform_texture_id, texture_unit - GL_TEXTURE0);
 }
 
+
+object *create_rectangular_object_with_texture_on_it_from_panel(gl_panel *panel, int texture_id)
+{
+	object *o = create_object(0);
+	face *sf = create_face(0);
+	vertex *sv0 = create_vertex(panel->pos_x, panel->pos_y, 0);
+	sv0->m.w = 1;
+	sv0->uv[0] = 0.0f;
+	sv0->uv[1] = 0.0f;
+	vertex *sv1 = create_vertex(panel->pos_x, panel->pos_y + panel->height * panel->font_height, 0);
+	sv1->m.w = 1;
+	sv1->uv[0] = 0.0f;
+	sv1->uv[1] = 1.0f;
+	vertex *sv2 = create_vertex(panel->pos_x + panel->width * panel->font_width, panel->pos_y + panel->height * panel->font_height, 0);
+	sv2->m.w = 1;
+	sv2->uv[0] = 1.0f;
+	sv2->uv[1] = 1.0f;
+	vertex *sv3 = create_vertex(panel->pos_x + panel->width * panel->font_width, panel->pos_y, 0);
+	sv3->m.w = 1;
+	sv3->uv[0] = 1.0f;
+	sv3->uv[1] = 0.0f;
+
+
+
+	//vertex* sv0 = create_vertex(0, 400, 0);
+	//sv0->m.w = 1;
+	//sv0->uv[0] = 0.0f;
+	//sv0->uv[1] = 0.0f;
+	//vertex* sv1 = create_vertex(0, 415, 0);
+	//sv1->m.w = 1;
+	//sv1->uv[0] = 0.0f;
+	//sv1->uv[1] = 1.0f;
+	//vertex* sv2 = create_vertex(69, 415, 0);
+	//sv2->m.w = 1;
+	//sv2->uv[0] = 1.0f;
+	//sv2->uv[1] = 1.0f;
+	//vertex* sv3 = create_vertex(69, 400, 0);
+	//sv3->m.w = 1;
+	//sv3->uv[0] = 1.0f;
+	//sv3->uv[1] = 0.0f;
+
+
+	add_vertex_to_face(sf, sv0);
+	add_vertex_to_face(sf, sv1);
+	add_vertex_to_face(sf, sv2);
+	add_vertex_to_face(sf, sv3);
+	add_face_to_object(o, sf);
+	set_texture_to_object(o, texture_id, 1.0f);
+
+	return o;
+}
+
+
+void set_panel_position(gl_panel *panel, int x, int y)
+{
+	panel->pos_x = x;
+	panel->pos_y = y;
+}
 
 float *get_lights_array(vector *lights)
 {
@@ -366,7 +755,7 @@ void free_gl_object(gl_object *glo)
 void free_gl_objects(vector *glos)
 {
 	for (int i = 0; i < vector_size(*glos); i++) {
-		gl_object *glo;
+		gl_object *glo = NULL;
 		vector_get_at(glo, *glos, i);
 		free_gl_object(glo);
 	}

@@ -63,7 +63,7 @@ short linear_space(short x)
 	if (xf <= 0.04045)
 		yf = xf / 12.92;
 	else
-		yf = powf(((xf + 0.055) / 1.055), 2.4);
+		yf = powf(((xf + 0.055f) / 1.055f), 2.4f);
 	return (int)(yf * 255);
 }
 
@@ -75,7 +75,7 @@ float linear_space_f(float x)
 	if (xf <= 0.04045)
 		yf = xf / 12.92;
 	else
-		yf = powf(((xf + 0.055) / 1.055), 2.4);
+		yf = powf(((xf + 0.055f) / 1.055f), 2.4f);
 	return yf * 255;
 }
 
@@ -87,7 +87,7 @@ short rgb_space(short x)
 	if (xf <= 0.0031308)
 		yf = xf * 12.92;
 	else
-		yf = 1.055 * powf(xf, 1.0 / 2.4) - 0.055;
+		yf = 1.055 * powf(xf, 1.0f / 2.4f) - 0.055f;
 	return (int)(yf * 255);
 }
 
@@ -99,7 +99,7 @@ float rgb_space_f(float x)
 	if (xf <= 0.0031308)
 		yf = xf * 12.92;
 	else
-		yf = 1.055 * (powf(xf, (1.0 / 2.4))) - 0.055;
+		yf = 1.055 * (powf(xf, (1.0f / 2.4f))) - 0.055f;
 	return yf * 255;
 }
 
@@ -273,15 +273,7 @@ IMAGE *bilinear_resize(IMAGE *image, unsigned short width, unsigned short height
 	float x_ratio = width > 1 ? ((float)(image->width - 1) / (width - 1)) : 0;
 	float y_ratio = height > 1 ? ((float)(image->height - 1) / (height - 1)) : 0;
 
-	// short percent = 0, old_percent = 0;
-
 	for (unsigned short i = 0; i < height; i++) {
-		/*
-		 * percent = (int)((i / (float)height) * 100);
-		 * if (percent != old_percent)
-		 *      printf("Progression %d\n", percent);
-		 * old_percent = percent;
-		 */
 
 		for (unsigned short j = 0; j < width; j++) {
 			x_l = flr(x_ratio * j);
@@ -321,39 +313,9 @@ IMAGE *bilinear_resize(IMAGE *image, unsigned short width, unsigned short height
 
 
 
-/* IMAGE *gamma(IMAGE *image, float gamma) */
-/* { */
-/* 	PIXEL pixel, p; */
-
-/* 	IMAGE *gamma_img = (IMAGE *)malloc(sizeof(IMAGE)); */
-/* 	PIXEL *pixels = (PIXEL *)malloc(sizeof(PIXEL) * image->width * image->height); */
-
-/* 	float gamma_correction; */
-
-/* 	gamma_img->pixels = pixels; */
-/* 	gamma_img->width = image->width; */
-/* 	gamma_img->height = image->height; */
-
-/* 	for (unsigned short y = 0; y < image->height; y++) { */
-/* 		for (unsigned short x = 0; x < image->width; x++) { */
-/* 			p = image->pixels[y * image->width + x]; */
-
-/* 			gamma_correction = 1.0 / gamma; */
-/* 			p.r = 255 * powf((p.r / 255.0), gamma_correction); */
-/* 			p.g = 255 * powf((p.g / 255.0), gamma_correction); */
-/* 			p.b = 255 * powf((p.b / 255.0), gamma_correction); */
-
-/* 			gamma_img->pixels[y * image->width + x] = p; */
-/* 		} */
-/* 	} */
-
-/* 	return gamma_img; */
-/* } */
-
-
 IMAGE *brightness_and_contrast(IMAGE *image, float brightness, float contrast)
 {
-	PIXEL pixel, p;
+	PIXEL p;
 
 	IMAGE *br_ctr_img = (IMAGE *)malloc(sizeof(IMAGE));
 	PIXEL *pixels = (PIXEL *)malloc(sizeof(PIXEL) * image->width * image->height);
@@ -392,14 +354,12 @@ IMAGE *brightness_and_contrast(IMAGE *image, float brightness, float contrast)
 //------------------------------------------------------------------------------
 IMAGE *saturation(IMAGE *image, float sat)
 {
-	PIXEL pixel, p;
+	PIXEL p;
 
 	IMAGE *sat_img = (IMAGE *)malloc(sizeof(IMAGE));
 	PIXEL *pixels = (PIXEL *)malloc(sizeof(PIXEL) * image->width * image->height);
 
 	float r, g, b;
-	float gray;
-
 
 	float Pr = 0.299f;
 	float Pg = 0.587f;

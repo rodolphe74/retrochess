@@ -1,3 +1,4 @@
+#include <Windows.h>
 #include <GL/gl.h>
 #include <GL/glu.h>
 #include <stdarg.h>
@@ -58,7 +59,7 @@ void split(char *string, char sep, char token_array[][50])
 
 
 
-vertex *create_vertex(double x, double y, double z) {
+vertex *create_vertex(float x, float y, float z) {
     vertex *v = malloc(sizeof(vertex));
     v->pos[0] = x;
     v->pos[1] = y;
@@ -77,7 +78,7 @@ vertex *create_vertex(double x, double y, double z) {
     return v;
 }
 
-vertex *create_vertex_with_color(double x, double y, double z, color c) {
+vertex *create_vertex_with_color(float x, float y, float z, color c) {
     vertex *v = create_vertex(x, y, z);
 
     color ambient = c;
@@ -91,7 +92,7 @@ vertex *create_vertex_with_color(double x, double y, double z, color c) {
     return v;
 }
 
-vertex *create_vertex_with_texture(double x, double y, double z, int texture_id)
+vertex *create_vertex_with_texture(float x, float y, float z, int texture_id)
 {
     vertex *v = create_vertex(x, y, z);
 
@@ -107,7 +108,7 @@ vertex *create_vertex_with_texture(double x, double y, double z, int texture_id)
     return v;
 }
 
-vertex *create_vertex_with_color_and_texture(double x, double y, double z, color c, int texture_id)
+vertex *create_vertex_with_color_and_texture(float x, float y, float z, color c, int texture_id)
 {
     vertex *v = create_vertex(x, y, z);
     
@@ -157,6 +158,19 @@ void set_material_to_object(object *o, color ambient, color diffuse, color specu
     while (current_vertex_key != NULL) {
         map_get(&v, o->vertices_lis, current_vertex_key);
         set_material(v, ambient, diffuse, specular, shininess /*pot*/);
+        current_vertex_key = map_higher(o->vertices_lis, current_vertex_key);
+    }
+}
+
+
+void set_texture_to_object(object* o, int texture_id, float multiplier)
+{
+    char* current_vertex_key = map_first(o->vertices_lis);
+    vertex* v;
+    while (current_vertex_key != NULL) {
+        map_get(&v, o->vertices_lis, current_vertex_key);
+        set_texture(v, texture_id, multiplier);
+        v->m.w = use_texture;
         current_vertex_key = map_higher(o->vertices_lis, current_vertex_key);
     }
 }
@@ -279,7 +293,7 @@ int is_ccw(face *f)
     int a[2], b[2], c[2]; //Just renaming>
 
     int m = find_lowest_right(f);
-    int n = vector_size(f->vertices);
+    int n = (int) vector_size(f->vertices);
     
     vertex *v_m, *v_m1, *v_mp;
 
@@ -306,6 +320,8 @@ int is_ccw(face *f)
         return 1;
     else if ( area2 < 0 )
         return 0;
+
+    return 0;
 }
 
 
@@ -313,7 +329,7 @@ face *reverse_face(face *f)
 {
     vertex *v;
     face *new_face = create_face(0);
-    for(int i = vector_size(f->vertices) - 1; i >= 0; i--) {
+    for(int i = (int) vector_size(f->vertices) - 1; i >= 0; i--) {
         vector_get_at(&v, f->vertices, i);
         vertex *new_vertex = copy_vertex(v);
         add_vertex_to_face(new_face, new_vertex);
@@ -445,7 +461,7 @@ object *copy_object(object *o)
 	object *copy = create_object(0);
 
 	strcpy(copy->name, o->name);
-	vertex *v, *vf;
+	vertex *v;
 
 	for (int i = 0; i < o->length; i++) {
 		face *f;
@@ -629,6 +645,7 @@ void free_object(object *o) {
     for (int i = 0; i < o->length; i++) {
         face *f;
         vector_get_at(&f, o->faces, i);
+        vector_destroy(f->vertices);
         free(f);
     }
     vector_destroy(o->faces);
@@ -649,6 +666,7 @@ void free_super_object(super_object *so)
         printf("freeing object %s at %p\n", o->name, o);
         free_object(o);
     }
+    vector_destroy(so->objects);
     free(so);
 }
 
@@ -662,7 +680,6 @@ void create_sphere(object *o, int sectors, int stacks, float radius) {
 
     float x, y, z, xy;                              // vertex position
     float nx, ny, nz, length_inv = 1.0f / radius;    // vertex normal
-    float s, t;                                     // vertex texCoord
 
     float sector_step = 2 * M_PI / sectors;
     float stack_step = M_PI / stacks;
@@ -735,7 +752,8 @@ void create_sphere(object *o, int sectors, int stacks, float radius) {
 
 void create_object_from_obj_file(object *o, char *filename) {
     FILE* filePointer;
-    int bufferLength = 1024;
+    // int bufferLength = 1024;
+    #define bufferLength 1024
     char buffer[bufferLength];
     char header[5];
     int vertices_count = 0;
@@ -883,19 +901,36 @@ void create_object_from_obj_file(object *o, char *filename) {
     fclose(filePointer);
 
 
+    //free(vertex_list);
+
+    //for (int i = 0; i < normals_count; i++) {
+    //    free(normals_list[i]);
+    //}
+    //free(normals_list);
+
+    for (int i = 0; i < vertices_count; i++) {
+        free(vertex_list[i]);
+    }
     free(vertex_list);
+
     for (int i = 0; i < normals_count; i++) {
         free(normals_list[i]);
     }
     free(normals_list);
 
+    for (int i = 0; i < uv_count; i++) {
+        free(uv_list[i]);
+    }
+    free(uv_list);
+
     update_vertices_list(o);
 }
 
 
-void create_super_object_from_obj_file(super_object *so, char *filename) {
+void create_super_object_from_obj_file(super_object *so, const char *filename) {
     FILE* filePointer;
-    int bufferLength = 1024;
+    // int bufferLength = 1024;
+    #define bufferLength 1024
     char buffer[bufferLength];
     char header[5];
     int vertices_count = 0;
@@ -1063,11 +1098,25 @@ void create_super_object_from_obj_file(super_object *so, char *filename) {
     strcpy(current_object->name, current_name);
     add_object_to_super_object(so, current_object);
 
+    //free(vertex_list);
+    //for (int i = 0; i < normals_count; i++) {
+    //    free(normals_list[i]);
+    //}
+    //free(normals_list);
+    for (int i = 0; i < vertices_count; i++) {
+        free(vertex_list[i]);
+    }
     free(vertex_list);
+
     for (int i = 0; i < normals_count; i++) {
         free(normals_list[i]);
     }
     free(normals_list);
+
+    for (int i = 0; i < uv_count; i++) {
+        free(uv_list[i]);
+    }
+    free(uv_list);
 
     printf("super_object:%d\n", (int) vector_size(so->objects));
 
@@ -1081,7 +1130,7 @@ void print_mat4(mfloat_t *m) {
     printf("  %f %f %f %f  ]\n", m[3], m[7], m[11], m[15]);
 }
 
-void print_mat4_str(char *title, mfloat_t *m) {
+void print_mat4_str(const char *title, mfloat_t* m) {
 	printf("-== %s ==-\n", title);
 	print_mat4(m);
 	printf("\n");
@@ -1225,7 +1274,7 @@ void get_hull(point a[], int n, vector *result)
 	// find center
 	point pt, center;
 	int x = 0, y = 0;
-	int hull_size = vector_size(hull_points);
+	int hull_size = (int) vector_size(hull_points);
 	for (int i = 0; i < hull_size; i++) {
 		vector_get_at(&pt, hull_points, i);
 		x += pt.x;
@@ -1269,7 +1318,7 @@ void get_hull(point a[], int n, vector *result)
 		if (add)
 			vector_add_last(*result, &(pa[i].p));
 	}
-
+    vector_destroy(hull_points);
 	free(pa);
 }
 
@@ -1345,13 +1394,14 @@ int is_point_in_2d_convex_hull(object *o, point *p, mfloat_t *model, mfloat_t *c
 
 			// creation du polygon x,y projete et z non projete
 			mfloat_t *vertex_poly = malloc(3 * sizeof(mfloat_t));
-			vertex_poly[0] = MIN(w - 1, (uint32_t)((projection_pos[0] + 1) * 0.5 * w));
-			vertex_poly[1] = MIN(h - 1, (uint32_t)((1 - (projection_pos[1] + 1) * 0.5) * h));
+			vertex_poly[0] = MIN(w - 1, (int32_t)((projection_pos[0] + 1) * 0.5 * w));
+			vertex_poly[1] = MIN(h - 1, (int32_t)((1 - (projection_pos[1] + 1) * 0.5) * h));
 			vertex_poly[2] = camera_pos[2];
 			point pt;
 			pt.x = vertex_poly[0];
 			pt.y = vertex_poly[1];
 			vector_add_last(points_list, &pt);
+            free(vertex_poly);
 		}
 	}
 
@@ -1360,9 +1410,9 @@ int is_point_in_2d_convex_hull(object *o, point *p, mfloat_t *model, mfloat_t *c
 	point *data = (point *) vector_get_data(points_list);
 
 	// Recherche de l'enveloppe convexe du polygone
-	get_hull(data, vector_size(points_list), hull);
+	get_hull(data, (int) vector_size(points_list), hull);
 
-	int hull_size = vector_size(*hull);
+	int hull_size = (int) vector_size(*hull);
 
 	free_object(object_copy);
 
@@ -1378,6 +1428,6 @@ int is_point_in_2d_convex_hull(object *o, point *p, mfloat_t *model, mfloat_t *c
 	t.y = p->y;
 	int inside = pnpoly(hull_size, fpolygon, t);
 	free(fpolygon);
-
+    vector_destroy(points_list);
 	return inside;
 }

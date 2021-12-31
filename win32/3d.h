@@ -60,7 +60,8 @@ typedef struct face {
 	int length;
 } face;
 
-static const int map_key_size = 64;
+// static const int map_key_size = 64;
+#define map_key_size 64
 
 typedef struct object {
 	vector faces;
@@ -92,16 +93,22 @@ typedef struct bounding_box {
 } bounding_box;
 
 
-vertex *create_vertex(double x, double y, double z);
-vertex *create_vertex_with_color(double x, double y, double z, color c);
-vertex *create_vertex_with_texture(double x, double y, double z, int texture_id);
-vertex *create_vertex_with_color_and_texture(double x, double y, double z, color c, int texture_id);
+//vertex *create_vertex(double x, double y, double z);
+//vertex *create_vertex_with_color(double x, double y, double z, color c);
+//vertex *create_vertex_with_texture(double x, double y, double z, int texture_id);
+//vertex *create_vertex_with_color_and_texture(double x, double y, double z, color c, int texture_id);
+
+vertex* create_vertex(float x, float y, float z);
+vertex* create_vertex_with_color(float x, float y, float z, color c);
+vertex* create_vertex_with_texture(float x, float y, float z, int texture_id);
+vertex* create_vertex_with_color_and_texture(float x, float y, float z, color c, int texture_id);
 
 void set_color(vertex *vertex, color c);
 void set_material(vertex *vertex, color ambient, color diffuse, color specular, float shininess);
 void set_texture(vertex *vertex, int texture_id, float multiplier);
 void select_color_or_texture(vertex *vertex, enum which w);
 void set_material_to_object(object *o, color ambient, color diffuse, color specular, float shininess);
+void set_texture_to_object(object* o, int texture_id, float multiplier);
 
 vertex *copy_vertex(vertex *v);
 void set_normal(vertex *v, float x, float y, float z);
@@ -119,7 +126,6 @@ object *copy_object(object *o);
 int add_face_to_object(object *o, face *f);
 super_object *create_super_object();
 int add_object_to_super_object(super_object *so, object *o);
-int count_vertices(object *o);
 void update_vertices_list_from_face(object *o, face *f);
 void update_vertices_list(object *o);
 void translate_object(object *o, mfloat_t* translation);
@@ -138,13 +144,13 @@ light *create_light(float x, float y, float z, color c, float i);
 void free_light(light *l);
 
 void print_mat4(mfloat_t *m);
-void print_mat4_str(char *title, mfloat_t *m);
+void print_mat4_str(const char *title, mfloat_t* m);
 void print_vec4(mfloat_t *m);
 void print_vec3(mfloat_t *m);
 
 void create_sphere(object *o, int sectors, int stack, float radius);
 void create_object_from_obj_file(object *o, char *filename);
-void create_super_object_from_obj_file(super_object *so, char *filename);
+void create_super_object_from_obj_file(super_object *so, const char *filename);
 
 int is_point_in_2d_convex_hull(object *o, point *p, mfloat_t *model, mfloat_t *camera, mfloat_t *projection, int w, int h, vector *hull);
 

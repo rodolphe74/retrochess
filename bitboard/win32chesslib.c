@@ -64,40 +64,34 @@ void g_close_chess_lib() {
 #endif
 }
 
-// int g_is_check_mate(lua_State *L)
-// {
-// 	// 0 rien
-// 	// 1 MATE
-// 	// 2 CHECK
-// 	uint8_t color = lua_tointeger(L, 1);
-// 	if (color == WHITE) {
-// 		if (king_in_check(&g.b, WHITE)) {
-// 			printf("WHITE is CHECK\n");
-// 			if (king_in_checkmate(&g.b, WHITE)) {
-// 				printf("      and MATE\n");
-// 				lua_pushinteger(L, 1);
-// 				return 1;
-// 			}
-// 			lua_pushinteger(L, 2);
-// 			return 1;
-// 		}
-// 	} else if (color == BLACK) {
-// 		if (king_in_check(&g.b, BLACK)) {
-// 			printf("BLACK is CHECK\n");
-// 			if (king_in_checkmate(&g.b, BLACK)) {
-// 				printf("      and MATE\n");
-// 				lua_pushinteger(L, 1);
-// 				return 1;
-// 			}
-// 			lua_pushinteger(L, 2);
-// 			return 1;
-// 		}
-// 	}
-// 	printf("Rien\n");
-// 	lua_pushinteger(L, 0);
-// 	return 1;
-// }
-//
+int g_is_check_mate(uint8_t color)
+{
+	// 0 rien
+	// 1 MATE
+	// 2 CHECK
+	if (color == WHITE) {
+		if (king_in_check(&g.b, WHITE)) {
+			printf("WHITE is CHECK\n");
+			if (king_in_checkmate(&g.b, WHITE)) {
+				printf("      and MATE\n");
+				return 1;
+			}
+			return 2;
+		}
+	} else if (color == BLACK) {
+		if (king_in_check(&g.b, BLACK)) {
+			printf("BLACK is CHECK\n");
+			if (king_in_checkmate(&g.b, BLACK)) {
+				printf("      and MATE\n");
+				return 1;
+			}
+			return 2;
+		}
+	}
+	printf("Rien\n");
+	return 0;
+}
+
 
 
 DWORD WINAPI thread_alpha_beta(LPVOID params)

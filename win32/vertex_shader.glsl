@@ -25,14 +25,34 @@
 
 	void main()
 	{
-        gl_Position = projection_matrix * view_matrix * model_matrix * vec4(pos, 1.0);
-        fPos = pos;
-        fMaterial_ambient = material_ambient;
-		fMaterial_diffuse = material_diffuse;
-		fMaterial_specular = material_specular;
-		fMaterial_shininess = material_shininess;
-        fUv = uv;
-        fTid = tid;
-        fWhich = which;
-        fNorm = norm;
+		int w = int(which);
+
+		if (w != 1) {
+			gl_Position = projection_matrix * view_matrix * model_matrix * vec4(pos, 1.0);
+			fPos = pos;
+			fMaterial_ambient = material_ambient;
+			fMaterial_diffuse = material_diffuse;
+			fMaterial_specular = material_specular;
+			fMaterial_shininess = material_shininess;
+			fUv = uv;
+			fTid = tid;
+			fWhich = which;
+			fNorm = norm;
+		} else {
+			// which = 1 reserve pour l'affichage du texte
+
+			vec2 vh = vec2(pos.x, pos.y) - vec2(400, 400); // [0..800][0..800] -> [-400..400][-400..400]
+			vh /= vec2(400, 400);
+			gl_Position =  vec4(vh, 0, 1);
+		
+			fPos = pos;
+			fMaterial_ambient = material_ambient;
+			fMaterial_diffuse = material_diffuse;
+			fMaterial_specular = material_specular;
+			fMaterial_shininess = material_shininess;
+			fUv = uv;
+			fTid = tid;
+			fWhich = which;
+			fNorm = norm;
+		}
 	};

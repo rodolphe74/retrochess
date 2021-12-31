@@ -31,7 +31,7 @@ __declspec(dllexport) void __cdecl g_get_moves_list(int from, vector *v);
 __declspec(dllexport) void __cdecl g_move_to(uint8_t from, uint8_t to, uint8_t en_passant, uint8_t is_castling, uint8_t color);
 __declspec(dllexport) void __cdecl g_alpha_beta(uint8_t color, uint8_t depth, void (*callback_function)(void));
 __declspec(dllexport) alpha_beta_result __cdecl g_get_alpha_beta_result();
-
+__declspec(dllexport) int __cdecl g_is_check_mate(uint8_t color);
 
 
 #endif

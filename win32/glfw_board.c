@@ -54,6 +54,7 @@ static void end_chess_log()
 
 
 enum gaming_state { human = 0, computer = 1, computer_thinking = 2, move_animation = 3 };
+enum check_state { not_check = 0, white_check = 1, white_check_mate = 2, black_check = 3, black_check_mate = 4};
 
 // Globals
 int drag = 0;
@@ -74,6 +75,7 @@ mfloat_t pieces_positions[64][MAT4_SIZE];
 // indique qui peut jouer
 enum gaming_state state = human;
 enum gaming_state c_est_a_qui = human; // pour le changement de joueur
+enum check_state ch_state = not_check;
 
 // Objets 3d
 GLuint vs, fs, program;
@@ -81,14 +83,15 @@ GLuint gs;
 vector lights;
 float *lights_array;
 int lights_count;
-gl_object glo_pawn_white, glo_pawn_black;
-gl_object glo_bishop_white, glo_bishop_black;
-gl_object glo_king_white, glo_king_black;
-gl_object glo_knight_white, glo_knight_black;
-gl_object glo_queen_white, glo_queen_black;
-gl_object glo_rook_white, glo_rook_black;
-gl_object glo_case_white, glo_case_black, glo_selected_case,
-		  glo_possible_square, glo_possible_selected_square;
+gl_object	glo_pawn_white, glo_pawn_black;
+gl_object	glo_bishop_white, glo_bishop_black;
+gl_object	glo_king_white, glo_king_black;
+gl_object	glo_knight_white, glo_knight_black;
+gl_object	glo_queen_white, glo_queen_black;
+gl_object	glo_rook_white, glo_rook_black;
+gl_object	glo_case_white, glo_case_black, glo_selected_case,
+			glo_possible_square, glo_possible_selected_square,
+			glo_check_square, glo_check_mat_square;
 
 
 // Panel informatif (un quad avec un texture dessus)
@@ -278,7 +281,7 @@ void load_objects() {
 	set_material_to_object(o, gray10, gray10, white, 32.0 * 1);
 	object_as_gl_unique_vertices_object(o, &glo_rook_black);
 
-	// case
+	// cases
 	vector_get_at(&o, chess_set->objects, 6); // case
 	set_material_to_object(o, white, white, white, 32.0 * 1);
 	object_as_gl_unique_vertices_object(o, &glo_case_white);
@@ -294,6 +297,14 @@ void load_objects() {
 	vector_get_at(&o, chess_set->objects, 6); // case
 	set_material_to_object(o, green_yellow, green_yellow, white, 32.0 * 1);
 	object_as_gl_unique_vertices_object(o, &glo_possible_selected_square);
+
+	// cases couleur en echec
+	vector_get_at(&o, chess_set->objects, 6); // case
+	set_material_to_object(o, dark_orange, dark_orange, white, 32.0 * 1);
+	object_as_gl_unique_vertices_object(o, &glo_check_square);
+	vector_get_at(&o, chess_set->objects, 6); // case
+	set_material_to_object(o, firebrick, firebrick, white, 32.0 * 1);
+	object_as_gl_unique_vertices_object(o, &glo_check_mat_square);
 
 	// garde une copie de case
 	original_square = copy_object(o);
@@ -403,8 +414,8 @@ void free_all() {
 }
 
 int draw_square(int already_inside, int current, float x, float z, int color,
-		GLfloat *position, GLfloat *view, GLfloat *projection,
-		GLfloat *lights_array, int lights_count) {
+	GLfloat *position, GLfloat *view, GLfloat *projection,
+	GLfloat *lights_array, int lights_count) {
 	mfloat_t model_square[MAT4_SIZE];
 
 	mat4_identity(model_square);
@@ -416,12 +427,12 @@ int draw_square(int already_inside, int current, float x, float z, int color,
 
 	point pt;
 
-	pt.x = (int)cursor_mousex;
-	pt.y = (int)cursor_mousey;
+	pt.x = (int) cursor_mousex;
+	pt.y = (int) cursor_mousey;
 	vector hull = vector_init(sizeof(point));
 	int inside =
 		is_point_in_2d_convex_hull(original_square, &pt, model_square, view,
-				projection, SCREEN_W, SCREEN_W, &hull);
+			projection, SCREEN_W, SCREEN_W, &hull);
 	vector_destroy(hull);
 
 	// Est ce une case de la liste de coups ?
@@ -431,24 +442,26 @@ int draw_square(int already_inside, int current, float x, float z, int color,
 		if (current == (m & 255)) {
 			if (already_inside) {
 				set_gl_object_before_render(
-						&glo_possible_square, &program, (GLfloat *)position,
-						(GLfloat *)model_square, (GLfloat *)view, (GLfloat *)projection,
-						(GLfloat *)lights_array, lights_count);
+					&glo_possible_square, &program, (GLfloat *) position,
+					(GLfloat *) model_square, (GLfloat *) view, (GLfloat *) projection,
+					(GLfloat *) lights_array, lights_count);
 				glDrawArrays(GL_TRIANGLES, 0, glo_possible_square.size);
 				return 0;
-			} else {
+			}
+			else {
 				if (!inside) {
 					set_gl_object_before_render(
-							&glo_possible_square, &program, (GLfloat *)position,
-							(GLfloat *)model_square, (GLfloat *)view, (GLfloat *)projection,
-							(GLfloat *)lights_array, lights_count);
+						&glo_possible_square, &program, (GLfloat *) position,
+						(GLfloat *) model_square, (GLfloat *) view, (GLfloat *) projection,
+						(GLfloat *) lights_array, lights_count);
 					glDrawArrays(GL_TRIANGLES, 0, glo_possible_square.size);
 					return 0;
-				} else {
+				}
+				else {
 					set_gl_object_before_render(
-							&glo_possible_selected_square, &program, (GLfloat *)position,
-							(GLfloat *)model_square, (GLfloat *)view, (GLfloat *)projection,
-							(GLfloat *)lights_array, lights_count);
+						&glo_possible_selected_square, &program, (GLfloat *) position,
+						(GLfloat *) model_square, (GLfloat *) view, (GLfloat *) projection,
+						(GLfloat *) lights_array, lights_count);
 					glDrawArrays(GL_TRIANGLES, 0, glo_possible_selected_square.size);
 					return 1;
 				}
@@ -457,52 +470,145 @@ int draw_square(int already_inside, int current, float x, float z, int color,
 	}
 
 	// Sinon (pas dans la liste)
+
+	// Un des rois est peut-etre en echec
+	int which_square = 0;
+	if (ch_state == white_check_mate && g->b.placement[current] == 'K') {
+		which_square = 1;
+	}
+	else if (ch_state == white_check && g->b.placement[current] == 'K') {
+		which_square = 2;
+	}
+	else if (ch_state == black_check_mate && g->b.placement[current] == 'k') {
+		which_square = 1;
+	}
+	else if (ch_state == black_check && g->b.placement[current] == 'k') {
+		which_square = 2;
+	}
+
+
 	if (color) {
 		if (already_inside) {
-			set_gl_object_before_render(&glo_case_white, &program,
-					(GLfloat *)position, (GLfloat *)model_square,
-					(GLfloat *)view, (GLfloat *)projection,
-					(GLfloat *)lights_array, lights_count);
-			glDrawArrays(GL_TRIANGLES, 0, glo_case_white.size);
-			return 0;
-		} else {
-			if (!inside) {
-				set_gl_object_before_render(
-						&glo_case_white, &program, (GLfloat *)position,
-						(GLfloat *)model_square, (GLfloat *)view, (GLfloat *)projection,
-						(GLfloat *)lights_array, lights_count);
+			
+			if (which_square == 1) {
+				set_gl_object_before_render(&glo_check_mat_square, &program,
+					(GLfloat *) position, (GLfloat *) model_square,
+					(GLfloat *) view, (GLfloat *) projection,
+					(GLfloat *) lights_array, lights_count);
+				glDrawArrays(GL_TRIANGLES, 0, glo_check_mat_square.size);
+			}
+			else if (which_square == 2) {
+				set_gl_object_before_render(&glo_check_square, &program,
+					(GLfloat *) position, (GLfloat *) model_square,
+					(GLfloat *) view, (GLfloat *) projection,
+					(GLfloat *) lights_array, lights_count);
+				glDrawArrays(GL_TRIANGLES, 0, glo_check_square.size);
+			}
+			else {
+				set_gl_object_before_render(&glo_case_white, &program,
+					(GLfloat *) position, (GLfloat *) model_square,
+					(GLfloat *) view, (GLfloat *) projection,
+					(GLfloat *) lights_array, lights_count);
 				glDrawArrays(GL_TRIANGLES, 0, glo_case_white.size);
+			}
+			return 0;
+
+		}
+		else {
+			if (!inside) {
+
+				if (which_square == 1) {
+					set_gl_object_before_render(&glo_check_mat_square, &program,
+						(GLfloat *) position, (GLfloat *) model_square,
+						(GLfloat *) view, (GLfloat *) projection,
+						(GLfloat *) lights_array, lights_count);
+					glDrawArrays(GL_TRIANGLES, 0, glo_check_mat_square.size);
+
+				}
+				else if (which_square == 2) {
+					set_gl_object_before_render(&glo_check_square, &program,
+						(GLfloat *) position, (GLfloat *) model_square,
+						(GLfloat *) view, (GLfloat *) projection,
+						(GLfloat *) lights_array, lights_count);
+					glDrawArrays(GL_TRIANGLES, 0, glo_check_square.size);
+				}
+				else {
+					set_gl_object_before_render(
+						&glo_case_white, &program, (GLfloat *) position,
+						(GLfloat *) model_square, (GLfloat *) view, (GLfloat *) projection,
+						(GLfloat *) lights_array, lights_count);
+					glDrawArrays(GL_TRIANGLES, 0, glo_case_white.size);
+				}
 				return 0;
-			} else {
+
+			}
+			else {
 				set_gl_object_before_render(
-						&glo_selected_case, &program, (GLfloat *)position,
-						(GLfloat *)model_square, (GLfloat *)view, (GLfloat *)projection,
-						(GLfloat *)lights_array, lights_count);
+					&glo_selected_case, &program, (GLfloat *) position,
+					(GLfloat *) model_square, (GLfloat *) view, (GLfloat *) projection,
+					(GLfloat *) lights_array, lights_count);
 				glDrawArrays(GL_TRIANGLES, 0, glo_selected_case.size);
 				return 1;
 			}
 		}
-	} else {
+	}
+	else {
 		if (already_inside) {
-			set_gl_object_before_render(&glo_case_black, &program,
-					(GLfloat *)position, (GLfloat *)model_square,
-					(GLfloat *)view, (GLfloat *)projection,
-					(GLfloat *)lights_array, lights_count);
-			glDrawArrays(GL_TRIANGLES, 0, glo_case_black.size);
-			return 0;
-		} else {
-			if (!inside) {
-				set_gl_object_before_render(
-						&glo_case_black, &program, (GLfloat *)position,
-						(GLfloat *)model_square, (GLfloat *)view, (GLfloat *)projection,
-						(GLfloat *)lights_array, lights_count);
+			if (which_square == 1) {
+				set_gl_object_before_render(&glo_check_mat_square, &program,
+					(GLfloat *) position, (GLfloat *) model_square,
+					(GLfloat *) view, (GLfloat *) projection,
+					(GLfloat *) lights_array, lights_count);
+				glDrawArrays(GL_TRIANGLES, 0, glo_check_mat_square.size);
+			}
+			else if (which_square == 2) {
+				set_gl_object_before_render(&glo_check_square, &program,
+					(GLfloat *) position, (GLfloat *) model_square,
+					(GLfloat *) view, (GLfloat *) projection,
+					(GLfloat *) lights_array, lights_count);
+				glDrawArrays(GL_TRIANGLES, 0, glo_check_square.size);
+			}
+			else {
+				set_gl_object_before_render(&glo_case_black, &program,
+					(GLfloat *) position, (GLfloat *) model_square,
+					(GLfloat *) view, (GLfloat *) projection,
+					(GLfloat *) lights_array, lights_count);
 				glDrawArrays(GL_TRIANGLES, 0, glo_case_black.size);
+			}
+			return 0;
+
+		}
+		else {
+			if (!inside) {
+				if (which_square == 1) {
+					set_gl_object_before_render(&glo_check_mat_square, &program,
+						(GLfloat *) position, (GLfloat *) model_square,
+						(GLfloat *) view, (GLfloat *) projection,
+						(GLfloat *) lights_array, lights_count);
+					glDrawArrays(GL_TRIANGLES, 0, glo_check_mat_square.size);
+				}
+				else if (which_square == 2) {
+					set_gl_object_before_render(&glo_check_square, &program,
+						(GLfloat *) position, (GLfloat *) model_square,
+						(GLfloat *) view, (GLfloat *) projection,
+						(GLfloat *) lights_array, lights_count);
+					glDrawArrays(GL_TRIANGLES, 0, glo_check_square.size);
+				}
+				else {
+					set_gl_object_before_render(
+						&glo_case_black, &program, (GLfloat *) position,
+						(GLfloat *) model_square, (GLfloat *) view, (GLfloat *) projection,
+						(GLfloat *) lights_array, lights_count);
+					glDrawArrays(GL_TRIANGLES, 0, glo_case_black.size);
+				}
 				return 0;
-			} else {
+
+			}
+			else {
 				set_gl_object_before_render(
-						&glo_selected_case, &program, (GLfloat *)position,
-						(GLfloat *)model_square, (GLfloat *)view, (GLfloat *)projection,
-						(GLfloat *)lights_array, lights_count);
+					&glo_selected_case, &program, (GLfloat *) position,
+					(GLfloat *) model_square, (GLfloat *) view, (GLfloat *) projection,
+					(GLfloat *) lights_array, lights_count);
 				glDrawArrays(GL_TRIANGLES, 0, glo_selected_case.size);
 				return 1;
 			}
@@ -926,7 +1032,7 @@ INT WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 
 		/* Render here */
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-		
+
 
 		// Draw board
 		int global_inside = 0;
@@ -1004,6 +1110,21 @@ INT WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 				g_move_to(piece_from, piece_to, 0, 0, state == human ? WHITE : BLACK);
 				wait_move_click = 0;
 
+				// Un des rois est peut etre en echec
+				ch_state = not_check;
+				if (g_is_check_mate(WHITE) == 1) {
+					ch_state = white_check_mate;
+				}
+				else if (g_is_check_mate(WHITE) == 2) {
+					ch_state = white_check;
+				}
+				else if (g_is_check_mate(BLACK) == 1) {
+					ch_state = black_check_mate;
+				}
+				else if (g_is_check_mate(BLACK) == 2) {
+					ch_state = black_check;
+				}
+
 				if (c_est_a_qui == human) c_est_a_qui = computer;
 				else /*if (c_est_a_qui == computer)*/ c_est_a_qui = human;
 				state = c_est_a_qui;
@@ -1053,7 +1174,6 @@ INT WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 				measured = 1;
 			}
 		}
-
 
 		//////////////////
 		// Update Panel //

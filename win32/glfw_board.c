@@ -54,7 +54,7 @@ static void end_chess_log()
 
 
 enum gaming_state { human = 0, computer = 1, computer_thinking = 2, move_animation = 3 };
-enum check_state { not_check = 0, white_check = 1, white_check_mate = 2, black_check = 3, black_check_mate = 4};
+enum check_state { not_check = 0, white_check = 1, white_check_mate = 2, black_check = 3, black_check_mate = 4 };
 
 // Globals
 int drag = 0;
@@ -400,6 +400,8 @@ void free_all() {
 	free_gl_object(&glo_selected_case);
 	free_gl_object(&glo_possible_square);
 	free_gl_object(&glo_possible_selected_square);
+	free_gl_object(&glo_check_square);
+	free_gl_object(&glo_check_mat_square);
 
 	free_object(original_square);
 

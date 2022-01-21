@@ -78,7 +78,7 @@ Le projet se compose :
 * d'un script powershell permettant de créer l'apk Android. Il utilise pour cela [l'apk de base love2d](https://github.com/love2d/love/releases/download/11.3/love-11.3-android.apk). L'apk est d'abord décompressé dans un répertoire, le code lua du jeu d'échec y est copié. Le répertoire est ensuite recompressé et signé avec les outils présents dans le répertoire tools. Pour cela, le jdk java doit être présent sur la machine. 
 
 # Ajout d'une interface 3D
-<img src="https://github.com/rodolphe74/retrochess/blob/main/win32/chess_play.gif" alt="le coup du berger" style="width:480px;"/>
+<img src="https://github.com/rodolphe74/retrochess/blob/main/win32/chess_play.gif" alt="le coup du berger" style="width:400px;"/>
 
 Le code (en cours de développement) se trouve dans le sous répertoire win32.
 Cette interface permet de mettre en œuvre OpenGL à travers [glfw](https://www.glfw.org/). Les effets spéculaires sont codés dans les shaders en glsl (https://learnopengl.com/Lighting/Basic-Lighting).

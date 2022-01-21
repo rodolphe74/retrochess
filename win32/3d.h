@@ -154,4 +154,8 @@ void create_super_object_from_obj_file(super_object *so, const char *filename);
 
 int is_point_in_2d_convex_hull(object *o, point *p, mfloat_t *model, mfloat_t *camera, mfloat_t *projection, int w, int h, vector *hull);
 
+
+void read_object_from_obj_file(object *o, char *filename);
+void read_super_object_from_obj_file(super_object *o, char *filename);
+
 #endif

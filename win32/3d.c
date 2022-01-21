@@ -927,6 +927,277 @@ void create_object_from_obj_file(object *o, char *filename) {
 }
 
 
+
+void read_object_from_obj_file(object *o, char *filename)
+{
+        FILE *fp;
+        fp = fopen(filename, "r");
+
+        size_t len = 0;
+        size_t read;
+        char line[1024];
+
+        int line_count = 0;
+        int vertex_count = 0;
+        int vt_count = 0;
+        int vn_count = 0;
+        int face_count = 0;
+
+        vector vertices = vector_init(sizeof(float) * 3);
+        vector vts = vector_init(sizeof(float) * 2);
+        vector vns = vector_init(sizeof(float) * 3);
+
+
+        // Creation du tableau de vertices
+        fseek(fp, 0, SEEK_SET);
+        while (fgets(line, bufferLength, fp)) {
+            if (line[0] == 'v' && line[1] == ' ') {
+                vertex_count++;
+                float v[3] = {0.0f, 0.0f, 0.0f};
+                sscanf(line, "v %f %f %f" , &v[0], &v[1], &v[2]);
+                vector_add_last(vertices, &v);
+            }
+
+            line_count++;
+        }
+
+        // Creation du tableau de coordonnees de texture
+        fseek(fp, 0, SEEK_SET);
+        while (fgets(line, bufferLength, fp)) {
+            if (line[0] == 'v' && line[1] == 't' && line[2] == ' ') {
+                float vt[2] = { 0.0f, 0.0f };
+                sscanf(line, "vt %f %f", &vt[0], &vt[1]);
+                vector_add_last(vts, &vt);
+                vt_count++;
+            }
+        }
+
+
+        // Creation du tableau de normales de texture
+        fseek(fp, 0, SEEK_SET);
+        while (fgets(line, bufferLength, fp)) {
+            if (line[0] == 'v' && line[1] == 'n' && line[2] == ' ') {
+                float vn[3] = { 0.0f, 0.0f, 0.0f };
+                sscanf(line, "vn %f %f %f", &vn[0], &vn[1], &vn[2]);
+                vector_add_last(vns, &vn);
+                vn_count++;
+            }
+        }
+
+
+        // Creation du tableau de face (triangles)
+        fseek(fp, 0, SEEK_SET);
+        while (fgets(line, bufferLength, fp)) {
+            // printf("%s", line);
+
+            if (line[0] == 'f' && line[1] == ' ') {
+                char f[3][64] = {"", "", ""};
+                int fi[3] = { 0, 0, 0 };
+                sscanf(line, "f %s %s %s", &f[0], &f[1], &f[2]);
+
+                // Face i
+                face *fc = create_face(0);
+                for (int i = 0; i < 3; i++) {
+                    // Gestion des cas avec ou sans coordonnees de texture
+                    if (strstr(line, "//")) {
+                        // pas de vt
+                        sscanf(f[i], "%i//%i", &fi[0], &fi[2]);
+                    }
+                    else {
+                        sscanf(f[i], "%i/%i/%i", &fi[0], &fi[1], &fi[2]);
+                    }
+
+                    // fi[0] -> vertex
+                    float v[3];
+                    vector_get_at(&v, vertices, fi[0] - 1);
+
+                    // fi[1] -> vt
+                    float vt[2];
+                    vector_get_at(&vt, vts, fi[1] - 1);
+
+                    // fi[2] -> vn
+                    float vn[3];
+                    vector_get_at(&vn, vns, fi[2] - 1);
+
+                    vertex *vx = create_vertex(v[0], v[1], v[2]);
+                    set_uv((vertex *) v, vt[0], vt[1]);
+                    set_normal((vertex *) v, vn[0], vn[1], vn[2]);
+
+                    add_vertex_to_face(fc, vx);
+                }
+                
+                add_face_to_object(o, fc);
+
+                face_count++;
+            }
+        }
+        update_vertices_list(o);
+
+        printf("vertex count:%d\n", vertex_count);
+        printf("vertex texture coordinates count:%d\n", vt_count);
+        printf("vertex normale count:%d\n", vn_count);
+        printf("face count:%d\n", face_count);
+        printf("line count: %d\n", line_count);
+        fclose(fp);
+
+        vector_destroy(vertices);
+        vector_destroy(vts);
+        vector_destroy(vns);
+
+        printf("yo");
+}
+
+
+
+
+
+
+void read_super_object_from_obj_file(super_object *so, char *filename)
+{
+    FILE *fp;
+    fp = fopen(filename, "r");
+
+    size_t len = 0;
+    size_t read;
+    char line[1024];
+
+    int line_count = 0;
+    int object_count = 0;
+    int vertex_count = 0;
+    int vt_count = 0;
+    int vn_count = 0;
+    int face_count = 0;
+
+    vector vertices = vector_init(sizeof(float) * 3);
+    vector vts = vector_init(sizeof(float) * 2);
+    vector vns = vector_init(sizeof(float) * 3);
+
+    // Creation du tableau de vertices
+    fseek(fp, 0, SEEK_SET);
+    while (fgets(line, bufferLength, fp)) {
+        if (line[0] == 'v' && line[1] == ' ') {
+            vertex_count++;
+            float v[3] = { 0.0f, 0.0f, 0.0f };
+            sscanf(line, "v %f %f %f", &v[0], &v[1], &v[2]);
+            vector_add_last(vertices, &v);
+        }
+
+        line_count++;
+    }
+
+    // Creation du tableau de coordonnees de texture
+    fseek(fp, 0, SEEK_SET);
+    while (fgets(line, bufferLength, fp)) {
+        if (line[0] == 'v' && line[1] == 't' && line[2] == ' ') {
+            float vt[2] = { 0.0f, 0.0f };
+            sscanf(line, "vt %f %f", &vt[0], &vt[1]);
+            vector_add_last(vts, &vt);
+            vt_count++;
+        }
+    }
+
+
+    // Creation du tableau de normales de texture
+    fseek(fp, 0, SEEK_SET);
+    while (fgets(line, bufferLength, fp)) {
+        if (line[0] == 'v' && line[1] == 'n' && line[2] == ' ') {
+            float vn[3] = { 0.0f, 0.0f, 0.0f };
+            sscanf(line, "vn %f %f %f", &vn[0], &vn[1], &vn[2]);
+            vector_add_last(vns, &vn);
+            vn_count++;
+        }
+    }
+
+
+    // Creation du tableau de face (triangles)
+    fseek(fp, 0, SEEK_SET);
+    object *current_object = NULL;
+    char current_name[256];
+    while (fgets(line, bufferLength, fp)) {
+        // printf("%s", line);
+
+        if (line[0] == 'o' && line[1] == ' ') {
+            if (current_object != NULL) {
+                // passe à l'objet suivant
+                printf("ajout %s\n", current_name);
+                update_vertices_list(current_object);
+                strcpy(current_object->name, current_name);
+                add_object_to_super_object(so, current_object);
+            }
+
+            current_object = create_object(0);
+            char tag[256];
+            sscanf(line, "o %s", current_name);
+            object_count++;
+        }
+
+        else if (line[0] == 'f' && line[1] == ' ') {
+            char f[3][64] = { "", "", "" };
+            int fi[3] = { 0, 0, 0 };
+            sscanf(line, "f %s %s %s", &f[0], &f[1], &f[2]);
+
+            // Face i
+            face *fc = create_face(0);
+            for (int i = 0; i < 3; i++) {
+
+                // Gestion des cas avec ou sans coordonnees de texture
+                if (strstr(line, "//")) {
+                    // pas de vt
+                    sscanf(f[i], "%i//%i", &fi[0], &fi[2]);
+                }
+                else {
+                    sscanf(f[i], "%i/%i/%i", &fi[0], &fi[1], &fi[2]);
+                }
+
+                
+                // fi[0] -> vertex
+                float v[3];
+                vector_get_at(&v, vertices, fi[0] - 1);
+
+                // fi[1] -> vt
+                float vt[2] = { 1.0, 1.0 };
+                vector_get_at(&vt, vts, fi[1] - 1);
+
+                // fi[2] -> vn
+                float vn[3] = { 0.0, 0.0, 0.0 };
+                vector_get_at(&vn, vns, fi[2] - 1);
+
+                vertex *vx = create_vertex(v[0], v[1], v[2]);
+                set_uv(vx, vt[0], vt[1]);
+                set_normal(vx, vn[0], vn[1], vn[2]);
+
+                add_vertex_to_face(fc, vx);
+            }
+
+            add_face_to_object(current_object, fc);
+
+            face_count++;
+        }
+    }
+
+    // Traitement du dernier object en cours
+    update_vertices_list(current_object);
+    strcpy(current_object->name, current_name);
+    add_object_to_super_object(so, current_object);
+
+    printf("object count:%d\n", object_count);
+    printf("vertex count:%d\n", vertex_count);
+    printf("vertex texture coordinates count:%d\n", vt_count);
+    printf("vertex normale count:%d\n", vn_count);
+    printf("face count:%d\n", face_count);
+    printf("line count: %d\n", line_count);
+    fclose(fp);
+
+    vector_destroy(vertices);
+    vector_destroy(vts);
+    vector_destroy(vns);
+}
+
+
+
+
+
+
 void create_super_object_from_obj_file(super_object *so, const char *filename) {
     FILE* filePointer;
     // int bufferLength = 1024;
@@ -1068,6 +1339,21 @@ void create_super_object_from_obj_file(super_object *so, const char *filename) {
 
             face *f = create_face(0);
             for (i = 0; i < k; i++) {
+
+
+                // DEBUG
+                //if (face_indexes[i] - 1 > 2504) {
+                //    printf("v warn\n");
+                //}
+                if (normal_indexes[i] - 1 > 1508) {
+                    printf("n warn\n");
+                }
+                //if (uv_indexes[i] - 1 > 5023) {
+                //    printf("u warn\n");
+                //}
+                ////////////////
+
+
                 // printf("face_indexes[%d]=%d\n", i, face_indexes[i]);
                 vertex *v = create_vertex(vertex_list[face_indexes[i] - 1]->pos[0], 
                     vertex_list[face_indexes[i] - 1]->pos[1], 
